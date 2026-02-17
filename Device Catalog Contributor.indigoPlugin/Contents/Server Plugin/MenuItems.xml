@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<MenuItems>
+    <MenuItem id="discoverProfiles">
+        <Name>Discover New Profiles</Name>
+        <CallbackMethod>discover_profiles</CallbackMethod>
+    </MenuItem>
+    <MenuItem id="exportProfiles">
+        <Name>Export Profiles to File</Name>
+        <CallbackMethod>export_profiles</CallbackMethod>
+    </MenuItem>
+    <MenuItem id="submitToGitHub">
+        <Name>Submit to Catalog (GitHub)</Name>
+        <CallbackMethod>submit_to_github</CallbackMethod>
+    </MenuItem>
+</MenuItems>
