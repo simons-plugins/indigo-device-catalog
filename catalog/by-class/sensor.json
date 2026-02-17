@@ -1,0 +1,3110 @@
+{
+  "$schema": "../../schema/device-profile.schema.json",
+  "baseClass": "indigo.SensorDevice",
+  "classCapabilities": [
+    "supportsOnState",
+    "supportsSensorValue",
+    "supportsStatusRequest"
+  ],
+  "profiles": [
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "multiSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Multi-Sensor",
+      "subModel": "Motion",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsAccumEnergyTotal",
+        "SupportsBatteryLevel",
+        "SupportsColor",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsRGB",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "UpdateDeviceName",
+        "UpdateNotes",
+        "UpdateNotesJsonList",
+        "address",
+        "allowOnStateChange",
+        "hideAccelerationBroadcast",
+        "hideActionBroadcast",
+        "hideAnglesBroadcast",
+        "hideContactBroadcast",
+        "hideDimmerBroadcast",
+        "hideEnergyBroadcast",
+        "hideHumidityBroadcast",
+        "hideHvacModeBroadcast",
+        "hideHvacStateBroadcast",
+        "hideIlluminanceBroadcast",
+        "hideMotionBroadcast",
+        "hideMultiSwitchActionBroadcast",
+        "hideOnOffBroadcast",
+        "hidePositionBroadcast",
+        "hidePowerBroadcast",
+        "hidePresenceBroadcast",
+        "hidePressureBroadcast",
+        "hideRemoteAudioBroadcast",
+        "hideRemoteDimmerBroadcast",
+        "hideRotationsBroadcast",
+        "hideSceneRotaryBroadcast",
+        "hideSetpointBroadcast",
+        "hideStateBroadcast",
+        "hideStateL1Broadcast",
+        "hideStateL2Broadcast",
+        "hideStateL3Broadcast",
+        "hideStateL4Broadcast",
+        "hideStateL5Broadcast",
+        "hideStateLeftBroadcast",
+        "hideStateRightBroadcast",
+        "hideStateSingleBroadcast",
+        "hideStrengthBroadcast",
+        "hideSwitchActionBroadcast",
+        "hideTamperBroadcast",
+        "hideTemperatureBroadcast",
+        "hideValveBroadcast",
+        "hideVibrationBroadcast",
+        "hideVoltageBroadcast",
+        "indigo_derived_device_name",
+        "list_zigbee_device_selected",
+        "name_exists",
+        "primaryIndigoDevice",
+        "properties_0x0ceff6fffe695c45_hidden",
+        "refreshCallbackMethod",
+        "show_name_exists_warning",
+        "show_update_notes_json",
+        "supportsTemperatureReporting",
+        "supportsValve",
+        "uspAcceleration",
+        "uspAccelerationIndigo",
+        "uspAction",
+        "uspActionIndigo",
+        "uspAngles",
+        "uspAnglesIndigo",
+        "uspBattery",
+        "uspBrightness",
+        "uspBrightnessIndigo",
+        "uspBrightnessL1",
+        "uspBrightnessL1Indigo",
+        "uspBrightnessL2",
+        "uspBrightnessL2Indigo",
+        "uspBrightnessL3",
+        "uspBrightnessL3Indigo",
+        "uspColorIndigo",
+        "uspColorRGB",
+        "uspColorTemperature",
+        "uspColorTemperatureIndigo",
+        "uspContact",
+        "uspContactIndigo",
+        "uspDimmer",
+        "uspEnergy",
+        "uspEnergyDecimalPlaces",
+        "uspEnergyIndigo",
+        "uspEnergyUnits",
+        "uspHumidity",
+        "uspHumidityDecimalPlaces",
+        "uspHumidityIndigo",
+        "uspHvacMode",
+        "uspHvacState",
+        "uspIlluminance",
+        "uspIlluminanceDecimalPlaces",
+        "uspIlluminanceIndigo",
+        "uspIlluminanceUnits",
+        "uspKelvinMaximum",
+        "uspKelvinMinimum",
+        "uspLinkQuality",
+        "uspLinkQualityIndigo",
+        "uspMultiSwitchAction",
+        "uspMultiSwitchActionIndigo",
+        "uspNumberOfButtons",
+        "uspOccupancy",
+        "uspOccupancyIndigo",
+        "uspOnOff",
+        "uspOnOffIndigo",
+        "uspPosition",
+        "uspPositionIndigo",
+        "uspPower",
+        "uspPowerDecimalPlaces",
+        "uspPowerIndigo",
+        "uspPowerIndigoEnabled",
+        "uspPowerLeft",
+        "uspPowerLeftDecimalPlaces",
+        "uspPowerLeftIndigo",
+        "uspPowerLeftMinimumReportingLevel",
+        "uspPowerLeftReportingHysteresis",
+        "uspPowerLeftUnits",
+        "uspPowerMinimumReportingLevel",
+        "uspPowerReportingHysteresis",
+        "uspPowerRight",
+        "uspPowerRightDecimalPlaces",
+        "uspPowerRightIndigo",
+        "uspPowerRightMinimumReportingLevel",
+        "uspPowerRightReportingHysteresis",
+        "uspPowerRightUnits",
+        "uspPowerUnits",
+        "uspPresence",
+        "uspPresenceEvent",
+        "uspPresenceEventIndigo",
+        "uspPresenceIndigo",
+        "uspPressure",
+        "uspPressureDecimalPlaces",
+        "uspPressureIndigo",
+        "uspPressureUnits",
+        "uspRadar",
+        "uspRadarIndigo",
+        "uspRemoteADimmerIndigo",
+        "uspRemoteAudio",
+        "uspRemoteAudioIndigo",
+        "uspRemoteDimmer",
+        "uspRemoteDimmerIndigo",
+        "uspRotationVariableFactor",
+        "uspRotationVariableId",
+        "uspRotations",
+        "uspRotationsIndigo",
+        "uspSceneRotary",
+        "uspSceneRotaryIndigo",
+        "uspSetpoint",
+        "uspSetpointDecimalPlaces",
+        "uspSetpointIndigo",
+        "uspSetpointUnitsConversion",
+        "uspState",
+        "uspStateIndigo",
+        "uspStateL1",
+        "uspStateL1Indigo",
+        "uspStateL2",
+        "uspStateL2Indigo",
+        "uspStateL3",
+        "uspStateL3Indigo",
+        "uspStateL4",
+        "uspStateL4Indigo",
+        "uspStateL5",
+        "uspStateL5Indigo",
+        "uspStateLeft",
+        "uspStateLeftIndigo",
+        "uspStateRight",
+        "uspStateRightIndigo",
+        "uspStateSingle",
+        "uspStateSingleIndigo",
+        "uspStrength",
+        "uspStrengthIndigo",
+        "uspSwitchAction",
+        "uspSwitchActionIndigo",
+        "uspTamper",
+        "uspTamperIndigo",
+        "uspTemperature",
+        "uspTemperatureDecimalPlaces",
+        "uspTemperatureIndigo",
+        "uspTemperatureUnitsConversion",
+        "uspValve",
+        "uspValveIndigo",
+        "uspVibration",
+        "uspVibrationIndigo",
+        "uspVoltage",
+        "uspVoltageDecimalPlaces",
+        "uspVoltageIndigo",
+        "version",
+        "zigbeePropertiesInitialised",
+        "zigbeePropertyAcceleration",
+        "zigbeePropertyAction",
+        "zigbeePropertyAngles",
+        "zigbeePropertyBattery",
+        "zigbeePropertyBrightness",
+        "zigbeePropertyBrightnessL1",
+        "zigbeePropertyBrightnessL2",
+        "zigbeePropertyBrightnessL3",
+        "zigbeePropertyBrightnessL4",
+        "zigbeePropertyBrightnessL5",
+        "zigbeePropertyColor",
+        "zigbeePropertyColorName",
+        "zigbeePropertyColorTemperature",
+        "zigbeePropertyContact",
+        "zigbeePropertyDim",
+        "zigbeePropertyEnergy",
+        "zigbeePropertyHumidity",
+        "zigbeePropertyHvacMode",
+        "zigbeePropertyHvacState",
+        "zigbeePropertyIlluminance",
+        "zigbeePropertyLinkQuality",
+        "zigbeePropertyMultiSwitchAction",
+        "zigbeePropertyOccupancy",
+        "zigbeePropertyOnOff",
+        "zigbeePropertyPosition",
+        "zigbeePropertyPower",
+        "zigbeePropertyPowerLeft",
+        "zigbeePropertyPowerRight",
+        "zigbeePropertyPower_left",
+        "zigbeePropertyPower_right",
+        "zigbeePropertyPresence",
+        "zigbeePropertyPresenceEvent",
+        "zigbeePropertyPressure",
+        "zigbeePropertyRadar",
+        "zigbeePropertyRefresh",
+        "zigbeePropertyRemoteAudio",
+        "zigbeePropertyRemoteDimmer",
+        "zigbeePropertyRotations",
+        "zigbeePropertySceneRotary",
+        "zigbeePropertySetpoint",
+        "zigbeePropertyState",
+        "zigbeePropertyStateL1",
+        "zigbeePropertyStateL2",
+        "zigbeePropertyStateL3",
+        "zigbeePropertyStateL4",
+        "zigbeePropertyStateL5",
+        "zigbeePropertyStateLeft",
+        "zigbeePropertyStateRight",
+        "zigbeePropertyStateSingle",
+        "zigbeePropertyStrength",
+        "zigbeePropertySwitchAction",
+        "zigbeePropertyTamper",
+        "zigbeePropertyTemperature",
+        "zigbeePropertyValve",
+        "zigbeePropertyVibration",
+        "zigbeePropertyVoltage",
+        "zigbee_coordinator_ieee",
+        "zigbee_description",
+        "zigbee_description_user",
+        "zigbee_device_ieee",
+        "zigbee_hw",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.MotionSensorTripped"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "radarSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "presence": {
+          "type": "boolean"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Radar-Sensor",
+      "subModel": "Presence",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsAccumEnergyTotal",
+        "SupportsBatteryLevel",
+        "SupportsColor",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsRGB",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "UpdateDeviceName",
+        "UpdateNotes",
+        "UpdateNotesJsonList",
+        "address",
+        "allowOnStateChange",
+        "hideAccelerationBroadcast",
+        "hideActionBroadcast",
+        "hideAnglesBroadcast",
+        "hideContactBroadcast",
+        "hideDimmerBroadcast",
+        "hideEnergyBroadcast",
+        "hideHumidityBroadcast",
+        "hideHvacModeBroadcast",
+        "hideHvacStateBroadcast",
+        "hideIlluminanceBroadcast",
+        "hideMotionBroadcast",
+        "hideOnOffBroadcast",
+        "hidePositionBroadcast",
+        "hidePowerBroadcast",
+        "hidePresenceBroadcast",
+        "hidePressureBroadcast",
+        "hideRemoteAudioBroadcast",
+        "hideRemoteDimmerBroadcast",
+        "hideSetpointBroadcast",
+        "hideStateBroadcast",
+        "hideStateL1Broadcast",
+        "hideStateL2Broadcast",
+        "hideStateL3Broadcast",
+        "hideStateL4Broadcast",
+        "hideStateL5Broadcast",
+        "hideStateLeftBroadcast",
+        "hideStateRightBroadcast",
+        "hideStrengthBroadcast",
+        "hideTamperBroadcast",
+        "hideTemperatureBroadcast",
+        "hideValveBroadcast",
+        "hideVibrationBroadcast",
+        "hideVoltageBroadcast",
+        "indigo_derived_device_name",
+        "list_zigbee_device_selected",
+        "name_exists",
+        "primaryIndigoDevice",
+        "properties_0x00158d000205a1b6_hidden",
+        "properties_0x70ac08fffe95b518_hidden",
+        "refreshCallbackMethod",
+        "show_name_exists_warning",
+        "show_update_notes_json",
+        "supportsTemperatureReporting",
+        "supportsValve",
+        "uspAcceleration",
+        "uspAccelerationIndigo",
+        "uspAccelerationIndigoEnabled",
+        "uspAction",
+        "uspActionEnabled",
+        "uspActionIndigo",
+        "uspActionIndigoEnabled",
+        "uspAngles",
+        "uspAnglesIndigo",
+        "uspBattery",
+        "uspBrightness",
+        "uspBrightnessIndigo",
+        "uspBrightnessIndigoEnabled",
+        "uspColorIndigo",
+        "uspColorIndigoEnabled",
+        "uspColorRGB",
+        "uspColorTemperature",
+        "uspColorTemperatureIndigo",
+        "uspColorTemperatureIndigoEnabled",
+        "uspContact",
+        "uspContactIndigo",
+        "uspContactIndigoEnabled",
+        "uspDimmer",
+        "uspEnergy",
+        "uspEnergyDecimalPlaces",
+        "uspEnergyIndigo",
+        "uspEnergyIndigoEnabled",
+        "uspEnergyUnits",
+        "uspHumidity",
+        "uspHumidityDecimalPlaces",
+        "uspHumidityIndigo",
+        "uspHumidityIndigoEnabled",
+        "uspHvacMode",
+        "uspHvacState",
+        "uspIlluminance",
+        "uspIlluminanceDecimalPlaces",
+        "uspIlluminanceIndigo",
+        "uspIlluminanceIndigoEnabled",
+        "uspIlluminanceUnits",
+        "uspKelvinMaximum",
+        "uspKelvinMinimum",
+        "uspLinkQuality",
+        "uspLinkQualityIndigo",
+        "uspLinkQualityIndigoEnabled",
+        "uspNumberOfButtons",
+        "uspOccupancy",
+        "uspOccupancyIndigo",
+        "uspOccupancyIndigoEnabled",
+        "uspOnOff",
+        "uspOnOffIndigo",
+        "uspOnOffIndigoEnabled",
+        "uspPosition",
+        "uspPositionIndigo",
+        "uspPositionIndigoEnabled",
+        "uspPower",
+        "uspPowerDecimalPlaces",
+        "uspPowerIndigo",
+        "uspPowerIndigoEnabled",
+        "uspPowerLeft",
+        "uspPowerLeftDecimalPlaces",
+        "uspPowerLeftIndigo",
+        "uspPowerLeftMinimumReportingLevel",
+        "uspPowerLeftReportingHysteresis",
+        "uspPowerLeftUnits",
+        "uspPowerMinimumReportingLevel",
+        "uspPowerReportingHysteresis",
+        "uspPowerRight",
+        "uspPowerRightDecimalPlaces",
+        "uspPowerRightIndigo",
+        "uspPowerRightMinimumReportingLevel",
+        "uspPowerRightReportingHysteresis",
+        "uspPowerRightUnits",
+        "uspPowerUnits",
+        "uspPresence",
+        "uspPresenceEvent",
+        "uspPresenceEventIndigo",
+        "uspPresenceEventIndigoEnabled",
+        "uspPresenceIndigo",
+        "uspPresenceIndigoEnabled",
+        "uspPressure",
+        "uspPressureDecimalPlaces",
+        "uspPressureIndigo",
+        "uspPressureIndigoEnabled",
+        "uspPressureUnits",
+        "uspRadar",
+        "uspRadarIndigo",
+        "uspRadarIndigoEnabled",
+        "uspRemoteADimmerIndigo",
+        "uspRemoteAudio",
+        "uspRemoteAudioIndigo",
+        "uspRemoteDimmer",
+        "uspRemoteDimmerIndigo",
+        "uspSetpoint",
+        "uspSetpointDecimalPlaces",
+        "uspSetpointIndigo",
+        "uspSetpointIndigoEnabled",
+        "uspSetpointUnitsConversion",
+        "uspState",
+        "uspStateIndigo",
+        "uspStateIndigoEnabled",
+        "uspStateL1",
+        "uspStateL1Indigo",
+        "uspStateL1IndigoEnabled",
+        "uspStateL2",
+        "uspStateL2Indigo",
+        "uspStateL2IndigoEnabled",
+        "uspStateL3",
+        "uspStateL3Indigo",
+        "uspStateL3IndigoEnabled",
+        "uspStateL4",
+        "uspStateL4Indigo",
+        "uspStateL4IndigoEnabled",
+        "uspStateL5",
+        "uspStateL5Indigo",
+        "uspStateL5IndigoEnabled",
+        "uspStateLeft",
+        "uspStateLeftIndigo",
+        "uspStateLn",
+        "uspStateLnIndigo",
+        "uspStateLnIndigoEnabled",
+        "uspStateRight",
+        "uspStateRightIndigo",
+        "uspStrength",
+        "uspStrengthIndigo",
+        "uspTamper",
+        "uspTamperIndigo",
+        "uspTamperIndigoEnabled",
+        "uspTemperature",
+        "uspTemperatureDecimalPlaces",
+        "uspTemperatureEnabled",
+        "uspTemperatureIndigo",
+        "uspTemperatureUnitsConversion",
+        "uspValve",
+        "uspValveIndigo",
+        "uspValveIndigoEnabled",
+        "uspVibration",
+        "uspVibrationIndigo",
+        "uspVibrationIndigoEnabled",
+        "uspVoltage",
+        "uspVoltageDecimalPlaces",
+        "uspVoltageIndigo",
+        "uspVoltageIndigoEnabled",
+        "zigbeePropertiesInitialised",
+        "zigbeePropertyAcceleration",
+        "zigbeePropertyAction",
+        "zigbeePropertyAngles",
+        "zigbeePropertyBattery",
+        "zigbeePropertyBrightness",
+        "zigbeePropertyColor",
+        "zigbeePropertyColorName",
+        "zigbeePropertyColorTemperature",
+        "zigbeePropertyContact",
+        "zigbeePropertyDim",
+        "zigbeePropertyEnergy",
+        "zigbeePropertyHumidity",
+        "zigbeePropertyHvacMode",
+        "zigbeePropertyHvacState",
+        "zigbeePropertyIlluminance",
+        "zigbeePropertyLinkQuality",
+        "zigbeePropertyOccupancy",
+        "zigbeePropertyOnOff",
+        "zigbeePropertyPosition",
+        "zigbeePropertyPower",
+        "zigbeePropertyPowerLeft",
+        "zigbeePropertyPowerRight",
+        "zigbeePropertyPresence",
+        "zigbeePropertyPresenceEvent",
+        "zigbeePropertyPressure",
+        "zigbeePropertyRadar",
+        "zigbeePropertyRefresh",
+        "zigbeePropertyRemoteAudio",
+        "zigbeePropertyRemoteDimmer",
+        "zigbeePropertySetpoint",
+        "zigbeePropertyState",
+        "zigbeePropertyStateL1",
+        "zigbeePropertyStateL2",
+        "zigbeePropertyStateL3",
+        "zigbeePropertyStateL4",
+        "zigbeePropertyStateL5",
+        "zigbeePropertyStateLeft",
+        "zigbeePropertyStateLn",
+        "zigbeePropertyStateRight",
+        "zigbeePropertyStrength",
+        "zigbeePropertyTamper",
+        "zigbeePropertyTemperature",
+        "zigbeePropertyValve",
+        "zigbeePropertyVibration",
+        "zigbeePropertyVoltage",
+        "zigbee_coordinator_ieee",
+        "zigbee_description",
+        "zigbee_description_user",
+        "zigbee_device_ieee",
+        "zigbee_hw",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "temperatureSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "humidity": {
+          "type": "integer"
+        },
+        "humidity.ui": {
+          "type": "string"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        },
+        "voltage": {
+          "type": "integer"
+        },
+        "voltage.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Temperature Sensor",
+      "subModel": "Temperature",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsAccumEnergyTotal",
+        "SupportsBatteryLevel",
+        "SupportsColor",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsRGB",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "UpdateDeviceName",
+        "UpdateNotes",
+        "UpdateNotesJsonList",
+        "address",
+        "hideAccelerationBroadcast",
+        "hideActionBroadcast",
+        "hideAnglesBroadcast",
+        "hideContactBroadcast",
+        "hideDimmerBroadcast",
+        "hideEnergyBroadcast",
+        "hideHumidityBroadcast",
+        "hideHvacModeBroadcast",
+        "hideHvacStateBroadcast",
+        "hideIlluminanceBroadcast",
+        "hideMotionBroadcast",
+        "hideMultiSwitchActionBroadcast",
+        "hideOnOffBroadcast",
+        "hidePositionBroadcast",
+        "hidePowerBroadcast",
+        "hidePresenceBroadcast",
+        "hidePressureBroadcast",
+        "hideRemoteAudioBroadcast",
+        "hideRemoteDimmerBroadcast",
+        "hideRotationsBroadcast",
+        "hideSceneRotaryBroadcast",
+        "hideSetpointBroadcast",
+        "hideStateBroadcast",
+        "hideStateL1Broadcast",
+        "hideStateL2Broadcast",
+        "hideStateL3Broadcast",
+        "hideStateL4Broadcast",
+        "hideStateL5Broadcast",
+        "hideStateLeftBroadcast",
+        "hideStateRightBroadcast",
+        "hideStateSingleBroadcast",
+        "hideStrengthBroadcast",
+        "hideSwitchActionBroadcast",
+        "hideTamperBroadcast",
+        "hideTemperatureBroadcast",
+        "hideValveBroadcast",
+        "hideVibrationBroadcast",
+        "hideVoltageBroadcast",
+        "indigo_derived_device_name",
+        "list_zigbee_device_selected",
+        "name_exists",
+        "primaryIndigoDevice",
+        "properties_0x00124b0022cf6ea2_hidden",
+        "refreshCallbackMethod",
+        "show_name_exists_warning",
+        "show_update_notes_json",
+        "supportsTemperatureReporting",
+        "supportsValve",
+        "uspAcceleration",
+        "uspAccelerationIndigo",
+        "uspAction",
+        "uspActionIndigo",
+        "uspAngles",
+        "uspAnglesIndigo",
+        "uspBattery",
+        "uspBrightness",
+        "uspBrightnessIndigo",
+        "uspBrightnessL1",
+        "uspBrightnessL1Indigo",
+        "uspBrightnessL2",
+        "uspBrightnessL2Indigo",
+        "uspBrightnessL3",
+        "uspBrightnessL3Indigo",
+        "uspColorIndigo",
+        "uspColorRGB",
+        "uspColorTemperature",
+        "uspColorTemperatureIndigo",
+        "uspContact",
+        "uspContactIndigo",
+        "uspDimmer",
+        "uspEnergy",
+        "uspEnergyDecimalPlaces",
+        "uspEnergyIndigo",
+        "uspEnergyUnits",
+        "uspHumidity",
+        "uspHumidityDecimalPlaces",
+        "uspHumidityIndigo",
+        "uspHvacMode",
+        "uspHvacState",
+        "uspIlluminance",
+        "uspIlluminanceDecimalPlaces",
+        "uspIlluminanceIndigo",
+        "uspIlluminanceUnits",
+        "uspKelvinMaximum",
+        "uspKelvinMinimum",
+        "uspLinkQuality",
+        "uspLinkQualityIndigo",
+        "uspMultiSwitchAction",
+        "uspMultiSwitchActionIndigo",
+        "uspNumberOfButtons",
+        "uspOccupancy",
+        "uspOccupancyIndigo",
+        "uspOnOff",
+        "uspOnOffIndigo",
+        "uspPosition",
+        "uspPositionIndigo",
+        "uspPower",
+        "uspPowerDecimalPlaces",
+        "uspPowerIndigo",
+        "uspPowerIndigoEnabled",
+        "uspPowerLeft",
+        "uspPowerLeftDecimalPlaces",
+        "uspPowerLeftIndigo",
+        "uspPowerLeftMinimumReportingLevel",
+        "uspPowerLeftReportingHysteresis",
+        "uspPowerLeftUnits",
+        "uspPowerMinimumReportingLevel",
+        "uspPowerReportingHysteresis",
+        "uspPowerRight",
+        "uspPowerRightDecimalPlaces",
+        "uspPowerRightIndigo",
+        "uspPowerRightMinimumReportingLevel",
+        "uspPowerRightReportingHysteresis",
+        "uspPowerRightUnits",
+        "uspPowerUnits",
+        "uspPresence",
+        "uspPresenceEvent",
+        "uspPresenceEventIndigo",
+        "uspPresenceIndigo",
+        "uspPressure",
+        "uspPressureDecimalPlaces",
+        "uspPressureIndigo",
+        "uspPressureUnits",
+        "uspRadar",
+        "uspRadarIndigo",
+        "uspRemoteADimmerIndigo",
+        "uspRemoteAudio",
+        "uspRemoteAudioIndigo",
+        "uspRemoteDimmer",
+        "uspRemoteDimmerIndigo",
+        "uspRotationVariableFactor",
+        "uspRotationVariableId",
+        "uspRotations",
+        "uspRotationsIndigo",
+        "uspSceneRotary",
+        "uspSceneRotaryIndigo",
+        "uspSetpoint",
+        "uspSetpointDecimalPlaces",
+        "uspSetpointIndigo",
+        "uspSetpointUnitsConversion",
+        "uspState",
+        "uspStateIndigo",
+        "uspStateL1",
+        "uspStateL1Indigo",
+        "uspStateL2",
+        "uspStateL2Indigo",
+        "uspStateL3",
+        "uspStateL3Indigo",
+        "uspStateL4",
+        "uspStateL4Indigo",
+        "uspStateL5",
+        "uspStateL5Indigo",
+        "uspStateLeft",
+        "uspStateLeftIndigo",
+        "uspStateRight",
+        "uspStateRightIndigo",
+        "uspStateSingle",
+        "uspStateSingleIndigo",
+        "uspStrength",
+        "uspStrengthIndigo",
+        "uspSwitchAction",
+        "uspSwitchActionIndigo",
+        "uspTamper",
+        "uspTamperIndigo",
+        "uspTemperature",
+        "uspTemperatureDecimalPlaces",
+        "uspTemperatureIndigo",
+        "uspTemperatureUnitsConversion",
+        "uspValve",
+        "uspValveIndigo",
+        "uspVibration",
+        "uspVibrationIndigo",
+        "uspVoltage",
+        "uspVoltageDecimalPlaces",
+        "uspVoltageIndigo",
+        "zigbeePropertiesInitialised",
+        "zigbeePropertyAcceleration",
+        "zigbeePropertyAction",
+        "zigbeePropertyAngles",
+        "zigbeePropertyBattery",
+        "zigbeePropertyBrightness",
+        "zigbeePropertyBrightnessL1",
+        "zigbeePropertyBrightnessL2",
+        "zigbeePropertyBrightnessL3",
+        "zigbeePropertyBrightnessL4",
+        "zigbeePropertyBrightnessL5",
+        "zigbeePropertyColor",
+        "zigbeePropertyColorName",
+        "zigbeePropertyColorTemperature",
+        "zigbeePropertyContact",
+        "zigbeePropertyDim",
+        "zigbeePropertyEnergy",
+        "zigbeePropertyHumidity",
+        "zigbeePropertyHvacMode",
+        "zigbeePropertyHvacState",
+        "zigbeePropertyIlluminance",
+        "zigbeePropertyLinkQuality",
+        "zigbeePropertyMultiSwitchAction",
+        "zigbeePropertyOccupancy",
+        "zigbeePropertyOnOff",
+        "zigbeePropertyPosition",
+        "zigbeePropertyPower",
+        "zigbeePropertyPowerLeft",
+        "zigbeePropertyPowerRight",
+        "zigbeePropertyPower_left",
+        "zigbeePropertyPower_right",
+        "zigbeePropertyPresence",
+        "zigbeePropertyPresenceEvent",
+        "zigbeePropertyPressure",
+        "zigbeePropertyRadar",
+        "zigbeePropertyRefresh",
+        "zigbeePropertyRemoteAudio",
+        "zigbeePropertyRemoteDimmer",
+        "zigbeePropertyRotations",
+        "zigbeePropertySceneRotary",
+        "zigbeePropertySetpoint",
+        "zigbeePropertyState",
+        "zigbeePropertyStateL1",
+        "zigbeePropertyStateL2",
+        "zigbeePropertyStateL3",
+        "zigbeePropertyStateL4",
+        "zigbeePropertyStateL5",
+        "zigbeePropertyStateLeft",
+        "zigbeePropertyStateRight",
+        "zigbeePropertyStateSingle",
+        "zigbeePropertyStrength",
+        "zigbeePropertySwitchAction",
+        "zigbeePropertyTamper",
+        "zigbeePropertyTemperature",
+        "zigbeePropertyValve",
+        "zigbeePropertyVibration",
+        "zigbeePropertyVoltage",
+        "zigbee_coordinator_ieee",
+        "zigbee_description",
+        "zigbee_description_user",
+        "zigbee_device_ieee",
+        "zigbee_hw",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "indigo.kStateImageSel.TemperatureSensor"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "vibrationSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "action": {
+          "type": "string"
+        },
+        "angle": {
+          "type": "string"
+        },
+        "angle_x": {
+          "type": "string"
+        },
+        "angle_x_absolute": {
+          "type": "string"
+        },
+        "angle_y": {
+          "type": "string"
+        },
+        "angle_y_absolute": {
+          "type": "string"
+        },
+        "angle_z": {
+          "type": "string"
+        },
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        },
+        "voltage": {
+          "type": "integer"
+        },
+        "voltage.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Vibration Sensor",
+      "subModel": "Vibration",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsAccumEnergyTotal",
+        "SupportsBatteryLevel",
+        "SupportsColor",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsRGB",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "UpdateDeviceName",
+        "UpdateNotes",
+        "UpdateNotesJsonList",
+        "address",
+        "allowOnStateChange",
+        "hideAccelerationBroadcast",
+        "hideActionBroadcast",
+        "hideAngleBroadcast",
+        "hideAnglesBroadcast",
+        "hideContactBroadcast",
+        "hideDimmerBroadcast",
+        "hideEnergyBroadcast",
+        "hideHumidityBroadcast",
+        "hideHvacModeBroadcast",
+        "hideHvacStateBroadcast",
+        "hideIlluminanceBroadcast",
+        "hideMotionBroadcast",
+        "hideMultiSwitchActionBroadcast",
+        "hideOnOffBroadcast",
+        "hidePositionBroadcast",
+        "hidePowerBroadcast",
+        "hidePresenceBroadcast",
+        "hidePressureBroadcast",
+        "hideRemoteAudioBroadcast",
+        "hideRemoteDimmerBroadcast",
+        "hideRotationsBroadcast",
+        "hideSceneRotaryBroadcast",
+        "hideSetpointBroadcast",
+        "hideStateBroadcast",
+        "hideStateL1Broadcast",
+        "hideStateL2Broadcast",
+        "hideStateL3Broadcast",
+        "hideStateL4Broadcast",
+        "hideStateL5Broadcast",
+        "hideStateLeftBroadcast",
+        "hideStateRightBroadcast",
+        "hideStateSingleBroadcast",
+        "hideStrengthBroadcast",
+        "hideSwitchActionBroadcast",
+        "hideTamperBroadcast",
+        "hideTemperatureBroadcast",
+        "hideValveBroadcast",
+        "hideVibrationBroadcast",
+        "hideVoltageBroadcast",
+        "indigo_derived_device_name",
+        "list_zigbee_device_selected",
+        "name_exists",
+        "primaryIndigoDevice",
+        "properties_0x00158d0003d29703_hidden",
+        "refreshCallbackMethod",
+        "show_name_exists_warning",
+        "show_update_notes_json",
+        "supportsTemperatureReporting",
+        "supportsValve",
+        "uspAcceleration",
+        "uspAccelerationIndigo",
+        "uspAccelerationIndigoEnabled",
+        "uspAction",
+        "uspActionEnabled",
+        "uspActionIndigo",
+        "uspActionIndigoEnabled",
+        "uspAngles",
+        "uspAnglesIndigo",
+        "uspBattery",
+        "uspBrightness",
+        "uspBrightnessIndigo",
+        "uspBrightnessIndigoEnabled",
+        "uspBrightnessL1",
+        "uspBrightnessL1Indigo",
+        "uspBrightnessL2",
+        "uspBrightnessL2Indigo",
+        "uspBrightnessL3",
+        "uspBrightnessL3Indigo",
+        "uspColorIndigo",
+        "uspColorIndigoEnabled",
+        "uspColorRGB",
+        "uspColorTemperature",
+        "uspColorTemperatureIndigo",
+        "uspColorTemperatureIndigoEnabled",
+        "uspContact",
+        "uspContactIndigo",
+        "uspContactIndigoEnabled",
+        "uspDimmer",
+        "uspEnergy",
+        "uspEnergyDecimalPlaces",
+        "uspEnergyIndigo",
+        "uspEnergyIndigoEnabled",
+        "uspEnergyUnits",
+        "uspHumidity",
+        "uspHumidityDecimalPlaces",
+        "uspHumidityIndigo",
+        "uspHumidityIndigoEnabled",
+        "uspHvacMode",
+        "uspHvacState",
+        "uspIlluminance",
+        "uspIlluminanceDecimalPlaces",
+        "uspIlluminanceIndigo",
+        "uspIlluminanceIndigoEnabled",
+        "uspIlluminanceUnits",
+        "uspKelvinMaximum",
+        "uspKelvinMinimum",
+        "uspLinkQuality",
+        "uspLinkQualityIndigo",
+        "uspLinkQualityIndigoEnabled",
+        "uspMultiSwitchAction",
+        "uspMultiSwitchActionIndigo",
+        "uspNumberOfButtons",
+        "uspOccupancy",
+        "uspOccupancyIndigo",
+        "uspOccupancyIndigoEnabled",
+        "uspOnOff",
+        "uspOnOffIndigo",
+        "uspOnOffIndigoEnabled",
+        "uspPosition",
+        "uspPositionIndigo",
+        "uspPositionIndigoEnabled",
+        "uspPower",
+        "uspPowerDecimalPlaces",
+        "uspPowerIndigo",
+        "uspPowerIndigoEnabled",
+        "uspPowerLeft",
+        "uspPowerLeftDecimalPlaces",
+        "uspPowerLeftIndigo",
+        "uspPowerLeftIndigoEnabled",
+        "uspPowerLeftMinimumReportingLevel",
+        "uspPowerLeftReportingHysteresis",
+        "uspPowerLeftUnits",
+        "uspPowerMinimumReportingLevel",
+        "uspPowerReportingHysteresis",
+        "uspPowerRight",
+        "uspPowerRightDecimalPlaces",
+        "uspPowerRightIndigo",
+        "uspPowerRightIndigoEnabled",
+        "uspPowerRightMinimumReportingLevel",
+        "uspPowerRightReportingHysteresis",
+        "uspPowerRightUnits",
+        "uspPowerUnits",
+        "uspPresence",
+        "uspPresenceEvent",
+        "uspPresenceEventIndigo",
+        "uspPresenceEventIndigoEnabled",
+        "uspPresenceIndigo",
+        "uspPresenceIndigoEnabled",
+        "uspPressure",
+        "uspPressureDecimalPlaces",
+        "uspPressureIndigo",
+        "uspPressureIndigoEnabled",
+        "uspPressureUnits",
+        "uspRadar",
+        "uspRadarIndigo",
+        "uspRadarIndigoEnabled",
+        "uspRemoteADimmerIndigo",
+        "uspRemoteAudio",
+        "uspRemoteAudioIndigo",
+        "uspRemoteDimmer",
+        "uspRemoteDimmerIndigo",
+        "uspRotationVariableFactor",
+        "uspRotationVariableId",
+        "uspRotations",
+        "uspRotationsIndigo",
+        "uspSceneRotary",
+        "uspSceneRotaryIndigo",
+        "uspSetpoint",
+        "uspSetpointDecimalPlaces",
+        "uspSetpointIndigo",
+        "uspSetpointIndigoEnabled",
+        "uspSetpointUnitsConversion",
+        "uspState",
+        "uspStateIndigo",
+        "uspStateIndigoEnabled",
+        "uspStateL1",
+        "uspStateL1Indigo",
+        "uspStateL1IndigoEnabled",
+        "uspStateL2",
+        "uspStateL2Indigo",
+        "uspStateL2IndigoEnabled",
+        "uspStateL3",
+        "uspStateL3Indigo",
+        "uspStateL3IndigoEnabled",
+        "uspStateL4",
+        "uspStateL4Indigo",
+        "uspStateL4IndigoEnabled",
+        "uspStateL5",
+        "uspStateL5Indigo",
+        "uspStateL5IndigoEnabled",
+        "uspStateLeft",
+        "uspStateLeftIndigo",
+        "uspStateLeftIndigoEnabled",
+        "uspStateRight",
+        "uspStateRightIndigo",
+        "uspStateRightIndigoEnabled",
+        "uspStateSingle",
+        "uspStateSingleIndigo",
+        "uspStrength",
+        "uspStrengthIndigo",
+        "uspSwitchAction",
+        "uspSwitchActionIndigo",
+        "uspTamper",
+        "uspTamperIndigo",
+        "uspTamperIndigoEnabled",
+        "uspTemperature",
+        "uspTemperatureDecimalPlaces",
+        "uspTemperatureEnabled",
+        "uspTemperatureIndigo",
+        "uspTemperatureUnitsConversion",
+        "uspValve",
+        "uspValveIndigo",
+        "uspValveIndigoEnabled",
+        "uspVibration",
+        "uspVibrationIndigo",
+        "uspVibrationIndigoEnabled",
+        "uspVoltage",
+        "uspVoltageDecimalPlaces",
+        "uspVoltageIndigo",
+        "uspVoltageIndigoEnabled",
+        "version",
+        "zigbeePropertiesInitialised",
+        "zigbeePropertyAcceleration",
+        "zigbeePropertyAction",
+        "zigbeePropertyAngles",
+        "zigbeePropertyBattery",
+        "zigbeePropertyBrightness",
+        "zigbeePropertyBrightnessL1",
+        "zigbeePropertyBrightnessL2",
+        "zigbeePropertyBrightnessL3",
+        "zigbeePropertyBrightnessL4",
+        "zigbeePropertyBrightnessL5",
+        "zigbeePropertyColor",
+        "zigbeePropertyColorName",
+        "zigbeePropertyColorTemperature",
+        "zigbeePropertyContact",
+        "zigbeePropertyDim",
+        "zigbeePropertyEnergy",
+        "zigbeePropertyHumidity",
+        "zigbeePropertyHvacMode",
+        "zigbeePropertyHvacState",
+        "zigbeePropertyIlluminance",
+        "zigbeePropertyLinkQuality",
+        "zigbeePropertyMultiSwitchAction",
+        "zigbeePropertyOccupancy",
+        "zigbeePropertyOnOff",
+        "zigbeePropertyPosition",
+        "zigbeePropertyPower",
+        "zigbeePropertyPowerLeft",
+        "zigbeePropertyPowerRight",
+        "zigbeePropertyPresence",
+        "zigbeePropertyPresenceEvent",
+        "zigbeePropertyPressure",
+        "zigbeePropertyRadar",
+        "zigbeePropertyRefresh",
+        "zigbeePropertyRemoteAudio",
+        "zigbeePropertyRemoteDimmer",
+        "zigbeePropertyRotations",
+        "zigbeePropertySceneRotary",
+        "zigbeePropertySetpoint",
+        "zigbeePropertyState",
+        "zigbeePropertyStateL1",
+        "zigbeePropertyStateL2",
+        "zigbeePropertyStateL3",
+        "zigbeePropertyStateL4",
+        "zigbeePropertyStateL5",
+        "zigbeePropertyStateLeft",
+        "zigbeePropertyStateRight",
+        "zigbeePropertyStateSingle",
+        "zigbeePropertyStrength",
+        "zigbeePropertySwitchAction",
+        "zigbeePropertyTamper",
+        "zigbeePropertyTemperature",
+        "zigbeePropertyValve",
+        "zigbeePropertyVibration",
+        "zigbeePropertyVoltage",
+        "zigbee_coordinator_ieee",
+        "zigbee_description",
+        "zigbee_description_user",
+        "zigbee_device_ieee",
+        "zigbee_hw",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.masquerade",
+      "pluginName": "Masquerade",
+      "deviceTypeId": "masqSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "On/Off Sensor Device",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsStatusRequest",
+        "baseDevice",
+        "deviceClass",
+        "devicePlugin",
+        "masqSensorSubtype",
+        "masqState",
+        "matchString",
+        "reverse"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.PowerOff"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.miniUniFi",
+      "pluginName": "miniUniFi",
+      "deviceTypeId": "unifiAccessPoint",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "UniFi Access Point",
+      "subModel": "U7LR",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "UniFiName",
+        "address",
+        "sql_logging_exclude",
+        "status_display",
+        "unifi_controller",
+        "unifi_site",
+        "version"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorTripped"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.miniUniFi",
+      "pluginName": "miniUniFi",
+      "deviceTypeId": "unifiClient",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "offline_seconds": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "UniFi Wired Client",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "UniFiName",
+        "address",
+        "sql_logging_exclude",
+        "unifi_controller",
+        "unifi_site"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorTripped"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.miniUniFi",
+      "pluginName": "miniUniFi",
+      "deviceTypeId": "unifiDevice",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "UniFi Switch",
+      "subModel": "USWED35",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "UniFiName",
+        "Version",
+        "address",
+        "sql_logging_exclude",
+        "unifi_controller",
+        "unifi_site",
+        "version"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorTripped"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.miniUniFi",
+      "pluginName": "miniUniFi",
+      "deviceTypeId": "unifiWirelessClient",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "offline_seconds": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "UniFi Wireless Client",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "UniFiName",
+        "address",
+        "sql_logging_exclude",
+        "unifi_controller",
+        "unifi_site"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorTripped"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.occupatum",
+      "pluginName": "Occupatum",
+      "deviceTypeId": "activityZone",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Activity Zone",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "activityCount",
+        "activityWindow",
+        "forceOffValue",
+        "offDelayValue",
+        "onAnyAll",
+        "onDelayValue",
+        "onSensorsOnOff",
+        "sensorDeviceList",
+        "sensorDeviceMenu",
+        "sensorDevices"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.MotionSensor"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.occupatum",
+      "pluginName": "Occupatum",
+      "deviceTypeId": "area",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "delay_timer": {
+          "type": "number"
+        },
+        "force_off_timer": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Occupancy Zone",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "activityCount",
+        "activityWindow",
+        "forceOffValue",
+        "offDelayValue",
+        "onAnyAll",
+        "onDelayValue",
+        "onSensorsOnOff",
+        "sensorDeviceList",
+        "sensorDeviceMenu",
+        "sensorDevices"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.MotionSensorTripped"
+    },
+    {
+      "pluginId": "com.karlwachs.uniFiAP",
+      "pluginName": "uniFiAP",
+      "deviceTypeId": "Device-AP",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "MAC": {
+          "type": "string"
+        },
+        "apNo": {
+          "type": "string"
+        },
+        "ap_id": {
+          "type": "string"
+        },
+        "channel_2": {
+          "type": "string"
+        },
+        "channel_5": {
+          "type": "string"
+        },
+        "clientList_2GHz": {
+          "type": "string"
+        },
+        "clientList_5GHz": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "displayStatus": {
+          "type": "string"
+        },
+        "essid_2": {
+          "type": "string"
+        },
+        "essid_5": {
+          "type": "string"
+        },
+        "groupMember": {
+          "type": "string"
+        },
+        "hostname": {
+          "type": "string"
+        },
+        "ipNumber": {
+          "type": "string"
+        },
+        "lastStatusChange": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "nClients_2": {
+          "type": "string"
+        },
+        "nClients_5": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "previousStatusChange": {
+          "type": "string"
+        },
+        "radio_2": {
+          "type": "string"
+        },
+        "radio_5": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "tx_power_2": {
+          "type": "string"
+        },
+        "tx_power_5": {
+          "type": "string"
+        },
+        "upDownSetting": {
+          "type": "string"
+        },
+        "upSince": {
+          "type": "string"
+        },
+        "vendor": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Device-AP",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "enableBroadCastEvents",
+        "expirationTime",
+        "isAP",
+        "useWhatForStatus"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.karlwachs.uniFiAP",
+      "pluginName": "uniFiAP",
+      "deviceTypeId": "Device-SW-52",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "MAC": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "displayStatus": {
+          "type": "string"
+        },
+        "fanLevel": {
+          "type": "integer"
+        },
+        "groupMember": {
+          "type": "string"
+        },
+        "hostname": {
+          "type": "string"
+        },
+        "ipNumber": {
+          "type": "string"
+        },
+        "lastStatusChange": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "nClients": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "overHeating": {
+          "type": "boolean"
+        },
+        "port_01": {
+          "type": "string"
+        },
+        "port_02": {
+          "type": "string"
+        },
+        "port_03": {
+          "type": "string"
+        },
+        "port_04": {
+          "type": "string"
+        },
+        "port_05": {
+          "type": "string"
+        },
+        "port_06": {
+          "type": "string"
+        },
+        "port_07": {
+          "type": "string"
+        },
+        "port_08": {
+          "type": "string"
+        },
+        "port_09": {
+          "type": "string"
+        },
+        "port_10": {
+          "type": "string"
+        },
+        "port_11": {
+          "type": "string"
+        },
+        "port_12": {
+          "type": "string"
+        },
+        "port_13": {
+          "type": "string"
+        },
+        "port_14": {
+          "type": "string"
+        },
+        "port_15": {
+          "type": "string"
+        },
+        "port_16": {
+          "type": "string"
+        },
+        "port_17": {
+          "type": "string"
+        },
+        "port_18": {
+          "type": "string"
+        },
+        "port_19": {
+          "type": "string"
+        },
+        "port_20": {
+          "type": "string"
+        },
+        "port_21": {
+          "type": "string"
+        },
+        "port_22": {
+          "type": "string"
+        },
+        "port_23": {
+          "type": "string"
+        },
+        "port_24": {
+          "type": "string"
+        },
+        "port_25": {
+          "type": "string"
+        },
+        "port_26": {
+          "type": "string"
+        },
+        "port_27": {
+          "type": "string"
+        },
+        "port_28": {
+          "type": "string"
+        },
+        "port_29": {
+          "type": "string"
+        },
+        "port_30": {
+          "type": "string"
+        },
+        "port_31": {
+          "type": "string"
+        },
+        "port_32": {
+          "type": "string"
+        },
+        "port_33": {
+          "type": "string"
+        },
+        "port_34": {
+          "type": "string"
+        },
+        "port_35": {
+          "type": "string"
+        },
+        "port_36": {
+          "type": "string"
+        },
+        "port_37": {
+          "type": "string"
+        },
+        "port_38": {
+          "type": "string"
+        },
+        "port_39": {
+          "type": "string"
+        },
+        "port_40": {
+          "type": "string"
+        },
+        "port_41": {
+          "type": "string"
+        },
+        "port_42": {
+          "type": "string"
+        },
+        "port_43": {
+          "type": "string"
+        },
+        "port_44": {
+          "type": "string"
+        },
+        "port_45": {
+          "type": "string"
+        },
+        "port_46": {
+          "type": "string"
+        },
+        "port_47": {
+          "type": "string"
+        },
+        "port_48": {
+          "type": "string"
+        },
+        "port_49": {
+          "type": "string"
+        },
+        "port_50": {
+          "type": "string"
+        },
+        "port_51": {
+          "type": "string"
+        },
+        "port_52": {
+          "type": "string"
+        },
+        "previousStatusChange": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "switchNo": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "upDownSetting": {
+          "type": "string"
+        },
+        "upSince": {
+          "type": "string"
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "vlan": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Device-SW-52",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "enableBroadCastEvents",
+        "expirationTime",
+        "isSwitch",
+        "useWhatForStatus"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.karlwachs.uniFiAP",
+      "pluginName": "uniFiAP",
+      "deviceTypeId": "UniFi",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "AP": {
+          "type": "string"
+        },
+        "GHz": {
+          "type": "string"
+        },
+        "MAC": {
+          "type": "string"
+        },
+        "SW_Port": {
+          "type": "string"
+        },
+        "blocked": {
+          "type": "boolean"
+        },
+        "created": {
+          "type": "string"
+        },
+        "displayStatus": {
+          "type": "string"
+        },
+        "firstSeen": {
+          "type": "string"
+        },
+        "groupMember": {
+          "type": "string"
+        },
+        "ipNumber": {
+          "type": "string"
+        },
+        "lastStatusChange": {
+          "type": "string"
+        },
+        "lastStatusChangeReason": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "noiseWiFi": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "powerMgmtWiFi": {
+          "type": "string"
+        },
+        "previousStatusChange": {
+          "type": "string"
+        },
+        "rx_Bytes_Last5Minutes": {
+          "type": "integer"
+        },
+        "rx_tx_RateWiFi": {
+          "type": "string"
+        },
+        "signalWiFi": {
+          "type": "string"
+        },
+        "stateWiFi": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "tx_Bytes_Last5Minutes": {
+          "type": "integer"
+        },
+        "upDownSetting": {
+          "type": "string"
+        },
+        "useFixedIP": {
+          "type": "boolean"
+        },
+        "vendor": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "UniFi",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "enableBroadCastEvents",
+        "expirationTime",
+        "isUniFi",
+        "useWhatForStatus",
+        "useupTimeforStatusSWITCH"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorTripped"
+    },
+    {
+      "pluginId": "com.karlwachs.uniFiAP",
+      "pluginName": "uniFiAP",
+      "deviceTypeId": "system_controller",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "MAC": {
+          "type": "string"
+        },
+        "cpu_load": {
+          "type": "string"
+        },
+        "cpu_temp": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "disk_free": {
+          "type": "string"
+        },
+        "disk_total": {
+          "type": "string"
+        },
+        "disk_used": {
+          "type": "string"
+        },
+        "displayStatus": {
+          "type": "string"
+        },
+        "groupMember": {
+          "type": "string"
+        },
+        "ipNumber": {
+          "type": "string"
+        },
+        "lastStatusChange": {
+          "type": "string"
+        },
+        "memory_free": {
+          "type": "string"
+        },
+        "memory_total": {
+          "type": "string"
+        },
+        "memory_used": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "upSince": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Controller system",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "AllowOnStateChange",
+        "AllowSensorValueChange",
+        "Group0",
+        "Group1",
+        "Group2",
+        "Group3",
+        "Group4",
+        "Group5",
+        "Group6",
+        "Group7",
+        "Gtext0",
+        "Gtext1",
+        "Gtext2",
+        "Gtext3",
+        "Gtext4",
+        "Gtext5",
+        "Gtext6",
+        "Gtext7",
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "address",
+        "expirationTime",
+        "isSystemDev",
+        "overWriteControllerPort",
+        "systemDev",
+        "unifControllerCheckPortNumber",
+        "unifiCONTROLLERPassWd",
+        "unifiCONTROLLERUserID",
+        "unifiCloudKeyIP",
+        "unifiCloudKeyMode",
+        "unifiCloudKeyPort",
+        "unifiCloudKeySiteName",
+        "unifiControllerType",
+        "useStrictToLogin"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "component-humidity",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Humidity",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "name",
+        "offset",
+        "report-threshold"
+      ],
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "indigo.kStateImageSel.DehumidifierOff"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "component-input",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Input 1",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "invert",
+        "name",
+        "type"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "component-temperature",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        },
+        "temperature_c": {
+          "type": "number"
+        },
+        "temperature_c.ui": {
+          "type": "string"
+        },
+        "temperature_f": {
+          "type": "number"
+        },
+        "temperature_f.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Temperature",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "name",
+        "report-threshold",
+        "unit"
+      ],
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "indigo.kStateImageSel.TemperatureSensorOn"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "shelly-plus-1-pm",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "available-beta-firmware": {
+          "type": "string"
+        },
+        "available-firmware": {
+          "type": "string"
+        },
+        "current-firmware": {
+          "type": "string"
+        },
+        "ip-address": {
+          "type": "string"
+        },
+        "mac-address": {
+          "type": "string"
+        },
+        "online": {
+          "type": "boolean"
+        },
+        "rssi": {
+          "type": "integer"
+        },
+        "ssid": {
+          "type": "string"
+        },
+        "uptime": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Shelly Plus 1 PM",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "ble-enable",
+        "broker-id",
+        "is-initial-setup",
+        "message-type",
+        "system-debug-mqtt",
+        "system-debug-udp-address",
+        "system-debug-websocket",
+        "system-device-eco-mode",
+        "system-device-firmware",
+        "system-device-mac-address",
+        "system-device-name",
+        "system-location-lat",
+        "system-location-lon",
+        "system-location-timezone",
+        "version",
+        "wifi-1-enable",
+        "wifi-1-gateway",
+        "wifi-1-ip-address",
+        "wifi-1-ipv4-mode",
+        "wifi-1-nameserver",
+        "wifi-1-network-mask",
+        "wifi-1-open-network",
+        "wifi-1-password",
+        "wifi-1-ssid",
+        "wifi-2-enable",
+        "wifi-2-gateway",
+        "wifi-2-ip-address",
+        "wifi-2-ipv4-mode",
+        "wifi-2-nameserver",
+        "wifi-2-network-mask",
+        "wifi-2-open-network",
+        "wifi-2-password",
+        "wifi-2-ssid",
+        "wifi-ap-enable",
+        "wifi-ap-open-network",
+        "wifi-ap-password",
+        "wifi-ap-ssid",
+        "wifi-roaming-interval",
+        "wifi-roaming-rssi-threshold"
+      ],
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "shelly-plus-2-pm",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "available-beta-firmware": {
+          "type": "string"
+        },
+        "available-firmware": {
+          "type": "string"
+        },
+        "current-firmware": {
+          "type": "string"
+        },
+        "ip-address": {
+          "type": "string"
+        },
+        "mac-address": {
+          "type": "string"
+        },
+        "online": {
+          "type": "boolean"
+        },
+        "rssi": {
+          "type": "integer"
+        },
+        "ssid": {
+          "type": "string"
+        },
+        "uptime": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Shelly Plus 2 PM",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "address",
+        "ble-enable",
+        "broker-id",
+        "device-eco-mode",
+        "message-type",
+        "settings-section",
+        "system-debug-mqtt",
+        "system-debug-udp-address",
+        "system-debug-websocket",
+        "system-device-eco-mode",
+        "system-device-firmware",
+        "system-device-mac-address",
+        "system-device-name",
+        "system-location-lat",
+        "system-location-lon",
+        "system-location-timezone",
+        "version",
+        "wifi-1-enable",
+        "wifi-1-gateway",
+        "wifi-1-ip-address",
+        "wifi-1-ipv4-mode",
+        "wifi-1-nameserver",
+        "wifi-1-network-mask",
+        "wifi-1-open-network",
+        "wifi-1-password",
+        "wifi-1-ssid",
+        "wifi-2-enable",
+        "wifi-2-gateway",
+        "wifi-2-ip-address",
+        "wifi-2-ipv4-mode",
+        "wifi-2-nameserver",
+        "wifi-2-network-mask",
+        "wifi-2-open-network",
+        "wifi-2-password",
+        "wifi-2-ssid",
+        "wifi-ap-enable",
+        "wifi-ap-open-network",
+        "wifi-ap-password",
+        "wifi-ap-ssid",
+        "wifi-roaming-interval",
+        "wifi-roaming-rssi-threshold"
+      ],
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "shelly-plus-plug",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "available-beta-firmware": {
+          "type": "string"
+        },
+        "available-firmware": {
+          "type": "string"
+        },
+        "current-firmware": {
+          "type": "string"
+        },
+        "ip-address": {
+          "type": "string"
+        },
+        "mac-address": {
+          "type": "string"
+        },
+        "online": {
+          "type": "boolean"
+        },
+        "rssi": {
+          "type": "integer"
+        },
+        "ssid": {
+          "type": "string"
+        },
+        "uptime": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Shelly Plus Plug",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "address",
+        "ble-enable",
+        "broker-id",
+        "device-eco-mode",
+        "message-type",
+        "settings-section",
+        "system-debug-mqtt",
+        "system-debug-udp-address",
+        "system-debug-websocket",
+        "system-device-eco-mode",
+        "system-device-firmware",
+        "system-device-mac-address",
+        "system-device-name",
+        "system-location-lat",
+        "system-location-lon",
+        "system-location-timezone",
+        "version",
+        "wifi-1-enable",
+        "wifi-1-gateway",
+        "wifi-1-ip-address",
+        "wifi-1-ipv4-mode",
+        "wifi-1-nameserver",
+        "wifi-1-network-mask",
+        "wifi-1-open-network",
+        "wifi-1-password",
+        "wifi-1-ssid",
+        "wifi-2-enable",
+        "wifi-2-gateway",
+        "wifi-2-ip-address",
+        "wifi-2-ipv4-mode",
+        "wifi-2-nameserver",
+        "wifi-2-network-mask",
+        "wifi-2-open-network",
+        "wifi-2-password",
+        "wifi-2-ssid",
+        "wifi-ap-enable",
+        "wifi-ap-open-network",
+        "wifi-ap-password",
+        "wifi-ap-ssid",
+        "wifi-roaming-interval",
+        "wifi-roaming-rssi-threshold"
+      ],
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.morris.online-sensor",
+      "pluginName": "Online Sensor",
+      "deviceTypeId": "lanPing",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lastDn": {
+          "type": "string"
+        },
+        "lastUp": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "LAN Ping",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "checkServer1",
+        "updateFrequency",
+        "version"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.morris.online-sensor",
+      "pluginName": "Online Sensor",
+      "deviceTypeId": "onlineSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lastDn": {
+          "type": "string"
+        },
+        "lastUp": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Online Sensor",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "checkServer1",
+        "checkServer2",
+        "checkServer3",
+        "checkServer4",
+        "checkServer5",
+        "checkServer6",
+        "checkServer7",
+        "checkServer8",
+        "dualFrequency",
+        "sensorLogic",
+        "updateFrequency",
+        "updateFrequency2",
+        "version"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.morris.online-sensor",
+      "pluginName": "Online Sensor",
+      "deviceTypeId": "publicIP",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "ipAddress": {
+          "type": "string"
+        },
+        "ipAddressUi": {
+          "type": "string"
+        },
+        "lastChange": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Public IP Address",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "dualFrequency",
+        "ipEchoService",
+        "updateFrequency",
+        "updateFrequency2",
+        "version"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.morris.online-sensor",
+      "pluginName": "Online Sensor",
+      "deviceTypeId": "speedtest",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "Mbps_download": {
+          "type": "number"
+        },
+        "Mbps_download.ui": {
+          "type": "string"
+        },
+        "Mbps_upload": {
+          "type": "number"
+        },
+        "Mbps_upload.ui": {
+          "type": "string"
+        },
+        "bytes_received": {
+          "type": "integer"
+        },
+        "bytes_sent": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "ping_latency": {
+          "type": "number"
+        },
+        "ping_latency.ui": {
+          "type": "string"
+        },
+        "raw_download": {
+          "type": "number"
+        },
+        "raw_download.ui": {
+          "type": "string"
+        },
+        "raw_upload": {
+          "type": "number"
+        },
+        "raw_upload.ui": {
+          "type": "string"
+        },
+        "server_country": {
+          "type": "string"
+        },
+        "server_countrycode": {
+          "type": "string"
+        },
+        "server_distance": {
+          "type": "number"
+        },
+        "server_distance.ui": {
+          "type": "string"
+        },
+        "server_host": {
+          "type": "string"
+        },
+        "server_id": {
+          "type": "integer"
+        },
+        "server_latitude": {
+          "type": "number"
+        },
+        "server_latitude.ui": {
+          "type": "string"
+        },
+        "server_longitude": {
+          "type": "number"
+        },
+        "server_longitude.ui": {
+          "type": "string"
+        },
+        "server_name": {
+          "type": "string"
+        },
+        "server_sponsor": {
+          "type": "string"
+        },
+        "server_url1": {
+          "type": "string"
+        },
+        "server_url2": {
+          "type": "string"
+        },
+        "share_link": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Speedtest",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "distanceUnit",
+        "dualFrequency",
+        "shareResults",
+        "testSelection",
+        "threshold_float",
+        "threshold_str",
+        "updateFrequency",
+        "updateFrequency2",
+        "version"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+      "deviceTypeId": "zwOnOffSensorType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "accumEnergyTimeDelta": {
+          "type": "integer"
+        },
+        "accumEnergyTotal": {
+          "type": "integer"
+        },
+        "curEnergyLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Flush Micro Dimmer (ZMNHDD)",
+      "subModel": "ui=Input 2",
+      "protocol": "indigo.kprotocol.zwave",
+      "pluginConfigKeys": [
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsEnergyMeterReset",
+        "SupportsGasMeterReset",
+        "SupportsOnState",
+        "SupportsPowerMeter",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsWaterMeterReset",
+        "address",
+        "indigoObjVersion",
+        "userEnergyPollingEnabled",
+        "version",
+        "zwClassCmdBase",
+        "zwDevEndPoint",
+        "zwDevSubIndex",
+        "zwManufactureId",
+        "zwManufactureName",
+        "zwModelId",
+        "zwModelName",
+        "zwShowDumpDevToLog",
+        "zwShowEnergyPollingUI",
+        "zwShowMainUI",
+        "zwShowManualModifyConfigParmUI",
+        "zwShowPollingUI",
+        "zwShowSubmitModelInfoUI",
+        "zwShowWakeIntervalUI"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+      "deviceTypeId": "zwValueSensorType",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "accumEnergyTimeDelta": {
+          "type": "integer"
+        },
+        "accumEnergyTotal": {
+          "type": "integer"
+        },
+        "curEnergyLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Flush 2 Micro Relay (ZMNHBD)",
+      "subModel": "ui=Temperature",
+      "protocol": "indigo.kprotocol.zwave",
+      "pluginConfigKeys": [
+        "SensorUnits",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsEnergyMeterReset",
+        "SupportsGasMeterReset",
+        "SupportsOnState",
+        "SupportsPowerMeter",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsWaterMeterReset",
+        "address",
+        "indigoObjVersion",
+        "userEnergyPollingEnabled",
+        "version",
+        "zwClassCmdBase",
+        "zwDevSubIndex",
+        "zwManufactureId",
+        "zwManufactureName",
+        "zwModelId",
+        "zwModelName",
+        "zwShowDumpDevToLog",
+        "zwShowEnergyPollingUI",
+        "zwShowMainUI",
+        "zwShowManualModifyConfigParmUI",
+        "zwShowPollingUI",
+        "zwShowSubmitModelInfoUI",
+        "zwShowWakeIntervalUI"
+      ],
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "indigo.kStateImageSel.EnergyMeterOff"
+    },
+    {
+      "pluginId": "com.simons-plugins.netro",
+      "pluginName": "Netro Smart Sprinklers",
+      "deviceTypeId": "Whisperer",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "api_last_active": {
+          "type": "string"
+        },
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "humidity": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "last_active": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "readingID": {
+          "type": "integer"
+        },
+        "readingLocalDate": {
+          "type": "string"
+        },
+        "readingLocalTime": {
+          "type": "string"
+        },
+        "readingTime": {
+          "type": "string"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensor_last_active": {
+          "type": "string"
+        },
+        "serial": {
+          "type": "string"
+        },
+        "soilMoisture": {
+          "type": "integer"
+        },
+        "soilTemperature": {
+          "type": "integer"
+        },
+        "sunlight": {
+          "type": "integer"
+        },
+        "temperature": {
+          "type": "integer"
+        },
+        "time": {
+          "type": "string"
+        },
+        "token_remaining": {
+          "type": "integer"
+        },
+        "token_reset": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Whisperer Plant Sensor",
+      "subModel": " ui=Plant Moisture Sensor",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "SupportsBatteryLevel",
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTemperatureReporting",
+        "address"
+      ],
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "indigo.kStateImageSel.DehumidifierOff"
+    },
+    {
+      "pluginId": "no.homeassistant.plugin",
+      "pluginName": "Home Assistant Agent",
+      "deviceTypeId": "HAsensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "actual_state": {
+          "type": "string"
+        },
+        "device_class": {
+          "type": "string"
+        },
+        "friendly_name": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        },
+        "state_class": {
+          "type": "string"
+        },
+        "unit_of_measurement": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Home Assistant Value Sensor",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "address",
+        "states_list"
+      ],
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    }
+  ],
+  "classCommands": {
+    "indigo.device.statusRequest": {}
+  }
+}

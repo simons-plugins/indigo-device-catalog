@@ -1,0 +1,600 @@
+{
+  "$schema": "../../schema/device-profile.schema.json",
+  "baseClass": "indigo.DimmerDevice",
+  "classCapabilities": [
+    "supportsOnState",
+    "supportsStatusRequest",
+    "supportsAllLightsOnOff",
+    "supportsAllOff",
+    "supportsColor",
+    "supportsRGB",
+    "supportsRGBandWhiteSimultaneously",
+    "supportsWhite",
+    "supportsWhiteTemperature",
+    "supportsTwoWhiteLevels",
+    "supportsTwoWhiteLevelsSimultaneously"
+  ],
+  "profiles": [
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "dimmer",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": true,
+        "supportsRGB": true,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": true,
+        "supportsWhiteTemperature": true,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "blueLevel": {
+          "type": "number"
+        },
+        "blueLevel.ui": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "brightnessLevel.ui": {
+          "type": "string"
+        },
+        "colorMode": {
+          "type": "string"
+        },
+        "colorName": {
+          "type": "string"
+        },
+        "greenLevel": {
+          "type": "number"
+        },
+        "greenLevel.ui": {
+          "type": "string"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "redLevel": {
+          "type": "number"
+        },
+        "redLevel.ui": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        },
+        "whiteLevel": {
+          "type": "number"
+        },
+        "whiteLevel.ui": {
+          "type": "string"
+        },
+        "whiteTemperature": {
+          "type": "number"
+        },
+        "whiteTemperature.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Dimmer (Light)",
+      "subModel": "Color Dimmer",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsAccumEnergyTotal",
+        "SupportsBatteryLevel",
+        "SupportsColor",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsRGB",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "UpdateDeviceName",
+        "UpdateNotes",
+        "UpdateNotesJsonList",
+        "WhiteTemperatureMax",
+        "WhiteTemperatureMin",
+        "address",
+        "hideAccelerationBroadcast",
+        "hideActionBroadcast",
+        "hideContactBroadcast",
+        "hideDimmerBroadcast",
+        "hideEnergyBroadcast",
+        "hideHumidityBroadcast",
+        "hideHvacModeBroadcast",
+        "hideHvacStateBroadcast",
+        "hideIlluminanceBroadcast",
+        "hideMotionBroadcast",
+        "hideOnOffBroadcast",
+        "hidePositionBroadcast",
+        "hidePowerBroadcast",
+        "hidePresenceBroadcast",
+        "hidePressureBroadcast",
+        "hideSetpointBroadcast",
+        "hideStateBroadcast",
+        "hideStateL1Broadcast",
+        "hideStateL2Broadcast",
+        "hideStateL3Broadcast",
+        "hideStateL4Broadcast",
+        "hideStateL5Broadcast",
+        "hideTamperBroadcast",
+        "hideTemperatureBroadcast",
+        "hideValveBroadcast",
+        "hideVibrationBroadcast",
+        "hideVoltageBroadcast",
+        "indigo_derived_device_name",
+        "list_zigbee_device_selected",
+        "name_exists",
+        "primaryIndigoDevice",
+        "properties_0x00158d0004f86f25_hidden",
+        "refreshCallbackMethod",
+        "show_name_exists_warning",
+        "show_update_notes_json",
+        "supportsTemperatureReporting",
+        "supportsValve",
+        "uspAcceleration",
+        "uspAccelerationIndigo",
+        "uspAccelerationIndigoEnabled",
+        "uspAction",
+        "uspActionEnabled",
+        "uspActionIndigo",
+        "uspActionIndigoEnabled",
+        "uspBattery",
+        "uspBrightness",
+        "uspBrightnessIndigo",
+        "uspBrightnessIndigoEnabled",
+        "uspColorIndigo",
+        "uspColorIndigoEnabled",
+        "uspColorRGB",
+        "uspColorTemperature",
+        "uspColorTemperatureIndigo",
+        "uspColorTemperatureIndigoEnabled",
+        "uspContact",
+        "uspContactIndigo",
+        "uspContactIndigoEnabled",
+        "uspDimmer",
+        "uspEnergy",
+        "uspEnergyDecimalPlaces",
+        "uspEnergyIndigo",
+        "uspEnergyIndigoEnabled",
+        "uspEnergyUnits",
+        "uspHumidity",
+        "uspHumidityDecimalPlaces",
+        "uspHumidityIndigo",
+        "uspHumidityIndigoEnabled",
+        "uspHvacMode",
+        "uspHvacState",
+        "uspIlluminance",
+        "uspIlluminanceDecimalPlaces",
+        "uspIlluminanceIndigo",
+        "uspIlluminanceIndigoEnabled",
+        "uspIlluminanceUnits",
+        "uspKelvinMaximum",
+        "uspKelvinMinimum",
+        "uspLinkQuality",
+        "uspLinkQualityIndigo",
+        "uspLinkQualityIndigoEnabled",
+        "uspNumberOfButtons",
+        "uspOccupancy",
+        "uspOccupancyIndigo",
+        "uspOccupancyIndigoEnabled",
+        "uspOnOff",
+        "uspOnOffIndigo",
+        "uspOnOffIndigoEnabled",
+        "uspPosition",
+        "uspPositionIndigo",
+        "uspPositionIndigoEnabled",
+        "uspPower",
+        "uspPowerDecimalPlaces",
+        "uspPowerIndigo",
+        "uspPowerIndigoEnabled",
+        "uspPowerMinimumReportingLevel",
+        "uspPowerReportingHysteresis",
+        "uspPowerUnits",
+        "uspPresence",
+        "uspPresenceEvent",
+        "uspPresenceEventIndigo",
+        "uspPresenceEventIndigoEnabled",
+        "uspPresenceIndigo",
+        "uspPresenceIndigoEnabled",
+        "uspPressure",
+        "uspPressureDecimalPlaces",
+        "uspPressureIndigo",
+        "uspPressureIndigoEnabled",
+        "uspPressureUnits",
+        "uspRadar",
+        "uspRadarIndigo",
+        "uspRadarIndigoEnabled",
+        "uspSetpoint",
+        "uspSetpointDecimalPlaces",
+        "uspSetpointIndigo",
+        "uspSetpointIndigoEnabled",
+        "uspSetpointUnitsConversion",
+        "uspState",
+        "uspStateIndigo",
+        "uspStateIndigoEnabled",
+        "uspStateL1",
+        "uspStateL1Indigo",
+        "uspStateL1IndigoEnabled",
+        "uspStateL2",
+        "uspStateL2Indigo",
+        "uspStateL2IndigoEnabled",
+        "uspStateL3",
+        "uspStateL3Indigo",
+        "uspStateL3IndigoEnabled",
+        "uspStateL4",
+        "uspStateL4Indigo",
+        "uspStateL4IndigoEnabled",
+        "uspStateL5",
+        "uspStateL5Indigo",
+        "uspStateL5IndigoEnabled",
+        "uspTamper",
+        "uspTamperIndigo",
+        "uspTamperIndigoEnabled",
+        "uspTemperature",
+        "uspTemperatureDecimalPlaces",
+        "uspTemperatureEnabled",
+        "uspTemperatureIndigo",
+        "uspTemperatureUnitsConversion",
+        "uspValve",
+        "uspValveIndigo",
+        "uspValveIndigoEnabled",
+        "uspVibration",
+        "uspVibrationIndigo",
+        "uspVibrationIndigoEnabled",
+        "uspVoltage",
+        "uspVoltageDecimalPlaces",
+        "uspVoltageIndigo",
+        "uspVoltageIndigoEnabled",
+        "version",
+        "zigbeePropertiesInitialised",
+        "zigbeePropertyAcceleration",
+        "zigbeePropertyAction",
+        "zigbeePropertyBattery",
+        "zigbeePropertyBrightness",
+        "zigbeePropertyColor",
+        "zigbeePropertyColorName",
+        "zigbeePropertyColorTemperature",
+        "zigbeePropertyContact",
+        "zigbeePropertyDim",
+        "zigbeePropertyEnergy",
+        "zigbeePropertyHumidity",
+        "zigbeePropertyHvacMode",
+        "zigbeePropertyHvacState",
+        "zigbeePropertyIlluminance",
+        "zigbeePropertyLinkQuality",
+        "zigbeePropertyOccupancy",
+        "zigbeePropertyOnOff",
+        "zigbeePropertyPosition",
+        "zigbeePropertyPower",
+        "zigbeePropertyPresence",
+        "zigbeePropertyPresenceEvent",
+        "zigbeePropertyPressure",
+        "zigbeePropertyRadar",
+        "zigbeePropertyRefresh",
+        "zigbeePropertySetpoint",
+        "zigbeePropertyState",
+        "zigbeePropertyStateL1",
+        "zigbeePropertyStateL2",
+        "zigbeePropertyStateL3",
+        "zigbeePropertyStateL4",
+        "zigbeePropertyStateL5",
+        "zigbeePropertyTamper",
+        "zigbeePropertyTemperature",
+        "zigbeePropertyValve",
+        "zigbeePropertyVibration",
+        "zigbeePropertyVoltage",
+        "zigbee_coordinator_ieee",
+        "zigbee_description",
+        "zigbee_description_user",
+        "zigbee_device_ieee",
+        "zigbee_hw",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "indigo.kStateImageSel.DimmerOff"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "zigbeeGroupDimmer",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": true,
+        "supportsRGB": true,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": true,
+        "supportsWhiteTemperature": true,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "blueLevel": {
+          "type": "number"
+        },
+        "blueLevel.ui": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "brightnessLevel.ui": {
+          "type": "string"
+        },
+        "colorMode": {
+          "type": "string"
+        },
+        "colorName": {
+          "type": "string"
+        },
+        "greenLevel": {
+          "type": "number"
+        },
+        "greenLevel.ui": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "redLevel": {
+          "type": "number"
+        },
+        "redLevel.ui": {
+          "type": "string"
+        },
+        "whiteLevel": {
+          "type": "number"
+        },
+        "whiteLevel.ui": {
+          "type": "string"
+        },
+        "whiteTemperature": {
+          "type": "number"
+        },
+        "whiteTemperature.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Zigbee Group Dimmer",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsColor",
+        "SupportsRGB",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "list_zigbee_device_selected",
+        "refreshCallbackMethod",
+        "uspColor",
+        "uspColorTemperature",
+        "uspOnOff",
+        "zigbeePropertiesInitialised",
+        "zigbee_coordinator_ieee",
+        "zigbee_group_friendly_name"
+      ],
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "indigo.kStateImageSel.DimmerOff"
+    },
+    {
+      "pluginId": "com.barn.indigoplugin.WLED",
+      "pluginName": "WLED",
+      "deviceTypeId": "wledip",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "UDPrecv": {
+          "type": "boolean"
+        },
+        "UDPsend": {
+          "type": "boolean"
+        },
+        "WLEDfreeheap": {
+          "type": "integer"
+        },
+        "WLEDversion": {
+          "type": "string"
+        },
+        "brightness": {
+          "type": "integer"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "effect": {
+          "type": "integer"
+        },
+        "effectintensity": {
+          "type": "integer"
+        },
+        "effectname": {
+          "type": "string"
+        },
+        "effectspeed": {
+          "type": "integer"
+        },
+        "nightlight": {
+          "type": "boolean"
+        },
+        "nightlightbrightness": {
+          "type": "integer"
+        },
+        "nightlightduration": {
+          "type": "integer"
+        },
+        "nightlightfade": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "palette": {
+          "type": "integer"
+        },
+        "palettename": {
+          "type": "string"
+        },
+        "playlist": {
+          "type": "integer"
+        },
+        "preset": {
+          "type": "integer"
+        },
+        "primarybluevalue": {
+          "type": "integer"
+        },
+        "primarygreenvalue": {
+          "type": "integer"
+        },
+        "primaryredvalue": {
+          "type": "integer"
+        },
+        "secondarybluevalue": {
+          "type": "integer"
+        },
+        "secondarygreenvalue": {
+          "type": "integer"
+        },
+        "secondaryredvalue": {
+          "type": "integer"
+        },
+        "segment": {
+          "type": "integer"
+        },
+        "transition": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "WLED IP Controller",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "ipaddress",
+        "supportsRGB",
+        "wledeffects"
+      ],
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "indigo.kStateImageSel.DimmerOff"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+      "deviceTypeId": "zwDimmerType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Dimmer Switch (FGD212)",
+      "subModel": "ui=Switch 2",
+      "protocol": "indigo.kprotocol.zwave",
+      "pluginConfigKeys": [
+        "address",
+        "indigoObjVersion",
+        "userEnergyPollingEnabled",
+        "version",
+        "zwClassCmdBase",
+        "zwDevEndPoint",
+        "zwDevSubIndex",
+        "zwManufactureId",
+        "zwManufactureName",
+        "zwModelId",
+        "zwModelName",
+        "zwShowDumpDevToLog",
+        "zwShowEnergyPollingUI",
+        "zwShowMainUI",
+        "zwShowManualModifyConfigParmUI",
+        "zwShowPollingUI",
+        "zwShowSubmitModelInfoUI",
+        "zwShowWakeIntervalUI"
+      ],
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "indigo.kStateImageSel.DimmerOn"
+    }
+  ],
+  "classCommands": {
+    "indigo.device.turnOn": {},
+    "indigo.device.turnOff": {},
+    "indigo.device.toggle": {},
+    "indigo.dimmer.setBrightness": {
+      "parameters": {
+        "value": "integer (0-100)"
+      }
+    },
+    "indigo.device.statusRequest": {}
+  }
+}

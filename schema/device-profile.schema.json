@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/simons-plugins/indigo-device-catalog/schema/device-profile.schema.json",
+  "title": "Indigo Device Class Profile",
+  "description": "Describes all known device profiles for a single Indigo base class",
+  "type": "object",
+  "required": ["baseClass", "classCapabilities", "profiles"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "baseClass": {
+      "type": "string",
+      "description": "Indigo base device class",
+      "enum": [
+        "indigo.DimmerDevice",
+        "indigo.RelayDevice",
+        "indigo.SensorDevice",
+        "indigo.SpeedControlDevice",
+        "indigo.SprinklerDevice",
+        "indigo.ThermostatDevice",
+        "indigo.Device",
+        "indigo.MultiIODevice"
+      ]
+    },
+    "classCommands": {
+      "type": "object",
+      "description": "Commands available to all devices of this base class",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "parameters": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "classCapabilities": {
+      "type": "array",
+      "description": "Capability flags relevant to this base class",
+      "items": {
+        "type": "string"
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "description": "Device profiles from different plugins",
+      "items": {
+        "$ref": "#/$defs/profile"
+      }
+    }
+  },
+  "$defs": {
+    "profile": {
+      "type": "object",
+      "required": ["pluginId", "pluginName", "deviceTypeId", "capabilities", "states", "metadata"],
+      "additionalProperties": false,
+      "properties": {
+        "pluginId": {
+          "type": "string",
+          "description": "Reverse-domain plugin identifier"
+        },
+        "pluginName": {
+          "type": "string",
+          "description": "Human-readable plugin name"
+        },
+        "deviceTypeId": {
+          "type": "string",
+          "description": "Plugin-defined device type identifier"
+        },
+        "model": {
+          "type": "string",
+          "description": "Device model string if available"
+        },
+        "subModel": {
+          "type": "string",
+          "description": "Device sub-model string if available"
+        },
+        "protocol": {
+          "type": "string",
+          "description": "Communication protocol (e.g., zwave, zigbee, mqtt, http)"
+        },
+        "capabilities": {
+          "type": "object",
+          "description": "Map of capability flag names to boolean values",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "states": {
+          "type": "object",
+          "description": "Map of state keys to their type information",
+          "additionalProperties": {
+            "$ref": "#/$defs/stateInfo"
+          }
+        },
+        "pluginConfigKeys": {
+          "type": "array",
+          "description": "Keys from pluginProps (no values)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "displayStateId": {
+          "type": "string",
+          "description": "The state key used for display in Indigo UI"
+        },
+        "displayStateImageSel": {
+          "type": "string",
+          "description": "The image selector used for display"
+        },
+        "metadata": {
+          "$ref": "#/$defs/metadata"
+        }
+      }
+    },
+    "stateInfo": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["number", "integer", "string", "boolean"],
+          "description": "Inferred data type of the state value"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of what this state represents"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["contributedBy", "discoveredAt"],
+      "additionalProperties": false,
+      "properties": {
+        "contributedBy": {
+          "type": "string",
+          "description": "GitHub username or org that contributed this profile"
+        },
+        "discoveredAt": {
+          "type": "string",
+          "format": "date",
+          "description": "Date this profile was first cataloged (YYYY-MM-DD)"
+        },
+        "indigoVersion": {
+          "type": "string",
+          "description": "Indigo version used during discovery"
+        },
+        "pluginVersion": {
+          "type": "string",
+          "description": "Plugin version at time of discovery"
+        }
+      }
+    }
+  }
+}

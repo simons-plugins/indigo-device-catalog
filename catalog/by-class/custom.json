@@ -1,0 +1,4326 @@
+{
+  "$schema": "../../schema/device-profile.schema.json",
+  "baseClass": "indigo.Device",
+  "classCapabilities": [
+    "supportsOnState",
+    "supportsStatusRequest",
+    "supportsAllLightsOnOff"
+  ],
+  "profiles": [
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.FindFriendsMini",
+      "pluginName": "FindFriendsMini",
+      "deviceTypeId": "FindFriendsGeofence",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "deviceIsOnline.ui": {
+          "type": "string"
+        },
+        "friendsInRange": {
+          "type": "integer"
+        },
+        "lastArrivaltime": {
+          "type": "string"
+        },
+        "lastArrivaltimestamp": {
+          "type": "number"
+        },
+        "lastDeptime": {
+          "type": "string"
+        },
+        "lastDeptimestamp": {
+          "type": "number"
+        },
+        "listFriends": {
+          "type": "string"
+        },
+        "minutessincelastArrival": {
+          "type": "number"
+        },
+        "minutessincelastDep": {
+          "type": "number"
+        },
+        "occupied": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "FindFriends GeoFence",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "geoDescription",
+        "geoLatitude",
+        "geoLongitude",
+        "geoName",
+        "geoRange"
+      ],
+      "displayStateId": "friendsInRange",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.FindFriendsMini",
+      "pluginName": "FindFriendsMini",
+      "deviceTypeId": "myDevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "address": {
+          "type": "string"
+        },
+        "address-city": {
+          "type": "string"
+        },
+        "address-country": {
+          "type": "string"
+        },
+        "address-number": {
+          "type": "string"
+        },
+        "address-road": {
+          "type": "string"
+        },
+        "address-suburb": {
+          "type": "string"
+        },
+        "altitude": {
+          "type": "number"
+        },
+        "batteryCharge": {
+          "type": "number"
+        },
+        "batteryStatus": {
+          "type": "string"
+        },
+        "devSummary": {
+          "type": "string"
+        },
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "deviceLastUpdated": {
+          "type": "string"
+        },
+        "deviceModel": {
+          "type": "string"
+        },
+        "deviceName": {
+          "type": "string"
+        },
+        "deviceStatus": {
+          "type": "string"
+        },
+        "deviceTimestamp": {
+          "type": "number"
+        },
+        "distanceSinceCheck": {
+          "type": "string"
+        },
+        "googleMapUrl": {
+          "type": "string"
+        },
+        "homeDistance": {
+          "type": "integer"
+        },
+        "homeDistanceText": {
+          "type": "string"
+        },
+        "homeTime": {
+          "type": "integer"
+        },
+        "homeTimeText": {
+          "type": "string"
+        },
+        "horizontalAccuracy": {
+          "type": "number"
+        },
+        "id": {
+          "type": "string"
+        },
+        "labels": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "locationTimestamp": {
+          "type": "integer"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "mapLastUpdated": {
+          "type": "string"
+        },
+        "mapUpdateNeeded": {
+          "type": "boolean"
+        },
+        "otherDistance": {
+          "type": "integer"
+        },
+        "otherDistanceText": {
+          "type": "string"
+        },
+        "otherTime": {
+          "type": "integer"
+        },
+        "otherTimeText": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        },
+        "url_mapping": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "FindFriends Family Device",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "appleFriendID",
+        "friendName",
+        "mapLabel",
+        "targetFriend"
+      ],
+      "displayStateId": "devSummary",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.HomeKitLink-Siri",
+      "pluginName": "HomeKitLink Siri",
+      "deviceTypeId": "homeKitBridgeDevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "QRCode": {
+          "type": "string"
+        },
+        "Status": {
+          "type": "string"
+        },
+        "pincode": {
+          "type": "string"
+        },
+        "uniqueID": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "HomeKitLink-Siri Bridge",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "HomeKit_publishDevice_2",
+        "altName",
+        "audioSelector",
+        "bridgeUniqueID",
+        "deviceId",
+        "deviceSensor",
+        "deviceSubtype",
+        "doorbellId",
+        "enablePublishFields",
+        "inverseSelector",
+        "isDeviceSelected",
+        "motionEnabled",
+        "selectdevice_or_AG",
+        "showALL",
+        "showSubtypes",
+        "tempSelector"
+      ],
+      "displayStateId": "Status",
+      "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "button",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "button_1": {
+          "type": "string"
+        },
+        "lastButtonPressed": {
+          "type": "string"
+        },
+        "lastButtonPressed.ui": {
+          "type": "string"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "integer"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        },
+        "voltage": {
+          "type": "integer"
+        },
+        "voltage.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Scene (Button)",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsAccumEnergyTotal",
+        "SupportsBatteryLevel",
+        "SupportsColor",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsRGB",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "address",
+        "hideAccelerationBroadcast",
+        "hideActionBroadcast",
+        "hideContactBroadcast",
+        "hideDimmerBroadcast",
+        "hideEnergyBroadcast",
+        "hideHumidityBroadcast",
+        "hideHvacModeBroadcast",
+        "hideHvacStateBroadcast",
+        "hideIlluminanceBroadcast",
+        "hideMotionBroadcast",
+        "hideOnOffBroadcast",
+        "hidePositionBroadcast",
+        "hidePowerBroadcast",
+        "hidePresenceBroadcast",
+        "hidePressureBroadcast",
+        "hideSetpointBroadcast",
+        "hideStateBroadcast",
+        "hideTamperBroadcast",
+        "hideTemperatureBroadcast",
+        "hideValveBroadcast",
+        "hideVibrationBroadcast",
+        "hideVoltageBroadcast",
+        "primaryIndigoDevice",
+        "properties_0x00158d000205a1b6_hidden",
+        "refreshCallbackMethod",
+        "supportsTemperatureReporting",
+        "supportsValve",
+        "uspAcceleration",
+        "uspAccelerationIndigo",
+        "uspAccelerationIndigoEnabled",
+        "uspAction",
+        "uspActionEnabled",
+        "uspActionIndigo",
+        "uspActionIndigoEnabled",
+        "uspBattery",
+        "uspBrightness",
+        "uspBrightnessIndigo",
+        "uspBrightnessIndigoEnabled",
+        "uspColorIndigo",
+        "uspColorIndigoEnabled",
+        "uspColorRGB",
+        "uspColorTemperature",
+        "uspColorTemperatureIndigo",
+        "uspColorTemperatureIndigoEnabled",
+        "uspContact",
+        "uspContactIndigo",
+        "uspContactIndigoEnabled",
+        "uspDimmer",
+        "uspEnergy",
+        "uspEnergyDecimalPlaces",
+        "uspEnergyIndigo",
+        "uspEnergyIndigoEnabled",
+        "uspEnergyUnits",
+        "uspHumidity",
+        "uspHumidityDecimalPlaces",
+        "uspHumidityIndigo",
+        "uspHumidityIndigoEnabled",
+        "uspHvacMode",
+        "uspHvacState",
+        "uspIlluminance",
+        "uspIlluminanceDecimalPlaces",
+        "uspIlluminanceIndigo",
+        "uspIlluminanceIndigoEnabled",
+        "uspIlluminanceUnits",
+        "uspKelvinMaximum",
+        "uspKelvinMinimum",
+        "uspLinkQuality",
+        "uspLinkQualityIndigo",
+        "uspLinkQualityIndigoEnabled",
+        "uspNumberOfButtons",
+        "uspOccupancy",
+        "uspOccupancyIndigo",
+        "uspOccupancyIndigoEnabled",
+        "uspOnOff",
+        "uspOnOffIndigo",
+        "uspOnOffIndigoEnabled",
+        "uspPosition",
+        "uspPositionIndigo",
+        "uspPositionIndigoEnabled",
+        "uspPower",
+        "uspPowerDecimalPlaces",
+        "uspPowerIndigo",
+        "uspPowerIndigoEnabled",
+        "uspPowerMinimumReportingLevel",
+        "uspPowerReportingHysteresis",
+        "uspPowerUnits",
+        "uspPresence",
+        "uspPresenceEvent",
+        "uspPresenceEventIndigo",
+        "uspPresenceEventIndigoEnabled",
+        "uspPresenceIndigo",
+        "uspPresenceIndigoEnabled",
+        "uspPressure",
+        "uspPressureDecimalPlaces",
+        "uspPressureIndigo",
+        "uspPressureIndigoEnabled",
+        "uspPressureUnits",
+        "uspRadar",
+        "uspRadarIndigo",
+        "uspRadarIndigoEnabled",
+        "uspSetpoint",
+        "uspSetpointDecimalPlaces",
+        "uspSetpointIndigo",
+        "uspSetpointIndigoEnabled",
+        "uspSetpointUnitsConversion",
+        "uspState",
+        "uspStateIndigo",
+        "uspStateIndigoEnabled",
+        "uspStateLn",
+        "uspStateLnIndigo",
+        "uspStateLnIndigoEnabled",
+        "uspTamper",
+        "uspTamperIndigo",
+        "uspTamperIndigoEnabled",
+        "uspTemperature",
+        "uspTemperatureDecimalPlaces",
+        "uspTemperatureEnabled",
+        "uspTemperatureIndigo",
+        "uspTemperatureUnitsConversion",
+        "uspValve",
+        "uspValveIndigo",
+        "uspValveIndigoEnabled",
+        "uspVibration",
+        "uspVibrationIndigo",
+        "uspVibrationIndigoEnabled",
+        "uspVoltage",
+        "uspVoltageDecimalPlaces",
+        "uspVoltageIndigo",
+        "uspVoltageIndigoEnabled",
+        "zigbeePropertiesInitialised",
+        "zigbeePropertyAcceleration",
+        "zigbeePropertyAction",
+        "zigbeePropertyBattery",
+        "zigbeePropertyBrightness",
+        "zigbeePropertyColor",
+        "zigbeePropertyColorName",
+        "zigbeePropertyColorTemperature",
+        "zigbeePropertyContact",
+        "zigbeePropertyDim",
+        "zigbeePropertyEnergy",
+        "zigbeePropertyHumidity",
+        "zigbeePropertyHvacMode",
+        "zigbeePropertyHvacState",
+        "zigbeePropertyIlluminance",
+        "zigbeePropertyLinkQuality",
+        "zigbeePropertyOccupancy",
+        "zigbeePropertyOnOff",
+        "zigbeePropertyPosition",
+        "zigbeePropertyPower",
+        "zigbeePropertyPresence",
+        "zigbeePropertyPresenceEvent",
+        "zigbeePropertyPressure",
+        "zigbeePropertyRadar",
+        "zigbeePropertyRefresh",
+        "zigbeePropertySetpoint",
+        "zigbeePropertyState",
+        "zigbeePropertyStateLn",
+        "zigbeePropertyTamper",
+        "zigbeePropertyTemperature",
+        "zigbeePropertyValve",
+        "zigbeePropertyVibration",
+        "zigbeePropertyVoltage",
+        "zigbee_coordinator_ieee",
+        "zigbee_description",
+        "zigbee_device_ieee",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "lastButtonPressed",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "switch",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "action": {
+          "type": "string"
+        },
+        "lastAction": {
+          "type": "string"
+        },
+        "lastAction.ui": {
+          "type": "string"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Switch",
+      "subModel": "Other,ui=Scene",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "NumHumidityInputs",
+        "NumTemperatureInputs",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsAccumEnergyTotal",
+        "SupportsBatteryLevel",
+        "SupportsColor",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsRGB",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "SupportsTwoWhiteLevels",
+        "SupportsWhite",
+        "SupportsWhiteTemperature",
+        "UpdateDeviceName",
+        "UpdateNotes",
+        "UpdateNotesJsonList",
+        "address",
+        "hideAccelerationBroadcast",
+        "hideActionBroadcast",
+        "hideAnglesBroadcast",
+        "hideContactBroadcast",
+        "hideDimmerBroadcast",
+        "hideEnergyBroadcast",
+        "hideHumidityBroadcast",
+        "hideHvacModeBroadcast",
+        "hideHvacStateBroadcast",
+        "hideIlluminanceBroadcast",
+        "hideMotionBroadcast",
+        "hideMultiSwitchActionBroadcast",
+        "hideOnOffBroadcast",
+        "hidePositionBroadcast",
+        "hidePowerBroadcast",
+        "hidePresenceBroadcast",
+        "hidePressureBroadcast",
+        "hideRemoteAudioBroadcast",
+        "hideRemoteDimmerBroadcast",
+        "hideRotationsBroadcast",
+        "hideSceneRotaryBroadcast",
+        "hideSetpointBroadcast",
+        "hideStateBroadcast",
+        "hideStateL1Broadcast",
+        "hideStateL2Broadcast",
+        "hideStateL3Broadcast",
+        "hideStateL4Broadcast",
+        "hideStateL5Broadcast",
+        "hideStateLeftBroadcast",
+        "hideStateRightBroadcast",
+        "hideStateSingleBroadcast",
+        "hideStrengthBroadcast",
+        "hideSwitchActionBroadcast",
+        "hideTamperBroadcast",
+        "hideTemperatureBroadcast",
+        "hideValveBroadcast",
+        "hideVibrationBroadcast",
+        "hideVoltageBroadcast",
+        "indigo_derived_device_name",
+        "list_zigbee_device_selected",
+        "name_exists",
+        "primaryIndigoDevice",
+        "properties_0x04cf8cdf3c796891_hidden",
+        "refreshCallbackMethod",
+        "show_name_exists_warning",
+        "show_update_notes_json",
+        "supportsTemperatureReporting",
+        "supportsValve",
+        "uspAcceleration",
+        "uspAccelerationIndigo",
+        "uspAction",
+        "uspActionIndigo",
+        "uspAngles",
+        "uspAnglesIndigo",
+        "uspBattery",
+        "uspBrightness",
+        "uspBrightnessIndigo",
+        "uspBrightnessL1",
+        "uspBrightnessL1Indigo",
+        "uspBrightnessL2",
+        "uspBrightnessL2Indigo",
+        "uspBrightnessL3",
+        "uspBrightnessL3Indigo",
+        "uspColorIndigo",
+        "uspColorRGB",
+        "uspColorTemperature",
+        "uspColorTemperatureIndigo",
+        "uspContact",
+        "uspContactIndigo",
+        "uspDimmer",
+        "uspEnergy",
+        "uspEnergyDecimalPlaces",
+        "uspEnergyIndigo",
+        "uspEnergyUnits",
+        "uspHumidity",
+        "uspHumidityDecimalPlaces",
+        "uspHumidityIndigo",
+        "uspHvacMode",
+        "uspHvacState",
+        "uspIlluminance",
+        "uspIlluminanceDecimalPlaces",
+        "uspIlluminanceIndigo",
+        "uspIlluminanceUnits",
+        "uspKelvinMaximum",
+        "uspKelvinMinimum",
+        "uspLinkQuality",
+        "uspLinkQualityIndigo",
+        "uspMultiSwitchAction",
+        "uspMultiSwitchActionIndigo",
+        "uspNumberOfButtons",
+        "uspOccupancy",
+        "uspOccupancyIndigo",
+        "uspOnOff",
+        "uspOnOffIndigo",
+        "uspPosition",
+        "uspPositionIndigo",
+        "uspPower",
+        "uspPowerDecimalPlaces",
+        "uspPowerIndigo",
+        "uspPowerIndigoEnabled",
+        "uspPowerLeft",
+        "uspPowerLeftDecimalPlaces",
+        "uspPowerLeftIndigo",
+        "uspPowerLeftMinimumReportingLevel",
+        "uspPowerLeftReportingHysteresis",
+        "uspPowerLeftUnits",
+        "uspPowerMinimumReportingLevel",
+        "uspPowerReportingHysteresis",
+        "uspPowerRight",
+        "uspPowerRightDecimalPlaces",
+        "uspPowerRightIndigo",
+        "uspPowerRightMinimumReportingLevel",
+        "uspPowerRightReportingHysteresis",
+        "uspPowerRightUnits",
+        "uspPowerUnits",
+        "uspPresence",
+        "uspPresenceEvent",
+        "uspPresenceEventIndigo",
+        "uspPresenceIndigo",
+        "uspPressure",
+        "uspPressureDecimalPlaces",
+        "uspPressureIndigo",
+        "uspPressureUnits",
+        "uspRadar",
+        "uspRadarIndigo",
+        "uspRemoteAudio",
+        "uspRemoteAudioIndigo",
+        "uspRemoteDimmer",
+        "uspRemoteDimmerIndigo",
+        "uspRotationVariableFactor",
+        "uspRotationVariableId",
+        "uspRotations",
+        "uspRotationsIndigo",
+        "uspSceneRotary",
+        "uspSceneRotaryIndigo",
+        "uspSetpoint",
+        "uspSetpointDecimalPlaces",
+        "uspSetpointIndigo",
+        "uspSetpointUnitsConversion",
+        "uspState",
+        "uspStateIndigo",
+        "uspStateL1",
+        "uspStateL1Indigo",
+        "uspStateL2",
+        "uspStateL2Indigo",
+        "uspStateL3",
+        "uspStateL3Indigo",
+        "uspStateL4",
+        "uspStateL4Indigo",
+        "uspStateL5",
+        "uspStateL5Indigo",
+        "uspStateLeft",
+        "uspStateLeftIndigo",
+        "uspStateRight",
+        "uspStateRightIndigo",
+        "uspStateSingle",
+        "uspStateSingleIndigo",
+        "uspStrength",
+        "uspStrengthIndigo",
+        "uspSwitchAction",
+        "uspSwitchActionIndigo",
+        "uspTamper",
+        "uspTamperIndigo",
+        "uspTemperature",
+        "uspTemperatureDecimalPlaces",
+        "uspTemperatureIndigo",
+        "uspTemperatureUnitsConversion",
+        "uspValve",
+        "uspValveIndigo",
+        "uspVibration",
+        "uspVibrationIndigo",
+        "uspVoltage",
+        "uspVoltageDecimalPlaces",
+        "uspVoltageIndigo",
+        "version",
+        "zigbeePropertiesInitialised",
+        "zigbeePropertyAcceleration",
+        "zigbeePropertyAction",
+        "zigbeePropertyAngles",
+        "zigbeePropertyBattery",
+        "zigbeePropertyBrightness",
+        "zigbeePropertyBrightnessL1",
+        "zigbeePropertyBrightnessL2",
+        "zigbeePropertyBrightnessL3",
+        "zigbeePropertyBrightnessL4",
+        "zigbeePropertyBrightnessL5",
+        "zigbeePropertyColor",
+        "zigbeePropertyColorName",
+        "zigbeePropertyColorTemperature",
+        "zigbeePropertyContact",
+        "zigbeePropertyDim",
+        "zigbeePropertyEnergy",
+        "zigbeePropertyHumidity",
+        "zigbeePropertyHvacMode",
+        "zigbeePropertyHvacState",
+        "zigbeePropertyIlluminance",
+        "zigbeePropertyLinkQuality",
+        "zigbeePropertyMultiSwitchAction",
+        "zigbeePropertyOccupancy",
+        "zigbeePropertyOnOff",
+        "zigbeePropertyPosition",
+        "zigbeePropertyPower",
+        "zigbeePropertyPowerLeft",
+        "zigbeePropertyPowerRight",
+        "zigbeePropertyPower_left",
+        "zigbeePropertyPower_right",
+        "zigbeePropertyPresence",
+        "zigbeePropertyPresenceEvent",
+        "zigbeePropertyPressure",
+        "zigbeePropertyRadar",
+        "zigbeePropertyRefresh",
+        "zigbeePropertyRemoteAudio",
+        "zigbeePropertyRemoteDimmer",
+        "zigbeePropertyRotations",
+        "zigbeePropertySceneRotary",
+        "zigbeePropertySetpoint",
+        "zigbeePropertyState",
+        "zigbeePropertyStateL1",
+        "zigbeePropertyStateL2",
+        "zigbeePropertyStateL3",
+        "zigbeePropertyStateL4",
+        "zigbeePropertyStateL5",
+        "zigbeePropertyStateLeft",
+        "zigbeePropertyStateRight",
+        "zigbeePropertyStateSingle",
+        "zigbeePropertyStrength",
+        "zigbeePropertySwitchAction",
+        "zigbeePropertyTamper",
+        "zigbeePropertyTemperature",
+        "zigbeePropertyValve",
+        "zigbeePropertyVibration",
+        "zigbeePropertyVoltage",
+        "zigbee_coordinator_ieee",
+        "zigbee_description",
+        "zigbee_description_user",
+        "zigbee_device_ieee",
+        "zigbee_hw",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "action",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "zigbeeCoordinator",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "status": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Zigbee Coordinator",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "list_zigbee_device_selected",
+        "mqttClientPrefix",
+        "mqttProtocol",
+        "mqttZigbeeDeviceMessageFilter",
+        "mqtt_broker_ip",
+        "mqtt_broker_port",
+        "mqtt_password",
+        "mqtt_password_encryption_key",
+        "mqtt_password_is_encoded",
+        "mqtt_username",
+        "mqtt_zigbee_device_message_filter",
+        "properties_-SELECT-_hidden",
+        "properties_0x00124b00033d755e_hidden",
+        "properties_0x00124b000e0eae12_hidden",
+        "properties_0x00124b0021b76a78_hidden",
+        "properties_0x00124b0021f28d50_hidden",
+        "properties_0x00124b0022670ad9_hidden",
+        "properties_0x00124b0022cf6e97_hidden",
+        "properties_0x00124b0022cf6ea2_hidden",
+        "properties_0x00124b0022cf7386_hidden",
+        "properties_0x00124b0022cf9b75_hidden",
+        "properties_0x00124b0023b5a30b_hidden",
+        "properties_0x00124b0025394bd0_hidden",
+        "properties_0x00124b002543fa1a_hidden",
+        "properties_0x00158d000205a1b6_hidden",
+        "properties_0x00158d0003d29703_hidden",
+        "properties_0x00158d00045d0463_hidden",
+        "properties_0x00158d0004607481_hidden",
+        "properties_0x00158d0004655bbf_hidden",
+        "properties_0x00158d0004aaeacd_hidden",
+        "properties_0x00158d0004f82d3a_hidden",
+        "properties_0x00158d0004f86f25_hidden",
+        "properties_0x00158d000533c36e_hidden",
+        "properties_0x00158d0006de51d5_hidden",
+        "properties_0x00158d0006de53e5_hidden",
+        "properties_0x0017880100b394a5_hidden",
+        "properties_0x00178801067b6e50_hidden",
+        "properties_0x00178801067b7662_hidden",
+        "properties_0x04cf8cdf3c77b258_hidden",
+        "properties_0x04cf8cdf3c7933de_hidden",
+        "properties_0x04cf8cdf3c796891_hidden",
+        "properties_0x0ceff6fffe695c45_hidden",
+        "properties_0x123456789_hidden",
+        "properties_0x54ef4410005fd7e9_hidden",
+        "properties_0x54ef441000658927_hidden",
+        "properties_0x70ac08fffe95b518_hidden",
+        "properties_0x70b3d52b6001753f_hidden",
+        "properties_0x781c9dfffe082fec_hidden",
+        "properties_0x781c9dfffe08426b_hidden",
+        "properties_0x84b4dbfffe089c89_hidden",
+        "properties_0x84b4dbfffe0bd0f8_hidden",
+        "properties_0xa4c1383b6aedc182_hidden",
+        "properties_0xa4c1386ca1087786_hidden",
+        "properties_0xa4c138972879df14_hidden",
+        "properties_0xa4c138c72852712b_hidden",
+        "properties_0xa4c138e71657b7b5_hidden",
+        "properties_0xa4c138f19c758ced_hidden",
+        "properties_0xc49886000006f8f7_hidden",
+        "properties_0xc4988600004baf3b_hidden",
+        "properties_0xccccccfffea00328_hidden",
+        "properties_0xec1bbdfffe8ad7fb_hidden",
+        "properties__hidden",
+        "section",
+        "zigbee2mqtt_root_topic",
+        "zigbeePropertiesInitialised",
+        "zigbee_description",
+        "zigbee_device",
+        "zigbee_device_filter",
+        "zigbee_hw",
+        "zigbee_model",
+        "zigbee_vendor"
+      ],
+      "displayStateId": "status",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.barn.indigoplugin.GlowmarktCAD",
+      "pluginName": "GlowmarktCAD",
+      "deviceTypeId": "GlowmarktCAD_local",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "elec_daily_consumption": {
+          "type": "number"
+        },
+        "elec_daily_consumption.ui": {
+          "type": "string"
+        },
+        "elec_instantaneous": {
+          "type": "number"
+        },
+        "elec_instantaneous.ui": {
+          "type": "string"
+        },
+        "elec_month_consumption": {
+          "type": "number"
+        },
+        "elec_month_consumption.ui": {
+          "type": "string"
+        },
+        "elec_standing_charge": {
+          "type": "number"
+        },
+        "elec_standing_charge.ui": {
+          "type": "string"
+        },
+        "elec_unit_rate": {
+          "type": "number"
+        },
+        "elec_unit_rate.ui": {
+          "type": "string"
+        },
+        "elec_week_consumption": {
+          "type": "number"
+        },
+        "elec_week_consumption.ui": {
+          "type": "string"
+        },
+        "electricity_meter": {
+          "type": "number"
+        },
+        "electricity_meter.ui": {
+          "type": "string"
+        },
+        "electricity_meter_export": {
+          "type": "number"
+        },
+        "electricity_meter_export.ui": {
+          "type": "string"
+        },
+        "electricity_supplier": {
+          "type": "string"
+        },
+        "gas_cumulative_vol": {
+          "type": "number"
+        },
+        "gas_cumulative_vol.ui": {
+          "type": "string"
+        },
+        "gas_daily_consumption": {
+          "type": "number"
+        },
+        "gas_daily_consumption.ui": {
+          "type": "string"
+        },
+        "gas_dayvol": {
+          "type": "number"
+        },
+        "gas_dayvol.ui": {
+          "type": "string"
+        },
+        "gas_meter": {
+          "type": "number"
+        },
+        "gas_meter.ui": {
+          "type": "string"
+        },
+        "gas_month_consumption": {
+          "type": "number"
+        },
+        "gas_month_consumption.ui": {
+          "type": "string"
+        },
+        "gas_monthvol": {
+          "type": "number"
+        },
+        "gas_monthvol.ui": {
+          "type": "string"
+        },
+        "gas_standing_charge": {
+          "type": "number"
+        },
+        "gas_standing_charge.ui": {
+          "type": "string"
+        },
+        "gas_supplier": {
+          "type": "string"
+        },
+        "gas_unit_rate": {
+          "type": "number"
+        },
+        "gas_unit_rate.ui": {
+          "type": "string"
+        },
+        "gas_week_consumption": {
+          "type": "number"
+        },
+        "gas_week_consumption.ui": {
+          "type": "string"
+        },
+        "gas_weekvol": {
+          "type": "number"
+        },
+        "gas_weekvol.ui": {
+          "type": "string"
+        },
+        "mpan": {
+          "type": "string"
+        },
+        "mprn": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Glowmarkt Smart Meter MQTT Local",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "brokerID",
+        "octopusID",
+        "octopus_enable"
+      ],
+      "displayStateId": "elec_instantaneous",
+      "displayStateImageSel": "indigo.kStateImageSel.EnergyMeterOn"
+    },
+    {
+      "pluginId": "com.barn.indigoplugin.GlowmarktCAD",
+      "pluginName": "GlowmarktCAD",
+      "deviceTypeId": "daily_Consumption",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "From-00-00": {
+          "type": "number"
+        },
+        "From-00-30": {
+          "type": "number"
+        },
+        "From-01-00": {
+          "type": "number"
+        },
+        "From-01-30": {
+          "type": "number"
+        },
+        "From-02-00": {
+          "type": "number"
+        },
+        "From-02-30": {
+          "type": "number"
+        },
+        "From-03-00": {
+          "type": "number"
+        },
+        "From-03-30": {
+          "type": "number"
+        },
+        "From-04-00": {
+          "type": "number"
+        },
+        "From-04-30": {
+          "type": "number"
+        },
+        "From-05-00": {
+          "type": "number"
+        },
+        "From-05-30": {
+          "type": "number"
+        },
+        "From-06-00": {
+          "type": "number"
+        },
+        "From-06-30": {
+          "type": "number"
+        },
+        "From-07-00": {
+          "type": "number"
+        },
+        "From-07-30": {
+          "type": "number"
+        },
+        "From-08-00": {
+          "type": "number"
+        },
+        "From-08-30": {
+          "type": "number"
+        },
+        "From-09-00": {
+          "type": "number"
+        },
+        "From-09-30": {
+          "type": "number"
+        },
+        "From-10-00": {
+          "type": "number"
+        },
+        "From-10-30": {
+          "type": "number"
+        },
+        "From-11-00": {
+          "type": "number"
+        },
+        "From-11-30": {
+          "type": "number"
+        },
+        "From-12-00": {
+          "type": "number"
+        },
+        "From-12-30": {
+          "type": "number"
+        },
+        "From-13-00": {
+          "type": "integer"
+        },
+        "From-13-30": {
+          "type": "integer"
+        },
+        "From-14-00": {
+          "type": "integer"
+        },
+        "From-14-30": {
+          "type": "integer"
+        },
+        "From-15-00": {
+          "type": "integer"
+        },
+        "From-15-30": {
+          "type": "integer"
+        },
+        "From-16-00": {
+          "type": "integer"
+        },
+        "From-16-30": {
+          "type": "integer"
+        },
+        "From-17-00": {
+          "type": "integer"
+        },
+        "From-17-30": {
+          "type": "integer"
+        },
+        "From-18-00": {
+          "type": "integer"
+        },
+        "From-18-30": {
+          "type": "integer"
+        },
+        "From-19-00": {
+          "type": "integer"
+        },
+        "From-19-30": {
+          "type": "integer"
+        },
+        "From-20-00": {
+          "type": "integer"
+        },
+        "From-20-30": {
+          "type": "integer"
+        },
+        "From-21-00": {
+          "type": "integer"
+        },
+        "From-21-30": {
+          "type": "integer"
+        },
+        "From-22-00": {
+          "type": "integer"
+        },
+        "From-22-30": {
+          "type": "integer"
+        },
+        "From-23-00": {
+          "type": "integer"
+        },
+        "From-23-30": {
+          "type": "integer"
+        },
+        "consumption_date": {
+          "type": "string"
+        },
+        "consumption_sum": {
+          "type": "number"
+        },
+        "consumption_sum.ui": {
+          "type": "string"
+        },
+        "consumption_this_period": {
+          "type": "number"
+        },
+        "consumption_type": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Glowmarkt Daily Consumption ",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "Pound_enable",
+        "address",
+        "dayList",
+        "resource_type"
+      ],
+      "displayStateId": "consumption_sum",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.duncanware.domoPadMobileClient",
+      "pluginName": "com.duncanware.domoPadMobileClient",
+      "deviceTypeId": "domoPadAndroidClient",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "batteryStatus": {
+          "type": "string"
+        },
+        "isPaired": {
+          "type": "boolean"
+        },
+        "isPaired.ui": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "locationFixTime": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "modelName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Android Remote Client",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsBatteryLevel",
+        "address",
+        "deviceRegistrationId"
+      ],
+      "displayStateId": "isPaired",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.harmonyhub",
+      "pluginName": "Harmony Hub",
+      "deviceTypeId": "harmonyHub",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "currentActivityName": {
+          "type": "string"
+        },
+        "currentActivityNum": {
+          "type": "string"
+        },
+        "lastAutomationBrightness": {
+          "type": "string"
+        },
+        "lastAutomationDevice": {
+          "type": "string"
+        },
+        "lastAutomationOnState": {
+          "type": "string"
+        },
+        "lastAutomationStatus": {
+          "type": "string"
+        },
+        "lastMetadataUpdate": {
+          "type": "string"
+        },
+        "notifyActivityId": {
+          "type": "string"
+        },
+        "notifyActivityStatus": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Harmony Hub",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "devVersCount"
+      ],
+      "displayStateId": "currentActivityName",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.miniUniFi",
+      "pluginName": "miniUniFi",
+      "deviceTypeId": "unifiController",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "status": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "UniFi Controller",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "password",
+        "port",
+        "ssl_verify",
+        "username",
+        "version"
+      ],
+      "displayStateId": "status",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.flyingdiver.indigoplugin.mqtt",
+      "pluginName": "MQTT Connector",
+      "deviceTypeId": "mqttBroker",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "last_payload": {
+          "type": "string"
+        },
+        "last_topic": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "MQTT Broker",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "certFile",
+        "control_device_pattern",
+        "control_enable_device_commands",
+        "control_enable_variable_commands",
+        "control_variable_pattern",
+        "delay",
+        "devVersCount",
+        "deviceProtocol",
+        "device_template_payload",
+        "device_template_qos",
+        "device_template_retain",
+        "device_template_topic",
+        "devices_deviceSelected",
+        "devices_doExcludes",
+        "devices_list",
+        "loopTimeout",
+        "old_subscriptions",
+        "password",
+        "port",
+        "protocol",
+        "published_devices",
+        "published_variables",
+        "section",
+        "subscriptions",
+        "subscriptions_items",
+        "subscriptions_newTopic",
+        "subscriptions_qos",
+        "transport",
+        "useTLS",
+        "username",
+        "variable_template_payload",
+        "variable_template_qos",
+        "variable_template_retain",
+        "variable_template_topic",
+        "variables_list",
+        "variables_variableSelected"
+      ],
+      "displayStateId": "status",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.fogbert.indigoplugin.fantasticwWeather",
+      "pluginName": "com.fogbert.indigoplugin.fantasticwWeather",
+      "deviceTypeId": "Astronomy",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "currentObservation": {
+          "type": "string"
+        },
+        "currentObservation24hr": {
+          "type": "string"
+        },
+        "currentObservationEpoch": {
+          "type": "integer"
+        },
+        "moonPhase": {
+          "type": "number"
+        },
+        "moonPhase.ui": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "sunriseTime": {
+          "type": "string"
+        },
+        "sunsetTime": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Astronomy",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "deviceVersion",
+        "isWeatherDevice",
+        "latitude",
+        "longitude",
+        "percentageUnits",
+        "time_zone"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.howartp.scenecontrol",
+      "pluginName": "Z-Wave Scene Controller",
+      "deviceTypeId": "sceneController",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "currentScene": {
+          "type": "string"
+        },
+        "repeatCount": {
+          "type": "integer"
+        },
+        "repeatStart": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Scene Controller",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "deviceId"
+      ],
+      "displayStateId": "currentScene",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.karlwachs.fingscan",
+      "pluginName": "fingscan",
+      "deviceTypeId": "IP-Device",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "MACNumber": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "deviceInfo": {
+          "type": "string"
+        },
+        "hardwareVendor": {
+          "type": "string"
+        },
+        "ipNumber": {
+          "type": "string"
+        },
+        "lastFingUp": {
+          "type": "string"
+        },
+        "noOfChanges": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "statusDisplay": {
+          "type": "string"
+        },
+        "suppressChangeMSG": {
+          "type": "string"
+        },
+        "timeOfLastChange": {
+          "type": "string"
+        },
+        "usePing-WOL": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "IP-Device",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "setExpirationTime",
+        "setUsePing",
+        "setuseWakeOnLan"
+      ],
+      "displayStateId": "statusDisplay",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorTripped"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "shelly-plus-ht",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "available-beta-firmware": {
+          "type": "string"
+        },
+        "available-firmware": {
+          "type": "string"
+        },
+        "battery-voltage": {
+          "type": "number"
+        },
+        "battery-voltage.ui": {
+          "type": "string"
+        },
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "batteryLevel.ui": {
+          "type": "string"
+        },
+        "current-firmware": {
+          "type": "string"
+        },
+        "external-power": {
+          "type": "boolean"
+        },
+        "ip-address": {
+          "type": "string"
+        },
+        "mac-address": {
+          "type": "string"
+        },
+        "online": {
+          "type": "boolean"
+        },
+        "rssi": {
+          "type": "integer"
+        },
+        "ssid": {
+          "type": "string"
+        },
+        "uptime": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Shelly Plus H&T",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsBatteryLevel",
+        "SupportsOnState",
+        "SupportsSensorValue",
+        "SupportsStatusRequest",
+        "address",
+        "ble-enable",
+        "broker-id",
+        "device-eco-mode",
+        "ht-ui-temperature-unit",
+        "message-type",
+        "settings-section",
+        "system-debug-mqtt",
+        "system-debug-udp-address",
+        "system-debug-websocket",
+        "system-device-firmware",
+        "system-device-mac-address",
+        "system-device-name",
+        "system-location-lat",
+        "system-location-lon",
+        "system-location-timezone",
+        "temperature-unit",
+        "wifi-1-enable",
+        "wifi-1-gateway",
+        "wifi-1-ip-address",
+        "wifi-1-ipv4-mode",
+        "wifi-1-nameserver",
+        "wifi-1-network-mask",
+        "wifi-1-open-network",
+        "wifi-1-password",
+        "wifi-1-ssid",
+        "wifi-2-enable",
+        "wifi-2-gateway",
+        "wifi-2-ip-address",
+        "wifi-2-ipv4-mode",
+        "wifi-2-nameserver",
+        "wifi-2-network-mask",
+        "wifi-2-open-network",
+        "wifi-2-password",
+        "wifi-2-ssid",
+        "wifi-ap-enable",
+        "wifi-ap-open-network",
+        "wifi-ap-password",
+        "wifi-ap-ssid",
+        "wifi-roaming-interval",
+        "wifi-roaming-rssi-threshold"
+      ],
+      "displayStateId": "batteryLevel",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.morris.mac-apps",
+      "pluginName": "Mac Apps",
+      "deviceTypeId": "sysload",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "displayState": {
+          "type": "string"
+        },
+        "percent_cpu": {
+          "type": "number"
+        },
+        "percent_cpu.ui": {
+          "type": "string"
+        },
+        "percent_mem": {
+          "type": "number"
+        },
+        "percent_mem.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "System Load",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "version"
+      ],
+      "displayStateId": "displayState",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.morris.timed-devices",
+      "pluginName": "Timed Devices",
+      "deviceTypeId": "activityTimer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "count": {
+          "type": "integer"
+        },
+        "counting": {
+          "type": "boolean"
+        },
+        "displayState": {
+          "type": "string"
+        },
+        "expired": {
+          "type": "boolean"
+        },
+        "offString": {
+          "type": "string"
+        },
+        "offTime": {
+          "type": "number"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "reset": {
+          "type": "boolean"
+        },
+        "resetString": {
+          "type": "string"
+        },
+        "resetTime": {
+          "type": "number"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.accrue": {
+          "type": "boolean"
+        },
+        "state.active": {
+          "type": "boolean"
+        },
+        "state.idle": {
+          "type": "boolean"
+        },
+        "state.persist": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Activity Timer",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "countThreshold",
+        "device1",
+        "device10",
+        "device11",
+        "device12",
+        "device13",
+        "device14",
+        "device15",
+        "device16",
+        "device17",
+        "device18",
+        "device19",
+        "device2",
+        "device20",
+        "device3",
+        "device4",
+        "device5",
+        "device6",
+        "device7",
+        "device8",
+        "device9",
+        "extend",
+        "logOnOff",
+        "logicType",
+        "offCycles",
+        "offUnits",
+        "operator",
+        "resetCycles",
+        "resetUnits",
+        "reverseBoolean",
+        "show10dev",
+        "show10var",
+        "show20dev",
+        "state1",
+        "state10",
+        "state11",
+        "state12",
+        "state13",
+        "state14",
+        "state15",
+        "state16",
+        "state17",
+        "state18",
+        "state19",
+        "state2",
+        "state20",
+        "state3",
+        "state4",
+        "state5",
+        "state6",
+        "state7",
+        "state8",
+        "state9",
+        "value",
+        "valueType",
+        "variable1",
+        "variable10",
+        "variable2",
+        "variable3",
+        "variable4",
+        "variable5",
+        "variable6",
+        "variable7",
+        "variable8",
+        "variable9",
+        "version"
+      ],
+      "displayStateId": "displayState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.morris.timed-devices",
+      "pluginName": "Timed Devices",
+      "deviceTypeId": "persistenceTimer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "displayState": {
+          "type": "string"
+        },
+        "offString": {
+          "type": "string"
+        },
+        "offTime": {
+          "type": "number"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onString": {
+          "type": "string"
+        },
+        "onTime": {
+          "type": "number"
+        },
+        "pending": {
+          "type": "boolean"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.off": {
+          "type": "boolean"
+        },
+        "state.on": {
+          "type": "boolean"
+        },
+        "state.pending": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Persistence Timer",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "device1",
+        "logOnOff",
+        "logicType",
+        "offCycles",
+        "offUnits",
+        "onCycles",
+        "onUnits",
+        "operator",
+        "reverseBoolean",
+        "state1",
+        "trackEntity",
+        "value",
+        "valueType",
+        "variable1",
+        "version"
+      ],
+      "displayStateId": "displayState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.morris.timed-devices",
+      "pluginName": "Timed Devices",
+      "deviceTypeId": "runningTimer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "displayState": {
+          "type": "string"
+        },
+        "offString": {
+          "type": "string"
+        },
+        "offTime": {
+          "type": "number"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onString": {
+          "type": "string"
+        },
+        "onTime": {
+          "type": "number"
+        },
+        "secondsContinuous00": {
+          "type": "integer"
+        },
+        "secondsContinuous01": {
+          "type": "integer"
+        },
+        "secondsDay00": {
+          "type": "integer"
+        },
+        "secondsDay01": {
+          "type": "integer"
+        },
+        "secondsDay02": {
+          "type": "integer"
+        },
+        "secondsDay03": {
+          "type": "integer"
+        },
+        "secondsDay04": {
+          "type": "integer"
+        },
+        "secondsDay05": {
+          "type": "integer"
+        },
+        "secondsDay06": {
+          "type": "integer"
+        },
+        "secondsDay07": {
+          "type": "integer"
+        },
+        "secondsHour00": {
+          "type": "integer"
+        },
+        "secondsHour01": {
+          "type": "integer"
+        },
+        "secondsHour02": {
+          "type": "integer"
+        },
+        "secondsHour03": {
+          "type": "integer"
+        },
+        "secondsHour04": {
+          "type": "integer"
+        },
+        "secondsHour05": {
+          "type": "integer"
+        },
+        "secondsHour06": {
+          "type": "integer"
+        },
+        "secondsHour07": {
+          "type": "integer"
+        },
+        "secondsHour08": {
+          "type": "integer"
+        },
+        "secondsHour09": {
+          "type": "integer"
+        },
+        "secondsHour10": {
+          "type": "integer"
+        },
+        "secondsHour11": {
+          "type": "integer"
+        },
+        "secondsHour12": {
+          "type": "integer"
+        },
+        "secondsHour13": {
+          "type": "integer"
+        },
+        "secondsHour14": {
+          "type": "integer"
+        },
+        "secondsHour15": {
+          "type": "integer"
+        },
+        "secondsHour16": {
+          "type": "integer"
+        },
+        "secondsHour17": {
+          "type": "integer"
+        },
+        "secondsHour18": {
+          "type": "integer"
+        },
+        "secondsHour19": {
+          "type": "integer"
+        },
+        "secondsHour20": {
+          "type": "integer"
+        },
+        "secondsHour21": {
+          "type": "integer"
+        },
+        "secondsHour22": {
+          "type": "integer"
+        },
+        "secondsHour23": {
+          "type": "integer"
+        },
+        "secondsHour24": {
+          "type": "integer"
+        },
+        "secondsLastContinuous": {
+          "type": "integer"
+        },
+        "secondsLastDay": {
+          "type": "integer"
+        },
+        "secondsLastHour": {
+          "type": "integer"
+        },
+        "secondsLastMonth": {
+          "type": "integer"
+        },
+        "secondsLastWeek": {
+          "type": "integer"
+        },
+        "secondsLastYear": {
+          "type": "integer"
+        },
+        "secondsMonth00": {
+          "type": "integer"
+        },
+        "secondsMonth01": {
+          "type": "integer"
+        },
+        "secondsMonth02": {
+          "type": "integer"
+        },
+        "secondsMonth03": {
+          "type": "integer"
+        },
+        "secondsMonth04": {
+          "type": "integer"
+        },
+        "secondsMonth05": {
+          "type": "integer"
+        },
+        "secondsMonth06": {
+          "type": "integer"
+        },
+        "secondsMonth07": {
+          "type": "integer"
+        },
+        "secondsMonth08": {
+          "type": "integer"
+        },
+        "secondsMonth09": {
+          "type": "integer"
+        },
+        "secondsMonth10": {
+          "type": "integer"
+        },
+        "secondsMonth11": {
+          "type": "integer"
+        },
+        "secondsMonth12": {
+          "type": "integer"
+        },
+        "secondsThisContinuous": {
+          "type": "integer"
+        },
+        "secondsThisDay": {
+          "type": "integer"
+        },
+        "secondsThisHour": {
+          "type": "integer"
+        },
+        "secondsThisMonth": {
+          "type": "integer"
+        },
+        "secondsThisWeek": {
+          "type": "integer"
+        },
+        "secondsThisYear": {
+          "type": "integer"
+        },
+        "secondsWeek00": {
+          "type": "integer"
+        },
+        "secondsWeek01": {
+          "type": "integer"
+        },
+        "secondsWeek02": {
+          "type": "integer"
+        },
+        "secondsWeek03": {
+          "type": "integer"
+        },
+        "secondsWeek04": {
+          "type": "integer"
+        },
+        "secondsYear00": {
+          "type": "integer"
+        },
+        "secondsYear01": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.off": {
+          "type": "boolean"
+        },
+        "state.on": {
+          "type": "boolean"
+        },
+        "stringContinuous00": {
+          "type": "string"
+        },
+        "stringContinuous01": {
+          "type": "string"
+        },
+        "stringDay00": {
+          "type": "string"
+        },
+        "stringDay01": {
+          "type": "string"
+        },
+        "stringDay02": {
+          "type": "string"
+        },
+        "stringDay03": {
+          "type": "string"
+        },
+        "stringDay04": {
+          "type": "string"
+        },
+        "stringDay05": {
+          "type": "string"
+        },
+        "stringDay06": {
+          "type": "string"
+        },
+        "stringDay07": {
+          "type": "string"
+        },
+        "stringHour00": {
+          "type": "string"
+        },
+        "stringHour01": {
+          "type": "string"
+        },
+        "stringHour02": {
+          "type": "string"
+        },
+        "stringHour03": {
+          "type": "string"
+        },
+        "stringHour04": {
+          "type": "string"
+        },
+        "stringHour05": {
+          "type": "string"
+        },
+        "stringHour06": {
+          "type": "string"
+        },
+        "stringHour07": {
+          "type": "string"
+        },
+        "stringHour08": {
+          "type": "string"
+        },
+        "stringHour09": {
+          "type": "string"
+        },
+        "stringHour10": {
+          "type": "string"
+        },
+        "stringHour11": {
+          "type": "string"
+        },
+        "stringHour12": {
+          "type": "string"
+        },
+        "stringHour13": {
+          "type": "string"
+        },
+        "stringHour14": {
+          "type": "string"
+        },
+        "stringHour15": {
+          "type": "string"
+        },
+        "stringHour16": {
+          "type": "string"
+        },
+        "stringHour17": {
+          "type": "string"
+        },
+        "stringHour18": {
+          "type": "string"
+        },
+        "stringHour19": {
+          "type": "string"
+        },
+        "stringHour20": {
+          "type": "string"
+        },
+        "stringHour21": {
+          "type": "string"
+        },
+        "stringHour22": {
+          "type": "string"
+        },
+        "stringHour23": {
+          "type": "string"
+        },
+        "stringHour24": {
+          "type": "string"
+        },
+        "stringLastContinuous": {
+          "type": "string"
+        },
+        "stringLastDay": {
+          "type": "string"
+        },
+        "stringLastHour": {
+          "type": "string"
+        },
+        "stringLastMonth": {
+          "type": "string"
+        },
+        "stringLastWeek": {
+          "type": "string"
+        },
+        "stringLastYear": {
+          "type": "string"
+        },
+        "stringMonth00": {
+          "type": "string"
+        },
+        "stringMonth01": {
+          "type": "string"
+        },
+        "stringMonth02": {
+          "type": "string"
+        },
+        "stringMonth03": {
+          "type": "string"
+        },
+        "stringMonth04": {
+          "type": "string"
+        },
+        "stringMonth05": {
+          "type": "string"
+        },
+        "stringMonth06": {
+          "type": "string"
+        },
+        "stringMonth07": {
+          "type": "string"
+        },
+        "stringMonth08": {
+          "type": "string"
+        },
+        "stringMonth09": {
+          "type": "string"
+        },
+        "stringMonth10": {
+          "type": "string"
+        },
+        "stringMonth11": {
+          "type": "string"
+        },
+        "stringMonth12": {
+          "type": "string"
+        },
+        "stringThisContinuous": {
+          "type": "string"
+        },
+        "stringThisDay": {
+          "type": "string"
+        },
+        "stringThisHour": {
+          "type": "string"
+        },
+        "stringThisMonth": {
+          "type": "string"
+        },
+        "stringThisWeek": {
+          "type": "string"
+        },
+        "stringThisYear": {
+          "type": "string"
+        },
+        "stringWeek00": {
+          "type": "string"
+        },
+        "stringWeek01": {
+          "type": "string"
+        },
+        "stringWeek02": {
+          "type": "string"
+        },
+        "stringWeek03": {
+          "type": "string"
+        },
+        "stringWeek04": {
+          "type": "string"
+        },
+        "stringYear00": {
+          "type": "string"
+        },
+        "stringYear01": {
+          "type": "string"
+        },
+        "zzzSaveSpanDict": {
+          "type": "string"
+        },
+        "zzzSecsDoneDict": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Running Timer",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "device1",
+        "logOnOff",
+        "logicType",
+        "operator",
+        "reverseBoolean",
+        "state1",
+        "trackEntity",
+        "updateSeconds",
+        "value",
+        "valueType",
+        "variable1",
+        "version"
+      ],
+      "displayStateId": "displayState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.panasonic-network-Remote",
+      "pluginName": "Panasonic Network Remote",
+      "deviceTypeId": "panremote",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "mute": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Panasonic TV",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "macaddress"
+      ],
+      "displayStateId": "state",
+      "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.timersandpesters",
+      "pluginName": "Timers and Pesters",
+      "deviceTypeId": "timer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "longStatusString": {
+          "type": "string"
+        },
+        "timeLeftDays": {
+          "type": "integer"
+        },
+        "timeLeftHours": {
+          "type": "integer"
+        },
+        "timeLeftMinutes": {
+          "type": "string"
+        },
+        "timeLeftSeconds": {
+          "type": "string"
+        },
+        "timerStartValueSeconds": {
+          "type": "string"
+        },
+        "timerStatus": {
+          "type": "string"
+        },
+        "timerStatus.active": {
+          "type": "boolean"
+        },
+        "timerStatus.inactive": {
+          "type": "boolean"
+        },
+        "timerStatus.paused": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Timer",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "amount",
+        "amountType"
+      ],
+      "displayStateId": "longStatusString",
+      "displayStateImageSel": "indigo.kStateImageSel.TimerOff"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+      "deviceTypeId": "zwCustomType",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {},
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Home Energy Monitor (DSB28)",
+      "subModel": "ui=Clamp 2",
+      "protocol": "indigo.kprotocol.zwave",
+      "pluginConfigKeys": [
+        "address",
+        "indigoObjVersion",
+        "userEnergyPollingEnabled",
+        "version",
+        "zwClassCmdBase",
+        "zwDevEndPoint",
+        "zwDevSubIndex",
+        "zwManufactureId",
+        "zwManufactureName",
+        "zwModelId",
+        "zwModelName",
+        "zwShowDumpDevToLog",
+        "zwShowEnergyPollingUI",
+        "zwShowMainUI",
+        "zwShowManualModifyConfigParmUI",
+        "zwShowPollingUI",
+        "zwShowSubmitModelInfoUI",
+        "zwShowWakeIntervalUI"
+      ],
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.heatmiser-neo",
+      "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
+      "deviceTypeId": "heatmiserNeoSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lowBattery": {
+          "type": "boolean"
+        },
+        "sensorValid": {
+          "type": "boolean"
+        },
+        "temperatureInput1": {
+          "type": "number"
+        },
+        "temperatureInput1.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Heatmiser Neo Sensor",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address"
+      ],
+      "displayStateId": "temperatureInput1",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.netatmo-welcome",
+      "pluginName": "com.racarter.indigoplugin.netatmo-welcome",
+      "deviceTypeId": "netatmoWelcome",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "last_event": {
+          "type": "string"
+        },
+        "last_event_pointer": {
+          "type": "integer"
+        },
+        "last_event_time": {
+          "type": "string"
+        },
+        "last_update_time": {
+          "type": "string"
+        },
+        "last_webhook_event": {
+          "type": "string"
+        },
+        "last_webhook_event_time": {
+          "type": "string"
+        },
+        "last_webhook_event_type": {
+          "type": "string"
+        },
+        "last_webhook_snapshot": {
+          "type": "string"
+        },
+        "light_mode": {
+          "type": "string"
+        },
+        "psu_status": {
+          "type": "string"
+        },
+        "psu_status.off": {
+          "type": "boolean"
+        },
+        "psu_status.on": {
+          "type": "boolean"
+        },
+        "sd_status": {
+          "type": "string"
+        },
+        "sd_status.off": {
+          "type": "boolean"
+        },
+        "sd_status.on": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string"
+        },
+        "status.off": {
+          "type": "boolean"
+        },
+        "status.on": {
+          "type": "boolean"
+        },
+        "statusUi": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Netatmo Camera",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address"
+      ],
+      "displayStateId": "statusUi",
+      "displayStateImageSel": "indigo.kStateImageSel.MotionSensor"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.texecom",
+      "pluginName": "Texecom",
+      "deviceTypeId": "alarmPanel",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "BatteryCurrent": {
+          "type": "integer"
+        },
+        "BatteryVoltage": {
+          "type": "number"
+        },
+        "BellTamper": {
+          "type": "string"
+        },
+        "BellTamper.Active": {
+          "type": "boolean"
+        },
+        "BellTamper.Secure": {
+          "type": "boolean"
+        },
+        "Communications": {
+          "type": "string"
+        },
+        "Communications.Failed": {
+          "type": "boolean"
+        },
+        "Communications.Healthy": {
+          "type": "boolean"
+        },
+        "Connection": {
+          "type": "string"
+        },
+        "LastLogEntry": {
+          "type": "string"
+        },
+        "LastUser": {
+          "type": "string"
+        },
+        "LogPointer": {
+          "type": "integer"
+        },
+        "PanelDetails": {
+          "type": "string"
+        },
+        "PanelTamper": {
+          "type": "string"
+        },
+        "PanelTamper.Active": {
+          "type": "boolean"
+        },
+        "PanelTamper.Secure": {
+          "type": "boolean"
+        },
+        "SystemCurrent": {
+          "type": "integer"
+        },
+        "SystemVoltage": {
+          "type": "number"
+        },
+        "keypadDisplay1": {
+          "type": "string"
+        },
+        "keypadDisplay2": {
+          "type": "string"
+        },
+        "panelTime": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Alarm Panel",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "ip_address",
+        "ip_port"
+      ],
+      "displayStateId": "Connection",
+      "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.texecom",
+      "pluginName": "Texecom",
+      "deviceTypeId": "alarmPartition",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alarm_state": {
+          "type": "string"
+        },
+        "alarm_state.Entry_Delay": {
+          "type": "boolean"
+        },
+        "alarm_state.Healthy": {
+          "type": "boolean"
+        },
+        "alarm_state.Tripped": {
+          "type": "boolean"
+        },
+        "arm_ready": {
+          "type": "string"
+        },
+        "arm_ready.Armed": {
+          "type": "boolean"
+        },
+        "arm_ready.Not_Ready": {
+          "type": "boolean"
+        },
+        "arm_ready.Ready": {
+          "type": "boolean"
+        },
+        "arm_state": {
+          "type": "string"
+        },
+        "arm_state.Disarmed": {
+          "type": "boolean"
+        },
+        "arm_state.Full": {
+          "type": "boolean"
+        },
+        "arm_state.Part": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Alarm Partition",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address"
+      ],
+      "displayStateId": "arm_state",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.texecom",
+      "pluginName": "Texecom",
+      "deviceTypeId": "alarmZone",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lastTripped": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "statusText": {
+          "type": "string"
+        },
+        "statusText.Healthy": {
+          "type": "boolean"
+        },
+        "statusText.Shorted": {
+          "type": "boolean"
+        },
+        "statusText.Tamper": {
+          "type": "boolean"
+        },
+        "statusText.Tripped": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Alarm Zone",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address"
+      ],
+      "displayStateId": "statusText",
+      "displayStateImageSel": "indigo.kStateImageSel.MotionSensor"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.texecom",
+      "pluginName": "Texecom",
+      "deviceTypeId": "powerStatus",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "MainsPower": {
+          "type": "string"
+        },
+        "MainsPower.Failed": {
+          "type": "boolean"
+        },
+        "MainsPower.OK": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Mains Power Status",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address"
+      ],
+      "displayStateId": "MainsPower",
+      "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
+    },
+    {
+      "pluginId": "com.simons-plugins.UKTrains",
+      "pluginName": "UK Trains",
+      "deviceTypeId": "trainTimetable",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "destinationCRS": {
+          "type": "string"
+        },
+        "destinationLong": {
+          "type": "string"
+        },
+        "deviceActive": {
+          "type": "boolean"
+        },
+        "deviceStatus": {
+          "type": "string"
+        },
+        "imageGenerationError": {
+          "type": "string"
+        },
+        "imageGenerationStatus": {
+          "type": "string"
+        },
+        "image_content_hash": {
+          "type": "string"
+        },
+        "stationCRS": {
+          "type": "string"
+        },
+        "stationIssues": {
+          "type": "boolean"
+        },
+        "stationLong": {
+          "type": "string"
+        },
+        "stationMessages": {
+          "type": "string"
+        },
+        "timeGenerated": {
+          "type": "string"
+        },
+        "train10Calling": {
+          "type": "string"
+        },
+        "train10Delay": {
+          "type": "string"
+        },
+        "train10Dest": {
+          "type": "string"
+        },
+        "train10Est": {
+          "type": "string"
+        },
+        "train10Issue": {
+          "type": "boolean"
+        },
+        "train10Op": {
+          "type": "string"
+        },
+        "train10Platform": {
+          "type": "string"
+        },
+        "train10Reason": {
+          "type": "string"
+        },
+        "train10Sch": {
+          "type": "string"
+        },
+        "train1Calling": {
+          "type": "string"
+        },
+        "train1Delay": {
+          "type": "string"
+        },
+        "train1Dest": {
+          "type": "string"
+        },
+        "train1Est": {
+          "type": "string"
+        },
+        "train1Issue": {
+          "type": "boolean"
+        },
+        "train1Op": {
+          "type": "string"
+        },
+        "train1Platform": {
+          "type": "string"
+        },
+        "train1Reason": {
+          "type": "string"
+        },
+        "train1Sch": {
+          "type": "string"
+        },
+        "train2Calling": {
+          "type": "string"
+        },
+        "train2Delay": {
+          "type": "string"
+        },
+        "train2Dest": {
+          "type": "string"
+        },
+        "train2Est": {
+          "type": "string"
+        },
+        "train2Issue": {
+          "type": "boolean"
+        },
+        "train2Op": {
+          "type": "string"
+        },
+        "train2Platform": {
+          "type": "string"
+        },
+        "train2Reason": {
+          "type": "string"
+        },
+        "train2Sch": {
+          "type": "string"
+        },
+        "train3Calling": {
+          "type": "string"
+        },
+        "train3Delay": {
+          "type": "string"
+        },
+        "train3Dest": {
+          "type": "string"
+        },
+        "train3Est": {
+          "type": "string"
+        },
+        "train3Issue": {
+          "type": "boolean"
+        },
+        "train3Op": {
+          "type": "string"
+        },
+        "train3Platform": {
+          "type": "string"
+        },
+        "train3Reason": {
+          "type": "string"
+        },
+        "train3Sch": {
+          "type": "string"
+        },
+        "train4Calling": {
+          "type": "string"
+        },
+        "train4Delay": {
+          "type": "string"
+        },
+        "train4Dest": {
+          "type": "string"
+        },
+        "train4Est": {
+          "type": "string"
+        },
+        "train4Issue": {
+          "type": "boolean"
+        },
+        "train4Op": {
+          "type": "string"
+        },
+        "train4Platform": {
+          "type": "string"
+        },
+        "train4Reason": {
+          "type": "string"
+        },
+        "train4Sch": {
+          "type": "string"
+        },
+        "train5Calling": {
+          "type": "string"
+        },
+        "train5Delay": {
+          "type": "string"
+        },
+        "train5Dest": {
+          "type": "string"
+        },
+        "train5Est": {
+          "type": "string"
+        },
+        "train5Issue": {
+          "type": "boolean"
+        },
+        "train5Op": {
+          "type": "string"
+        },
+        "train5Platform": {
+          "type": "string"
+        },
+        "train5Reason": {
+          "type": "string"
+        },
+        "train5Sch": {
+          "type": "string"
+        },
+        "train6Calling": {
+          "type": "string"
+        },
+        "train6Delay": {
+          "type": "string"
+        },
+        "train6Dest": {
+          "type": "string"
+        },
+        "train6Est": {
+          "type": "string"
+        },
+        "train6Issue": {
+          "type": "boolean"
+        },
+        "train6Op": {
+          "type": "string"
+        },
+        "train6Platform": {
+          "type": "string"
+        },
+        "train6Reason": {
+          "type": "string"
+        },
+        "train6Sch": {
+          "type": "string"
+        },
+        "train7Calling": {
+          "type": "string"
+        },
+        "train7Delay": {
+          "type": "string"
+        },
+        "train7Dest": {
+          "type": "string"
+        },
+        "train7Est": {
+          "type": "string"
+        },
+        "train7Issue": {
+          "type": "boolean"
+        },
+        "train7Op": {
+          "type": "string"
+        },
+        "train7Platform": {
+          "type": "string"
+        },
+        "train7Reason": {
+          "type": "string"
+        },
+        "train7Sch": {
+          "type": "string"
+        },
+        "train8Calling": {
+          "type": "string"
+        },
+        "train8Delay": {
+          "type": "string"
+        },
+        "train8Dest": {
+          "type": "string"
+        },
+        "train8Est": {
+          "type": "string"
+        },
+        "train8Issue": {
+          "type": "boolean"
+        },
+        "train8Op": {
+          "type": "string"
+        },
+        "train8Platform": {
+          "type": "string"
+        },
+        "train8Reason": {
+          "type": "string"
+        },
+        "train8Sch": {
+          "type": "string"
+        },
+        "train9Calling": {
+          "type": "string"
+        },
+        "train9Delay": {
+          "type": "string"
+        },
+        "train9Dest": {
+          "type": "string"
+        },
+        "train9Est": {
+          "type": "string"
+        },
+        "train9Issue": {
+          "type": "boolean"
+        },
+        "train9Op": {
+          "type": "string"
+        },
+        "train9Platform": {
+          "type": "string"
+        },
+        "train9Reason": {
+          "type": "string"
+        },
+        "train9Sch": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "National Rail Route",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "destinationCode",
+        "destinationName",
+        "includeCalling",
+        "routeActive",
+        "stationCode",
+        "stationName",
+        "trainRoute"
+      ],
+      "displayStateId": "deviceStatus",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.ssi.indigoplugin.Sonos",
+      "pluginName": "Sonos",
+      "deviceTypeId": "ZonePlayer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "GROUP_Coordinator": {
+          "type": "string"
+        },
+        "GROUP_Name": {
+          "type": "string"
+        },
+        "ModelName": {
+          "type": "string"
+        },
+        "Q_Crossfade": {
+          "type": "boolean"
+        },
+        "Q_Number": {
+          "type": "string"
+        },
+        "Q_ObjectID": {
+          "type": "string"
+        },
+        "Q_Repeat": {
+          "type": "boolean"
+        },
+        "Q_RepeatOne": {
+          "type": "boolean"
+        },
+        "Q_Shuffle": {
+          "type": "boolean"
+        },
+        "SerialNumber": {
+          "type": "string"
+        },
+        "ZP_AIName": {
+          "type": "string"
+        },
+        "ZP_AIPath": {
+          "type": "string"
+        },
+        "ZP_ALBUM": {
+          "type": "string"
+        },
+        "ZP_ART": {
+          "type": "string"
+        },
+        "ZP_ARTIST": {
+          "type": "string"
+        },
+        "ZP_BASS": {
+          "type": "string"
+        },
+        "ZP_CREATOR": {
+          "type": "string"
+        },
+        "ZP_CurrentTrack": {
+          "type": "string"
+        },
+        "ZP_CurrentTrackURI": {
+          "type": "string"
+        },
+        "ZP_CurrentURI": {
+          "type": "string"
+        },
+        "ZP_DURATION": {
+          "type": "string"
+        },
+        "ZP_INFO": {
+          "type": "string"
+        },
+        "ZP_LocalUID": {
+          "type": "string"
+        },
+        "ZP_MUTE": {
+          "type": "string"
+        },
+        "ZP_NALBUM": {
+          "type": "string"
+        },
+        "ZP_NART": {
+          "type": "string"
+        },
+        "ZP_NARTIST": {
+          "type": "string"
+        },
+        "ZP_NCREATOR": {
+          "type": "string"
+        },
+        "ZP_NTRACK": {
+          "type": "string"
+        },
+        "ZP_RELATIVE": {
+          "type": "string"
+        },
+        "ZP_STATE": {
+          "type": "string"
+        },
+        "ZP_STATION": {
+          "type": "string"
+        },
+        "ZP_TRACK": {
+          "type": "string"
+        },
+        "ZP_TREBLE": {
+          "type": "string"
+        },
+        "ZP_VOLUME": {
+          "type": "string"
+        },
+        "ZP_VOLUME_FIXED": {
+          "type": "string"
+        },
+        "ZP_ZoneName": {
+          "type": "string"
+        },
+        "ZoneGroupID": {
+          "type": "string"
+        },
+        "ZoneGroupName": {
+          "type": "string"
+        },
+        "ZonePlayerUUIDsInGroup": {
+          "type": "string"
+        },
+        "alive": {
+          "type": "string"
+        },
+        "bootseq": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Sonos Zone Player",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "model"
+      ],
+      "displayStateId": "ZP_STATE",
+      "displayStateImageSel": "indigo.kStateImageSel.AvStopped"
+    },
+    {
+      "pluginId": "com.vtmikel.mcp_server",
+      "pluginName": "MCP Server",
+      "deviceTypeId": "mcpServer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "accessMode": {
+          "type": "string"
+        },
+        "lastActivity": {
+          "type": "string"
+        },
+        "serverStatus": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "MCP Server",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "serverName"
+      ],
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.whmoorejr.my-people",
+      "pluginName": "My People",
+      "deviceTypeId": "aPerson",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alertsOn": {
+          "type": "string"
+        },
+        "email1Address": {
+          "type": "string"
+        },
+        "email2Address": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "friendlyName": {
+          "type": "string"
+        },
+        "homeState": {
+          "type": "string"
+        },
+        "homeState.Away": {
+          "type": "boolean"
+        },
+        "homeState.Home": {
+          "type": "boolean"
+        },
+        "homeState.Unsure": {
+          "type": "boolean"
+        },
+        "lastAway": {
+          "type": "string"
+        },
+        "lastHome": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "phone1IPAddress": {
+          "type": "string"
+        },
+        "phone1MMS": {
+          "type": "string"
+        },
+        "phone1Number": {
+          "type": "string"
+        },
+        "phone1SMS": {
+          "type": "string"
+        },
+        "phone2IPAddress": {
+          "type": "string"
+        },
+        "phone2MMS": {
+          "type": "string"
+        },
+        "phone2Number": {
+          "type": "string"
+        },
+        "phone2SMS": {
+          "type": "string"
+        },
+        "userIDNumber": {
+          "type": "string"
+        },
+        "userLatitude": {
+          "type": "string"
+        },
+        "userLocation": {
+          "type": "string"
+        },
+        "userLongitude": {
+          "type": "string"
+        },
+        "userMap": {
+          "type": "string"
+        },
+        "userPassword": {
+          "type": "string"
+        },
+        "userPinNumber": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Person",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "meta_homeState"
+      ],
+      "displayStateId": "homeState",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "org.cynic.indigo.denon-av",
+      "pluginName": "Cynical Denon",
+      "deviceTypeId": "avreceiver",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "dynamic_volume": {
+          "type": "string"
+        },
+        "mult_eq": {
+          "type": "string"
+        },
+        "muted": {
+          "type": "boolean"
+        },
+        "power": {
+          "type": "boolean"
+        },
+        "quick_select": {
+          "type": "integer"
+        },
+        "record_source": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.connecting": {
+          "type": "boolean"
+        },
+        "state.exploring": {
+          "type": "boolean"
+        },
+        "state.on": {
+          "type": "boolean"
+        },
+        "state.powerup": {
+          "type": "boolean"
+        },
+        "state.preparing": {
+          "type": "boolean"
+        },
+        "state.standby": {
+          "type": "boolean"
+        },
+        "state.unavailable": {
+          "type": "boolean"
+        },
+        "surround": {
+          "type": "string"
+        },
+        "tuner_frequency": {
+          "type": "string"
+        },
+        "video_processing": {
+          "type": "string"
+        },
+        "video_source": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "number"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "AV Receiver",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "description",
+        "keepalive",
+        "sourcemap"
+      ],
+      "displayStateId": "state",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "org.cynic.indigo.denon-av",
+      "pluginName": "Cynical Denon",
+      "deviceTypeId": "avrzone",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "muted": {
+          "type": "boolean"
+        },
+        "power": {
+          "type": "boolean"
+        },
+        "quick_select": {
+          "type": "integer"
+        },
+        "source": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.preparing": {
+          "type": "boolean"
+        },
+        "state.ready": {
+          "type": "boolean"
+        },
+        "state.unavailable": {
+          "type": "boolean"
+        },
+        "volume": {
+          "type": "number"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "AV Zone",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "description",
+        "hostdev",
+        "subaddress",
+        "xaddress"
+      ],
+      "displayStateId": "state",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "org.cynic.indigo.securityspy",
+      "pluginName": "Cynical SecuritySpy",
+      "deviceTypeId": "camera",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "actions": {
+          "type": "boolean"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "motion": {
+          "type": "boolean"
+        },
+        "recording": {
+          "type": "boolean"
+        },
+        "sensitivity": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.active": {
+          "type": "boolean"
+        },
+        "state.disconnected": {
+          "type": "boolean"
+        },
+        "state.passive": {
+          "type": "boolean"
+        },
+        "state.preparing": {
+          "type": "boolean"
+        },
+        "state.unavailable": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Camera",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "description",
+        "hostdev",
+        "subaddress",
+        "version_",
+        "xaddress"
+      ],
+      "displayStateId": "state",
+      "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "org.cynic.indigo.securityspy",
+      "pluginName": "Cynical SecuritySpy",
+      "deviceTypeId": "server",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "state": {
+          "type": "string"
+        },
+        "state.preparing": {
+          "type": "boolean"
+        },
+        "state.ready": {
+          "type": "boolean"
+        },
+        "state.unavailable": {
+          "type": "boolean"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Server",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "description",
+        "errors",
+        "password",
+        "port",
+        "username",
+        "xaddress"
+      ],
+      "displayStateId": "state",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "org.cynic.indigo.weather",
+      "pluginName": "Cynical Weather",
+      "deviceTypeId": "dayforecast",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alert": {
+          "type": "string"
+        },
+        "alert_url": {
+          "type": "string"
+        },
+        "cloudcover": {
+          "type": "number"
+        },
+        "cloudcover.ui": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string"
+        },
+        "dew": {
+          "type": "number"
+        },
+        "feelslike": {
+          "type": "number"
+        },
+        "feelslikemax": {
+          "type": "number"
+        },
+        "feelslikemin": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "humidity.ui": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "moonphase": {
+          "type": "number"
+        },
+        "precip": {
+          "type": "number"
+        },
+        "precip.ui": {
+          "type": "string"
+        },
+        "precipprob": {
+          "type": "number"
+        },
+        "precipprob.ui": {
+          "type": "string"
+        },
+        "pressure": {
+          "type": "number"
+        },
+        "pressure.ui": {
+          "type": "string"
+        },
+        "severerisk": {
+          "type": "integer"
+        },
+        "solarenergy": {
+          "type": "number"
+        },
+        "solarenergy.ui": {
+          "type": "string"
+        },
+        "solarradiation": {
+          "type": "number"
+        },
+        "solarradiation.ui": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.preparing": {
+          "type": "boolean"
+        },
+        "state.ready": {
+          "type": "boolean"
+        },
+        "state.unavailable": {
+          "type": "boolean"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "temp": {
+          "type": "number"
+        },
+        "tempmax": {
+          "type": "number"
+        },
+        "tempmin": {
+          "type": "number"
+        },
+        "uvindex": {
+          "type": "number"
+        },
+        "visibility": {
+          "type": "number"
+        },
+        "visibility.ui": {
+          "type": "string"
+        },
+        "winddir": {
+          "type": "number"
+        },
+        "winddir.ui": {
+          "type": "string"
+        },
+        "windgust": {
+          "type": "number"
+        },
+        "windgust.ui": {
+          "type": "string"
+        },
+        "windspeed": {
+          "type": "number"
+        },
+        "windspeed.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Daily Forecast",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "description",
+        "distance",
+        "location",
+        "version_"
+      ],
+      "displayStateId": "summary",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "org.cynic.indigo.weather",
+      "pluginName": "Cynical Weather",
+      "deviceTypeId": "hourforecast",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alert": {
+          "type": "string"
+        },
+        "alert_url": {
+          "type": "string"
+        },
+        "cloudcover": {
+          "type": "number"
+        },
+        "cloudcover.ui": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string"
+        },
+        "dew": {
+          "type": "number"
+        },
+        "feelslike": {
+          "type": "number"
+        },
+        "feelslikemax": {
+          "type": "number"
+        },
+        "feelslikemin": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "humidity.ui": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "moonphase": {
+          "type": "number"
+        },
+        "precip": {
+          "type": "number"
+        },
+        "precip.ui": {
+          "type": "string"
+        },
+        "precipprob": {
+          "type": "number"
+        },
+        "precipprob.ui": {
+          "type": "string"
+        },
+        "pressure": {
+          "type": "number"
+        },
+        "pressure.ui": {
+          "type": "string"
+        },
+        "severerisk": {
+          "type": "integer"
+        },
+        "solarenergy": {
+          "type": "number"
+        },
+        "solarenergy.ui": {
+          "type": "string"
+        },
+        "solarradiation": {
+          "type": "number"
+        },
+        "solarradiation.ui": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.preparing": {
+          "type": "boolean"
+        },
+        "state.ready": {
+          "type": "boolean"
+        },
+        "state.unavailable": {
+          "type": "boolean"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "temp": {
+          "type": "number"
+        },
+        "tempmax": {
+          "type": "number"
+        },
+        "tempmin": {
+          "type": "number"
+        },
+        "uvindex": {
+          "type": "number"
+        },
+        "visibility": {
+          "type": "number"
+        },
+        "visibility.ui": {
+          "type": "string"
+        },
+        "winddir": {
+          "type": "number"
+        },
+        "winddir.ui": {
+          "type": "string"
+        },
+        "windgust": {
+          "type": "number"
+        },
+        "windgust.ui": {
+          "type": "string"
+        },
+        "windspeed": {
+          "type": "number"
+        },
+        "windspeed.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Hourly Forecast",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "description",
+        "distance",
+        "location"
+      ],
+      "displayStateId": "temperature",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "org.cynic.indigo.weather",
+      "pluginName": "Cynical Weather",
+      "deviceTypeId": "location",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alert": {
+          "type": "string"
+        },
+        "alert_url": {
+          "type": "string"
+        },
+        "cloudcover": {
+          "type": "number"
+        },
+        "cloudcover.ui": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string"
+        },
+        "dew": {
+          "type": "number"
+        },
+        "feelslike": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "humidity.ui": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "moonphase": {
+          "type": "number"
+        },
+        "precip": {
+          "type": "number"
+        },
+        "precip.ui": {
+          "type": "string"
+        },
+        "precipprob": {
+          "type": "number"
+        },
+        "precipprob.ui": {
+          "type": "string"
+        },
+        "pressure": {
+          "type": "number"
+        },
+        "pressure.ui": {
+          "type": "string"
+        },
+        "severerisk": {
+          "type": "integer"
+        },
+        "solarenergy": {
+          "type": "number"
+        },
+        "solarenergy.ui": {
+          "type": "string"
+        },
+        "solarradiation": {
+          "type": "number"
+        },
+        "solarradiation.ui": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.preparing": {
+          "type": "boolean"
+        },
+        "state.ready": {
+          "type": "boolean"
+        },
+        "state.unavailable": {
+          "type": "boolean"
+        },
+        "temp": {
+          "type": "number"
+        },
+        "uvindex": {
+          "type": "number"
+        },
+        "visibility": {
+          "type": "number"
+        },
+        "visibility.ui": {
+          "type": "string"
+        },
+        "winddir": {
+          "type": "number"
+        },
+        "winddir.ui": {
+          "type": "string"
+        },
+        "windgust": {
+          "type": "number"
+        },
+        "windgust.ui": {
+          "type": "string"
+        },
+        "windspeed": {
+          "type": "number"
+        },
+        "windspeed.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Location",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "address",
+        "description",
+        "latitude",
+        "longitude",
+        "polling",
+        "rawdata",
+        "units",
+        "version_"
+      ],
+      "displayStateId": "temperature",
+      "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "se.cobmedia.indigoplugin.virtualenergymeter",
+      "pluginName": "Virtual Energy Meter",
+      "deviceTypeId": "virtualDeviceEnergyMeter",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "accumEnergyTimeDelta": {
+          "type": "integer"
+        },
+        "accumEnergyTimeDelta.ui": {
+          "type": "string"
+        },
+        "accumEnergyTotal": {
+          "type": "number"
+        },
+        "accumEnergyTotal.ui": {
+          "type": "string"
+        },
+        "accumEnergyTotalTS": {
+          "type": "number"
+        },
+        "accumEnergyTotalTS.ui": {
+          "type": "string"
+        },
+        "curEnergyLevel": {
+          "type": "number"
+        },
+        "curEnergyLevel.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Virtual Device Energy Meter",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "parentDeviceDimmer",
+        "parentDeviceId",
+        "powerAt1",
+        "powerAt100",
+        "powerAt33",
+        "powerAt66",
+        "powerAtOn"
+      ],
+      "displayStateId": "curEnergyLevel",
+      "displayStateImageSel": "indigo.kStateImageSel.EnergyMeterOff"
+    },
+    {
+      "pluginId": "se.cobmedia.indigoplugin.virtualenergymeter",
+      "pluginName": "Virtual Energy Meter",
+      "deviceTypeId": "virtualGroupEnergyMeter",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "accumEnergyTimeDelta": {
+          "type": "integer"
+        },
+        "accumEnergyTimeDelta.ui": {
+          "type": "string"
+        },
+        "accumEnergyTotal": {
+          "type": "number"
+        },
+        "accumEnergyTotal.ui": {
+          "type": "string"
+        },
+        "accumEnergyTotalTS": {
+          "type": "number"
+        },
+        "accumEnergyTotalTS.ui": {
+          "type": "string"
+        },
+        "curEnergyLevel": {
+          "type": "number"
+        },
+        "curEnergyLevel.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Virtual Group Energy Meter",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "childEnergyMeters"
+      ],
+      "displayStateId": "curEnergyLevel",
+      "displayStateImageSel": "indigo.kStateImageSel.EnergyMeterOff"
+    }
+  ]
+}

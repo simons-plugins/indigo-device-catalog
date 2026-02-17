@@ -1,0 +1,27 @@
+name: Validate Catalog
+
+on:
+  push:
+    paths:
+      - 'catalog/**'
+      - 'schema/**'
+  pull_request:
+    paths:
+      - 'catalog/**'
+      - 'schema/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Validate catalog
+        run: python tools/validate.py

@@ -1,0 +1,301 @@
+{
+  "$schema": "../../schema/device-profile.schema.json",
+  "baseClass": "indigo.ThermostatDevice",
+  "classCapabilities": [
+    "supportsHeatSetpoint",
+    "supportsCoolSetpoint",
+    "supportsHvacOperationMode",
+    "supportsHvacFanMode",
+    "supportsStatusRequest"
+  ],
+  "profiles": [
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyMQTT",
+      "pluginName": "ShellyMQTT",
+      "deviceTypeId": "shelly-trv",
+      "capabilities": {
+        "supportsHeatSetpoint": true,
+        "supportsCoolSetpoint": false,
+        "supportsHvacOperationMode": true,
+        "supportsHvacFanMode": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsOnState": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "batteryLevel.ui": {
+          "type": "string"
+        },
+        "boost-minutes": {
+          "type": "integer"
+        },
+        "calibrated": {
+          "type": "boolean"
+        },
+        "charging": {
+          "type": "boolean"
+        },
+        "firmware-version": {
+          "type": "string"
+        },
+        "has-firmware-update": {
+          "type": "boolean"
+        },
+        "hvacCoolerIsOn": {
+          "type": "boolean"
+        },
+        "hvacDehumidifierIsOn": {
+          "type": "boolean"
+        },
+        "hvacFanIsOn": {
+          "type": "boolean"
+        },
+        "hvacHeaterIsOn": {
+          "type": "boolean"
+        },
+        "hvacHumidifierIsOn": {
+          "type": "boolean"
+        },
+        "hvacOperationMode": {
+          "type": "string"
+        },
+        "hvacOperationMode.ui": {
+          "type": "string"
+        },
+        "hvacOperationModeIsAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsHeat": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsOff": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramHeat": {
+          "type": "boolean"
+        },
+        "ip-address": {
+          "type": "string"
+        },
+        "mac-address": {
+          "type": "string"
+        },
+        "online": {
+          "type": "boolean"
+        },
+        "schedule-profile": {
+          "type": "integer"
+        },
+        "setpointHeat": {
+          "type": "number"
+        },
+        "temperatureInput1": {
+          "type": "number"
+        },
+        "temperatureInputsAll": {
+          "type": "string"
+        },
+        "valve-position": {
+          "type": "number"
+        },
+        "valve-position.ui": {
+          "type": "string"
+        },
+        "voltage": {
+          "type": "number"
+        },
+        "voltage.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Shelly TRV",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "AllowOnStateChange",
+        "ShowCoolHeatEquipmentStateUI",
+        "SupportsBatteryLevel",
+        "SupportsCoolSetpoint",
+        "SupportsEnergyMeter",
+        "SupportsEnergyMeterCurPower",
+        "SupportsHeatSetpoint",
+        "SupportsHvacFanMode",
+        "SupportsHvacOperationMode",
+        "SupportsOnState",
+        "SupportsPowerMeter",
+        "address",
+        "announce-message-type",
+        "announce-message-type-same-as-message-type",
+        "broker-id",
+        "devVersCount",
+        "heating-status",
+        "heating-status-temperature-threshold",
+        "heating-status-valve-threshold",
+        "last-input-event-id",
+        "message-type",
+        "muted",
+        "supportsStatusRequest",
+        "temp-units",
+        "template-device",
+        "version"
+      ],
+      "displayStateId": "temperatureInputsAll",
+      "displayStateImageSel": "indigo.kStateImageSel.HvacHeatMode"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.heatmiser-neo",
+      "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
+      "deviceTypeId": "heatmiserNeostat",
+      "capabilities": {
+        "supportsHeatSetpoint": true,
+        "supportsCoolSetpoint": false,
+        "supportsHvacOperationMode": true,
+        "supportsHvacFanMode": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsOnState": false
+      },
+      "states": {
+        "Away": {
+          "type": "boolean"
+        },
+        "DST_Auto": {
+          "type": "string"
+        },
+        "DST_On": {
+          "type": "string"
+        },
+        "FrostTemp": {
+          "type": "integer"
+        },
+        "Holiday": {
+          "type": "boolean"
+        },
+        "Holiday_Days": {
+          "type": "integer"
+        },
+        "HubFirmwareVersion": {
+          "type": "string"
+        },
+        "NTP_Status": {
+          "type": "string"
+        },
+        "Prog_Format": {
+          "type": "string"
+        },
+        "ROC": {
+          "type": "integer"
+        },
+        "ShortMode": {
+          "type": "string"
+        },
+        "SwitchDiff": {
+          "type": "number"
+        },
+        "Units": {
+          "type": "string"
+        },
+        "heatIsOn": {
+          "type": "boolean"
+        },
+        "hvacOperationMode": {
+          "type": "string"
+        },
+        "hvacOperationMode.ui": {
+          "type": "string"
+        },
+        "hvacOperationModeIsAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsHeat": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsOff": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramHeat": {
+          "type": "boolean"
+        },
+        "preHeat": {
+          "type": "boolean"
+        },
+        "setpointHeat": {
+          "type": "number"
+        },
+        "temperatureInput1": {
+          "type": "number"
+        },
+        "temperatureInput1.ui": {
+          "type": "string"
+        },
+        "temperatureInputsAll": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Heatmiser Neo Thermostat",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsCoolSetpoint",
+        "SupportsHvacFanMode",
+        "address"
+      ],
+      "displayStateId": "temperatureInputsAll",
+      "displayStateImageSel": "indigo.kStateImageSel.HvacHeating"
+    }
+  ],
+  "classCommands": {
+    "indigo.thermostat.setHeatSetpoint": {
+      "parameters": {
+        "value": "number"
+      }
+    },
+    "indigo.thermostat.setCoolSetpoint": {
+      "parameters": {
+        "value": "number"
+      }
+    },
+    "indigo.thermostat.setHvacMode": {
+      "parameters": {
+        "value": "enum:off,heat,cool,auto,program"
+      }
+    },
+    "indigo.thermostat.setFanMode": {
+      "parameters": {
+        "value": "enum:auto,on"
+      }
+    },
+    "indigo.device.turnOn": {},
+    "indigo.device.turnOff": {},
+    "indigo.device.statusRequest": {}
+  }
+}
