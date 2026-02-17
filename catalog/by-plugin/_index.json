@@ -503,19 +503,6 @@
         }
       ]
     },
-    "com.simons-plugins.netro": {
-      "pluginName": "Netro Smart Sprinklers",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.SensorDevice",
-          "deviceTypeId": "Whisperer"
-        },
-        {
-          "baseClass": "indigo.SprinklerDevice",
-          "deviceTypeId": "sprinkler"
-        }
-      ]
-    },
     "com.ssi.indigoplugin.Sonos": {
       "pluginName": "Sonos",
       "deviceTypes": [
