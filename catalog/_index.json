@@ -408,18 +408,6 @@
         }
       }
     },
-    "indigo.SprinklerDevice": {
-      "file": "by-class/sprinkler.json",
-      "profileCount": 1,
-      "plugins": {
-        "com.simons-plugins.netro": {
-          "pluginName": "Netro Smart Sprinklers",
-          "deviceTypeIds": [
-            "sprinkler"
-          ]
-        }
-      }
-    },
     "indigo.ThermostatDevice": {
       "file": "by-class/thermostat.json",
       "profileCount": 2,
