@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<PluginConfig>
+    <Field id="topLabel" type="label">
+        <Label>Contribute device profiles to the Indigo Device Catalog. Run "Discover New Profiles" from the plugin menu to find device types not yet in the catalog, then export or submit them.</Label>
+    </Field>
+
+    <Field id="sep1" type="separator"/>
+
+    <Field id="contributorName" type="textfield" defaultValue="community">
+        <Label>Contributor Name:</Label>
+    </Field>
+    <Field id="contributorLabel" type="label" fontSize="small" fontColor="darkgray" alignWithControl="true">
+        <Label>Your name or handle for attribution in the catalog. This will appear in profile metadata.</Label>
+    </Field>
+
+    <Field id="sep2" type="separator"/>
+
+    <Field id="githubToken" type="textfield" defaultValue="" secure="true">
+        <Label>GitHub Personal Access Token:</Label>
+    </Field>
+    <Field id="tokenLabel" type="label" fontSize="small" fontColor="darkgray" alignWithControl="true">
+        <Label>Optional. Required only for "Submit to Catalog" (auto-PR). Needs "repo" scope. Without this, you can still export profiles to a file and submit manually.</Label>
+    </Field>
+
+    <Field id="sep3" type="separator"/>
+
+    <Field id="showDebugInfo" type="checkbox" defaultValue="false">
+        <Label>Enable debug logging:</Label>
+        <Description>Show detailed discovery information in Event Log</Description>
+    </Field>
+</PluginConfig>
