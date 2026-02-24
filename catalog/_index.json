@@ -1,9 +1,9 @@
 {
-  "generated": "2026-02-17",
+  "generated": "2026-02-24",
   "classes": {
     "indigo.DimmerDevice": {
       "file": "by-class/dimmer.json",
-      "profileCount": 4,
+      "profileCount": 5,
       "plugins": {
         "com.autologplugin.indigoplugin.zigbee2mqtt": {
           "pluginName": "Zigbee2mqtt Bridge",
@@ -23,12 +23,18 @@
           "deviceTypeIds": [
             "zwDimmerType"
           ]
+        },
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "HAdimmerType"
+          ]
         }
       }
     },
     "indigo.RelayDevice": {
       "file": "by-class/relay.json",
-      "profileCount": 23,
+      "profileCount": 25,
       "plugins": {
         "com.JohnBurgess.indigoplugin.TP-Link-Device": {
           "pluginName": "TP-Link Devices",
@@ -93,6 +99,7 @@
         "com.perceptiveautomation.indigoplugin.zwave": {
           "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
           "deviceTypeIds": [
+            "zwLockType",
             "zwRelayType"
           ]
         },
@@ -127,6 +134,12 @@
             "auto_lights_zone"
           ]
         },
+        "net.papamac.indigoplugin.virtualgaragedoor": {
+          "pluginName": "Virtual Garage Door",
+          "deviceTypeIds": [
+            "opener"
+          ]
+        },
         "no.homeassistant.plugin": {
           "pluginName": "Home Assistant Agent",
           "deviceTypeIds": [
@@ -137,15 +150,19 @@
     },
     "indigo.SensorDevice": {
       "file": "by-class/sensor.json",
-      "profileCount": 29,
+      "profileCount": 34,
       "plugins": {
         "com.autologplugin.indigoplugin.zigbee2mqtt": {
           "pluginName": "Zigbee2mqtt Bridge",
           "deviceTypeIds": [
+            "contactSensor",
+            "humiditySensorSecondary",
+            "motionSensor",
             "multiSensor",
             "radarSensor",
             "temperatureSensor",
-            "vibrationSensor"
+            "vibrationSensor",
+            "waterLeakSensor"
           ]
         },
         "com.flyingdiver.indigoplugin.masquerade": {
@@ -215,6 +232,7 @@
         "no.homeassistant.plugin": {
           "pluginName": "Home Assistant Agent",
           "deviceTypeIds": [
+            "HAbinarySensorType",
             "HAsensor"
           ]
         }
@@ -234,7 +252,7 @@
     },
     "indigo.ThermostatDevice": {
       "file": "by-class/thermostat.json",
-      "profileCount": 2,
+      "profileCount": 4,
       "plugins": {
         "com.lionsheeptechnology.ShellyMQTT": {
           "pluginName": "ShellyMQTT",
@@ -242,17 +260,29 @@
             "shelly-trv"
           ]
         },
+        "com.perceptiveautomation.indigoplugin.zwave": {
+          "pluginName": "Z-Wave",
+          "deviceTypeIds": [
+            "zwThermostatType"
+          ]
+        },
         "com.racarter.indigoplugin.heatmiser-neo": {
           "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
           "deviceTypeIds": [
             "heatmiserNeostat"
+          ]
+        },
+        "uk.co.clives.ramses.esp": {
+          "pluginName": "RAMSES ESP",
+          "deviceTypeIds": [
+            "ramsesZoneThermostat"
           ]
         }
       }
     },
     "indigo.Device": {
       "file": "by-class/custom.json",
-      "profileCount": 42,
+      "profileCount": 50,
       "plugins": {
         "com.GlennNZ.indigoplugin.FindFriendsMini": {
           "pluginName": "FindFriendsMini",
@@ -280,6 +310,12 @@
           "deviceTypeIds": [
             "GlowmarktCAD_local",
             "daily_Consumption"
+          ]
+        },
+        "com.drjason.temp-adapter": {
+          "pluginName": "Adapters",
+          "deviceTypeIds": [
+            "formulaConvertedSensorString"
           ]
         },
         "com.duncanware.domoPadMobileClient": {
@@ -312,10 +348,29 @@
             "Astronomy"
           ]
         },
+        "com.howartp.clockdisplay": {
+          "pluginName": "Clock Display",
+          "deviceTypeIds": [
+            "clockdisplay"
+          ]
+        },
+        "com.howartp.lockmanager": {
+          "pluginName": "Z-Wave Lock Manager",
+          "deviceTypeIds": [
+            "doorLock"
+          ]
+        },
         "com.howartp.scenecontrol": {
           "pluginName": "Z-Wave Scene Controller",
           "deviceTypeIds": [
             "sceneController"
+          ]
+        },
+        "com.indigodomo.email": {
+          "pluginName": "Email+",
+          "deviceTypeIds": [
+            "imapAccount",
+            "smtpAccount"
           ]
         },
         "com.karlwachs.fingscan": {
@@ -407,6 +462,12 @@
             "aPerson"
           ]
         },
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "ha_generic"
+          ]
+        },
         "org.cynic.indigo.denon-av": {
           "pluginName": "Cynical Denon",
           "deviceTypeIds": [
@@ -434,6 +495,25 @@
           "deviceTypeIds": [
             "virtualDeviceEnergyMeter",
             "virtualGroupEnergyMeter"
+          ]
+        },
+        "uk.co.clives.shelly.energy.monitor": {
+          "pluginName": "Shelly Energy Monitor",
+          "deviceTypeIds": [
+            "shellyCombinedDevice",
+            "shellyEnergyDevice"
+          ]
+        }
+      }
+    },
+    "indigo.SpeedControlDevice": {
+      "file": "by-class/speed-control.json",
+      "profileCount": 1,
+      "plugins": {
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "ha_fan"
           ]
         }
       }

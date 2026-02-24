@@ -584,6 +584,93 @@
       ],
       "displayStateId": "brightnessLevel",
       "displayStateImageSel": "indigo.kStateImageSel.DimmerOn"
+    },
+    {
+      "pluginId": "no.homeassistant.plugin",
+      "pluginName": "Home Assistant Agent",
+      "deviceTypeId": "HAdimmerType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "actual_state": {
+          "type": "string"
+        },
+        "brightness": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "color_mode": {
+          "type": "string"
+        },
+        "color_temp": {
+          "type": "string"
+        },
+        "color_temp_kelvin": {
+          "type": "string"
+        },
+        "effect": {
+          "type": "string"
+        },
+        "effect_list": {
+          "type": "string"
+        },
+        "friendly_name": {
+          "type": "string"
+        },
+        "hs_color": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        },
+        "max_color_temp_kelvin": {
+          "type": "integer"
+        },
+        "max_mireds": {
+          "type": "integer"
+        },
+        "min_color_temp_kelvin": {
+          "type": "integer"
+        },
+        "min_mireds": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "rgb_color": {
+          "type": "string"
+        },
+        "supported_color_modes": {
+          "type": "string"
+        },
+        "supported_features": {
+          "type": "integer"
+        },
+        "xy_color": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Home Assistant Light",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOff"
     }
   ],
   "classCommands": {

@@ -271,6 +271,211 @@
       ],
       "displayStateId": "temperatureInputsAll",
       "displayStateImageSel": "indigo.kStateImageSel.HvacHeating"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "Z-Wave",
+      "deviceTypeId": "zwThermostatType",
+      "capabilities": {
+        "supportsHeatSetpoint": true,
+        "supportsCoolSetpoint": true,
+        "supportsHvacOperationMode": true,
+        "supportsHvacFanMode": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsOnState": false
+      },
+      "states": {
+        "accumEnergyTimeDelta": {
+          "type": "integer"
+        },
+        "accumEnergyTimeDelta.ui": {
+          "type": "string"
+        },
+        "accumEnergyTotal": {
+          "type": "number"
+        },
+        "accumEnergyTotal.ui": {
+          "type": "string"
+        },
+        "humidityInput1": {
+          "type": "number"
+        },
+        "humidityInput1.ui": {
+          "type": "string"
+        },
+        "humidityInputsAll": {
+          "type": "string"
+        },
+        "hvacFanMode": {
+          "type": "integer"
+        },
+        "hvacFanModeIsAlwaysOn": {
+          "type": "boolean"
+        },
+        "hvacFanModeIsAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationMode": {
+          "type": "integer"
+        },
+        "hvacOperationMode.ui": {
+          "type": "string"
+        },
+        "hvacOperationModeIsAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsHeat": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsOff": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramHeat": {
+          "type": "boolean"
+        },
+        "setpointCool": {
+          "type": "number"
+        },
+        "setpointCool.ui": {
+          "type": "string"
+        },
+        "setpointHeat": {
+          "type": "number"
+        },
+        "setpointHeat.ui": {
+          "type": "string"
+        },
+        "temperatureInput1": {
+          "type": "number"
+        },
+        "temperatureInput1.ui": {
+          "type": "string"
+        },
+        "temperatureInputsAll": {
+          "type": "string"
+        },
+        "zwaveHvacOperationModeID": {
+          "type": "integer"
+        },
+        "zwaveHvacOperationModeName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Thermostat (TF021)",
+      "protocol": "zwave",
+      "displayStateId": "temperatureInputsAll",
+      "displayStateImageSel": "HvacHeatMode"
+    },
+    {
+      "pluginId": "uk.co.clives.ramses.esp",
+      "pluginName": "RAMSES ESP",
+      "deviceTypeId": "ramsesZoneThermostat",
+      "capabilities": {
+        "supportsHeatSetpoint": true,
+        "supportsCoolSetpoint": false,
+        "supportsHvacOperationMode": true,
+        "supportsHvacFanMode": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsOnState": false
+      },
+      "states": {
+        "hvacCoolerIsOn": {
+          "type": "boolean"
+        },
+        "hvacDehumidifierIsOn": {
+          "type": "boolean"
+        },
+        "hvacFanIsOn": {
+          "type": "boolean"
+        },
+        "hvacHeaterIsOn": {
+          "type": "boolean"
+        },
+        "hvacHumidifierIsOn": {
+          "type": "boolean"
+        },
+        "hvacOperationMode": {
+          "type": "integer"
+        },
+        "hvacOperationMode.ui": {
+          "type": "string"
+        },
+        "hvacOperationModeIsAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsHeat": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsOff": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramAuto": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramCool": {
+          "type": "boolean"
+        },
+        "hvacOperationModeIsProgramHeat": {
+          "type": "boolean"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "online": {
+          "type": "string"
+        },
+        "setpointHeat": {
+          "type": "number"
+        },
+        "setpointHeat.ui": {
+          "type": "string"
+        },
+        "temperatureInput1": {
+          "type": "number"
+        },
+        "temperatureInput1.ui": {
+          "type": "string"
+        },
+        "temperatureInputsAll": {
+          "type": "string"
+        },
+        "zone_controller_id": {
+          "type": "string"
+        },
+        "zone_mode": {
+          "type": "string"
+        },
+        "zone_name": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "RAMSES Zone Thermostat",
+      "displayStateId": "temperatureInputsAll",
+      "displayStateImageSel": "HvacHeatMode"
     }
   ],
   "classCommands": {
