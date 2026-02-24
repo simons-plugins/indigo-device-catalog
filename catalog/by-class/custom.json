@@ -4321,6 +4321,411 @@
       ],
       "displayStateId": "curEnergyLevel",
       "displayStateImageSel": "indigo.kStateImageSel.EnergyMeterOff"
+    },
+    {
+      "pluginId": "com.drjason.temp-adapter",
+      "pluginName": "Adapters",
+      "deviceTypeId": "formulaConvertedSensorString",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "sensorValue": {
+          "type": "string"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Custom Formula Adapter (string result)",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.howartp.clockdisplay",
+      "pluginName": "Clock Display",
+      "deviceTypeId": "clockdisplay",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "Custom1": {
+          "type": "string"
+        },
+        "Custom1L": {
+          "type": "string"
+        },
+        "Custom2": {
+          "type": "string"
+        },
+        "Custom2L": {
+          "type": "string"
+        },
+        "Custom3": {
+          "type": "string"
+        },
+        "Custom3L": {
+          "type": "string"
+        },
+        "Custom4": {
+          "type": "string"
+        },
+        "Custom4L": {
+          "type": "string"
+        },
+        "Custom5": {
+          "type": "string"
+        },
+        "Custom5L": {
+          "type": "string"
+        },
+        "DateUK_DDMMYY": {
+          "type": "string"
+        },
+        "DateUK_DDMMYYYY": {
+          "type": "string"
+        },
+        "DateUS_MMDDYY": {
+          "type": "string"
+        },
+        "DateUS_MMDDYYYY": {
+          "type": "string"
+        },
+        "Day_Long": {
+          "type": "string"
+        },
+        "Day_Short": {
+          "type": "string"
+        },
+        "LocalDate": {
+          "type": "string"
+        },
+        "LocalTime": {
+          "type": "string"
+        },
+        "MinuteOfDay": {
+          "type": "string"
+        },
+        "Sunrise": {
+          "type": "string"
+        },
+        "SunriseL": {
+          "type": "string"
+        },
+        "Sunset": {
+          "type": "string"
+        },
+        "SunsetL": {
+          "type": "string"
+        },
+        "TZ_Offset": {
+          "type": "number"
+        },
+        "Time_12HHMM": {
+          "type": "string"
+        },
+        "Time_12HHMMAMPM": {
+          "type": "string"
+        },
+        "Time_12HHMMAMPML": {
+          "type": "string"
+        },
+        "Time_12HHMMSS": {
+          "type": "string"
+        },
+        "Time_12HHMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_12HHMMSSAMPML": {
+          "type": "string"
+        },
+        "Time_12HMM": {
+          "type": "string"
+        },
+        "Time_12HMMAMPM": {
+          "type": "string"
+        },
+        "Time_12HMMAMPML": {
+          "type": "string"
+        },
+        "Time_12HMMSS": {
+          "type": "string"
+        },
+        "Time_12HMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_12HMMSSAMPML": {
+          "type": "string"
+        },
+        "Time_24HHMM": {
+          "type": "string"
+        },
+        "Time_24HHMMAMPM": {
+          "type": "string"
+        },
+        "Time_24HHMMAMPML": {
+          "type": "string"
+        },
+        "Time_24HHMMSS": {
+          "type": "string"
+        },
+        "Time_24HHMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_24HHMMSSAMPML": {
+          "type": "string"
+        },
+        "Time_24HMM": {
+          "type": "string"
+        },
+        "Time_24HMMAMPM": {
+          "type": "string"
+        },
+        "Time_24HMMAMPML": {
+          "type": "string"
+        },
+        "Time_24HMMSS": {
+          "type": "string"
+        },
+        "Time_24HMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_24HMMSSAMPML": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Clock Display",
+      "displayStateId": "LocalTime",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.howartp.lockmanager",
+      "pluginName": "Z-Wave Lock Manager",
+      "deviceTypeId": "doorLock",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alarmState": {
+          "type": "string"
+        },
+        "boltState": {
+          "type": "string"
+        },
+        "doorMode": {
+          "type": "string"
+        },
+        "handleState": {
+          "type": "string"
+        },
+        "lastUser": {
+          "type": "string"
+        },
+        "latchState": {
+          "type": "string"
+        },
+        "lockState": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Door Lock",
+      "displayStateId": "lockState",
+      "displayStateImageSel": "Locked"
+    },
+    {
+      "pluginId": "com.indigodomo.email",
+      "pluginName": "Email+",
+      "deviceTypeId": "imapAccount",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lastMessage": {
+          "type": "integer"
+        },
+        "messageDate": {
+          "type": "string"
+        },
+        "messageFrom": {
+          "type": "string"
+        },
+        "messageSubject": {
+          "type": "string"
+        },
+        "messageText": {
+          "type": "string"
+        },
+        "messageTo": {
+          "type": "string"
+        },
+        "regexMatch": {
+          "type": "string"
+        },
+        "serverStatus": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "IMAP Server",
+      "displayStateId": "serverStatus",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.indigodomo.email",
+      "pluginName": "Email+",
+      "deviceTypeId": "smtpAccount",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "messagesToSend": {
+          "type": "integer"
+        },
+        "serverStatus": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "SMTP Server",
+      "displayStateId": "serverStatus",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "no.homeassistant.plugin",
+      "pluginName": "Home Assistant Agent",
+      "deviceTypeId": "ha_generic",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "actual_state": {
+          "type": "string"
+        },
+        "friendly_name": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Home Assistant Generic Device",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "uk.co.clives.shelly.energy.monitor",
+      "pluginName": "Shelly Energy Monitor",
+      "deviceTypeId": "shellyCombinedDevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "last_updated": {
+          "type": "string"
+        },
+        "plug_count": {
+          "type": "integer"
+        },
+        "today_cost_gbp": {
+          "type": "number"
+        },
+        "today_kwh": {
+          "type": "number"
+        },
+        "yesterday_cost_gbp": {
+          "type": "number"
+        },
+        "yesterday_kwh": {
+          "type": "number"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Shelly Energy Combined Total",
+      "displayStateId": "today_kwh",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "uk.co.clives.shelly.energy.monitor",
+      "pluginName": "Shelly Energy Monitor",
+      "deviceTypeId": "shellyEnergyDevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "current_power_w": {
+          "type": "number"
+        },
+        "last_updated": {
+          "type": "string"
+        },
+        "today_cost_gbp": {
+          "type": "number"
+        },
+        "today_kwh": {
+          "type": "number"
+        },
+        "yesterday_cost_gbp": {
+          "type": "number"
+        },
+        "yesterday_kwh": {
+          "type": "number"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Shelly Energy Tracker",
+      "displayStateId": "today_kwh",
+      "displayStateImageSel": "NoImage"
     }
   ]
 }

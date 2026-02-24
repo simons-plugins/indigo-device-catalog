@@ -1656,6 +1656,93 @@
       ],
       "displayStateId": "onOffState",
       "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "Z-Wave",
+      "deviceTypeId": "zwLockType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "batteryLevel.ui": {
+          "type": "string"
+        },
+        "lastChangedVia": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Keyfree Connected Lock",
+      "protocol": "zwave",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "Locked"
+    },
+    {
+      "pluginId": "net.papamac.indigoplugin.virtualgaragedoor",
+      "pluginName": "Virtual Garage Door",
+      "deviceTypeId": "opener",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "doorState": {
+          "type": "integer"
+        },
+        "doorStatus": {
+          "type": "string"
+        },
+        "doorStatus.closed": {
+          "type": "boolean"
+        },
+        "doorStatus.closing": {
+          "type": "boolean"
+        },
+        "doorStatus.open": {
+          "type": "boolean"
+        },
+        "doorStatus.opening": {
+          "type": "boolean"
+        },
+        "doorStatus.reversing": {
+          "type": "boolean"
+        },
+        "doorStatus.stopped": {
+          "type": "boolean"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Virtual Garage Door Opener",
+      "subModel": "Garage Controller",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOn"
     }
   ],
   "classCommands": {

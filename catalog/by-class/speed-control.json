@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/device-profile.schema.json",
+  "baseClass": "indigo.SpeedControlDevice",
+  "classCapabilities": [
+    "supportsOnState",
+    "supportsStatusRequest"
+  ],
+  "profiles": [
+    {
+      "pluginId": "no.homeassistant.plugin",
+      "pluginName": "Home Assistant Agent",
+      "deviceTypeId": "ha_fan",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "actual_state": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "preset_modes": {
+          "type": "string"
+        },
+        "restored": {
+          "type": "boolean"
+        },
+        "speedIndex": {
+          "type": "integer"
+        },
+        "speedIndex.ui": {
+          "type": "string"
+        },
+        "speedLevel": {
+          "type": "integer"
+        },
+        "supported_features": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Home Assistant Fan",
+      "displayStateId": "speedIndex",
+      "displayStateImageSel": "NoImage"
+    }
+  ],
+  "classCommands": {
+    "indigo.speedcontrol.setSpeedLevel": {
+      "parameters": {
+        "value": "integer (0-100)"
+      }
+    },
+    "indigo.speedcontrol.setSpeedIndex": {
+      "parameters": {
+        "value": "integer"
+      }
+    },
+    "indigo.device.turnOn": {},
+    "indigo.device.turnOff": {},
+    "indigo.device.statusRequest": {}
+  }
+}
