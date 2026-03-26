@@ -2,13 +2,9 @@ name: Validate Catalog
 
 on:
   push:
-    paths:
-      - 'catalog/**'
-      - 'schema/**'
+    branches: [main]
   pull_request:
-    paths:
-      - 'catalog/**'
-      - 'schema/**'
+    branches: [main]
 
 jobs:
   validate:
@@ -16,12 +12,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check for catalog changes
+        id: changes
+        run: |
+          if git diff --name-only origin/main...HEAD | grep -qE '^(catalog|schema)/'; then
+            echo "catalog_changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "catalog_changed=false" >> $GITHUB_OUTPUT
+            echo "No catalog/schema changes — skipping validation"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.changes.outputs.catalog_changed == 'true'
         with:
           python-version: '3.12'
 
       - name: Install dependencies
+        if: steps.changes.outputs.catalog_changed == 'true'
         run: pip install jsonschema
 
       - name: Validate catalog
+        if: steps.changes.outputs.catalog_changed == 'true'
         run: python tools/validate.py
