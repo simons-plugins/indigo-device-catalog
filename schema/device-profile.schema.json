@@ -1,14 +1,19 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/simons-plugins/indigo-device-catalog/schema/device-profile.schema.json",
+  "$id": "https://github.com/simons-plugins/indigo-device-catalog/schema/v1/device-profile.schema.json",
   "title": "Indigo Device Class Profile",
-  "description": "Describes all known device profiles for a single Indigo base class",
+  "description": "Describes all known device profiles for a single Indigo base class. Consumers should check `schemaVersion` before parsing; major versions signal breaking changes.",
   "type": "object",
   "required": ["baseClass", "classCapabilities", "profiles"],
   "additionalProperties": false,
   "properties": {
     "$schema": {
       "type": "string"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "description": "Semantic version of the schema this file conforms to. Consumers pin to a major version (e.g. start with 1) and must re-evaluate compatibility on major bumps.",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "baseClass": {
       "type": "string",

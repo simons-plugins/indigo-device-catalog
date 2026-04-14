@@ -34,3 +34,7 @@ jobs:
       - name: Validate catalog
         if: steps.changes.outputs.catalog_changed == 'true'
         run: python tools/validate.py
+
+      - name: Check indexes are in sync with by-class
+        if: steps.changes.outputs.catalog_changed == 'true'
+        run: python tools/check_indexes.py
