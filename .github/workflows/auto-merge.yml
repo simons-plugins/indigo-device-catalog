@@ -1,8 +1,13 @@
 name: Auto-merge contributions
 
+# Auto-merge only runs when a maintainer has reviewed the contribution
+# and added the `auto-merge-approved` label. This keeps the convenient
+# bot-assisted merge flow while closing the prior gap where any
+# `contribute/*` PR was auto-merged as soon as schema validation passed.
+
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [labeled, synchronize]
 
 permissions:
   contents: write
@@ -11,7 +16,9 @@ permissions:
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'contribute/')
+    if: |
+      startsWith(github.head_ref, 'contribute/') &&
+      contains(github.event.pull_request.labels.*.name, 'auto-merge-approved')
     steps:
       - name: Enable auto-merge
         run: gh pr merge "$PR_URL" --auto --merge

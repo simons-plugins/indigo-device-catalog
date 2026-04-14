@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-17",
+  "generated": "2026-04-14",
   "plugins": {
     "com.GlennNZ.indigoplugin.FindFriendsMini": {
       "pluginName": "FindFriendsMini",
@@ -90,6 +90,18 @@
         },
         {
           "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "contactSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "humiditySensorSecondary"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "motionSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
           "deviceTypeId": "multiSensor"
         },
         {
@@ -103,6 +115,10 @@
         {
           "baseClass": "indigo.SensorDevice",
           "deviceTypeId": "vibrationSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "waterLeakSensor"
         }
       ]
     },
@@ -134,6 +150,15 @@
         {
           "baseClass": "indigo.RelayDevice",
           "deviceTypeId": "metaDevice"
+        }
+      ]
+    },
+    "com.drjason.temp-adapter": {
+      "pluginName": "Adapters",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "formulaConvertedSensorString"
         }
       ]
     },
@@ -224,12 +249,43 @@
         }
       ]
     },
+    "com.howartp.clockdisplay": {
+      "pluginName": "Clock Display",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "clockdisplay"
+        }
+      ]
+    },
+    "com.howartp.lockmanager": {
+      "pluginName": "Z-Wave Lock Manager",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "doorLock"
+        }
+      ]
+    },
     "com.howartp.scenecontrol": {
       "pluginName": "Z-Wave Scene Controller",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "sceneController"
+        }
+      ]
+    },
+    "com.indigodomo.email": {
+      "pluginName": "Email+",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "imapAccount"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "smtpAccount"
         }
       ]
     },
@@ -413,6 +469,10 @@
         },
         {
           "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "zwLockType"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
           "deviceTypeId": "zwRelayType"
         },
         {
@@ -422,6 +482,10 @@
         {
           "baseClass": "indigo.SensorDevice",
           "deviceTypeId": "zwValueSensorType"
+        },
+        {
+          "baseClass": "indigo.ThermostatDevice",
+          "deviceTypeId": "zwThermostatType"
         }
       ]
     },
@@ -556,16 +620,41 @@
         }
       ]
     },
+    "net.papamac.indigoplugin.virtualgaragedoor": {
+      "pluginName": "Virtual Garage Door",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "opener"
+        }
+      ]
+    },
     "no.homeassistant.plugin": {
       "pluginName": "Home Assistant Agent",
       "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "ha_generic"
+        },
+        {
+          "baseClass": "indigo.DimmerDevice",
+          "deviceTypeId": "HAdimmerType"
+        },
         {
           "baseClass": "indigo.RelayDevice",
           "deviceTypeId": "HAswitchType"
         },
         {
           "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "HAbinarySensorType"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
           "deviceTypeId": "HAsensor"
+        },
+        {
+          "baseClass": "indigo.SpeedControlDevice",
+          "deviceTypeId": "ha_fan"
         }
       ]
     },
@@ -622,6 +711,28 @@
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "virtualGroupEnergyMeter"
+        }
+      ]
+    },
+    "uk.co.clives.ramses.esp": {
+      "pluginName": "RAMSES ESP",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.ThermostatDevice",
+          "deviceTypeId": "ramsesZoneThermostat"
+        }
+      ]
+    },
+    "uk.co.clives.shelly.energy.monitor": {
+      "pluginName": "Shelly Energy Monitor",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "shellyCombinedDevice"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "shellyEnergyDevice"
         }
       ]
     }
