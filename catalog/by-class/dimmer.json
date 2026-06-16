@@ -586,6 +586,177 @@
       "displayStateImageSel": "indigo.kStateImageSel.DimmerOn"
     },
     {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterColorDimmer",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": true,
+        "supportsRGB": true,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": true,
+        "supportsWhiteTemperature": true,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "blueLevel": {
+          "type": "number"
+        },
+        "blueLevel.ui": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "colorCapabilities": {
+          "type": "integer"
+        },
+        "colorX": {
+          "type": "integer"
+        },
+        "colorY": {
+          "type": "integer"
+        },
+        "greenLevel": {
+          "type": "number"
+        },
+        "greenLevel.ui": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "redLevel": {
+          "type": "number"
+        },
+        "redLevel.ui": {
+          "type": "string"
+        },
+        "whiteLevel": {
+          "type": "number"
+        },
+        "whiteLevel.ui": {
+          "type": "string"
+        },
+        "whiteTemperature": {
+          "type": "number"
+        },
+        "whiteTemperature.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Color Dimmer",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOn"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterDimmer",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Dimmer",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOn"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterFan",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Fan",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOff"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterWindowCovering",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Window Covering",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOff"
+    },
+    {
       "pluginId": "no.homeassistant.plugin",
       "pluginName": "Home Assistant Agent",
       "deviceTypeId": "HAdimmerType",
