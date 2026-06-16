@@ -28,6 +28,7 @@ On merge to main, the `create-release` workflow automatically creates a GitHub r
 ### CI Workflows
 
 - `validate.yml` — Validates catalog JSON against schema on changes to `catalog/` or `schema/`
+- `ingest-contribution.yml` — When a maintainer adds the `ingest-contribution` label to an issue, downloads the attached contribution JSON, merges it via `tools/merge_contribution.py`, validates, and opens a `contribute/` PR for review
 - `auto-merge.yml` — Auto-merges PRs from `contribute/` branches
 - `version-check.yml` — Blocks PRs if PluginVersion hasn't been bumped
 - `create-release.yml` — Auto-creates tagged release with plugin `.zip` on merge
