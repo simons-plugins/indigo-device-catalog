@@ -859,6 +859,83 @@
     },
     {
       "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "Z-Wave",
+      "deviceTypeId": "zwColorDimmerType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": true,
+        "supportsRGB": true,
+        "supportsRGBandWhiteSimultaneously": true,
+        "supportsWhite": true,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "accumEnergyTimeDelta": {
+          "type": "integer"
+        },
+        "accumEnergyTimeDelta.ui": {
+          "type": "string"
+        },
+        "accumEnergyTotal": {
+          "type": "number"
+        },
+        "accumEnergyTotal.ui": {
+          "type": "string"
+        },
+        "blueLevel": {
+          "type": "number"
+        },
+        "blueLevel.ui": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "curEnergyLevel": {
+          "type": "number"
+        },
+        "curEnergyLevel.ui": {
+          "type": "string"
+        },
+        "greenLevel": {
+          "type": "number"
+        },
+        "greenLevel.ui": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "redLevel": {
+          "type": "number"
+        },
+        "redLevel.ui": {
+          "type": "string"
+        },
+        "whiteLevel": {
+          "type": "number"
+        },
+        "whiteLevel.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "RGBW Dimmer (ZEN31)",
+      "subModel": "Color Dimmer,ui=Composite",
+      "protocol": "zwave",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOff"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
       "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
       "deviceTypeId": "zwDimmerType",
       "capabilities": {

@@ -8,6 +8,465 @@
   ],
   "profiles": [
     {
+      "pluginId": "com.GlennNZ.indigoplugin.BlueIris",
+      "pluginName": "BlueIris Plugin",
+      "deviceTypeId": "BlueIrisCamera",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "CameraPaused": {
+          "type": "integer"
+        },
+        "FPS": {
+          "type": "number"
+        },
+        "ManRecLimit": {
+          "type": "integer"
+        },
+        "Motion": {
+          "type": "boolean"
+        },
+        "Motion.ui": {
+          "type": "string"
+        },
+        "MotionDetection": {
+          "type": "boolean"
+        },
+        "PluginTriggeringEnabled": {
+          "type": "boolean"
+        },
+        "PtzCycle": {
+          "type": "boolean"
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "alertutc": {
+          "type": "integer"
+        },
+        "audio": {
+          "type": "boolean"
+        },
+        "color": {
+          "type": "integer"
+        },
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "deviceIsOnline.ui": {
+          "type": "string"
+        },
+        "deviceLastUpdated": {
+          "type": "string"
+        },
+        "deviceTimestamp": {
+          "type": "string"
+        },
+        "error": {
+          "type": "string"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "hidden": {
+          "type": "boolean"
+        },
+        "isAlerting": {
+          "type": "boolean"
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "isGroup": {
+          "type": "boolean"
+        },
+        "isManRec": {
+          "type": "boolean"
+        },
+        "isMotion": {
+          "type": "boolean"
+        },
+        "isNoSignal": {
+          "type": "boolean"
+        },
+        "isOnline": {
+          "type": "boolean"
+        },
+        "isPaused": {
+          "type": "boolean"
+        },
+        "isRecording": {
+          "type": "boolean"
+        },
+        "isTriggered": {
+          "type": "boolean"
+        },
+        "isYellow": {
+          "type": "boolean"
+        },
+        "lastMotionTriggerType": {
+          "type": "string"
+        },
+        "lastalert": {
+          "type": "integer"
+        },
+        "motionUTC": {
+          "type": "integer"
+        },
+        "nAlerts": {
+          "type": "integer"
+        },
+        "nClips": {
+          "type": "integer"
+        },
+        "nNoSignal": {
+          "type": "integer"
+        },
+        "nTriggers": {
+          "type": "integer"
+        },
+        "newalerts": {
+          "type": "integer"
+        },
+        "optionDisplay": {
+          "type": "string"
+        },
+        "optionValue": {
+          "type": "string"
+        },
+        "pause": {
+          "type": "integer"
+        },
+        "profile": {
+          "type": "integer"
+        },
+        "ptz": {
+          "type": "boolean"
+        },
+        "timeLastMotion": {
+          "type": "string"
+        },
+        "triggeredbyLog": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "integer"
+        },
+        "webcast": {
+          "type": "boolean"
+        },
+        "width": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "BlueIris Camera",
+      "displayStateId": "Motion",
+      "displayStateImageSel": "MotionSensor"
+    },
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.BlueIris",
+      "pluginName": "BlueIris Plugin",
+      "deviceTypeId": "BlueIrisDevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "count": {
+          "type": "integer"
+        },
+        "date": {
+          "type": "number"
+        },
+        "id": {
+          "type": "string"
+        },
+        "inside": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "push": {
+          "type": "string"
+        },
+        "timeLastLogin": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "BlueIris Device",
+      "displayStateId": "inside",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.BlueIris",
+      "pluginName": "BlueIris Plugin",
+      "deviceTypeId": "BlueIrisServer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "admin": {
+          "type": "boolean"
+        },
+        "alerts": {
+          "type": "string"
+        },
+        "audio": {
+          "type": "boolean"
+        },
+        "clips": {
+          "type": "boolean"
+        },
+        "clipsInfo": {
+          "type": "string"
+        },
+        "cpu": {
+          "type": "integer"
+        },
+        "cxns": {
+          "type": "integer"
+        },
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "deviceIsOnline.ui": {
+          "type": "string"
+        },
+        "deviceLastUpdated": {
+          "type": "string"
+        },
+        "deviceState": {
+          "type": "string"
+        },
+        "deviceTimestamp": {
+          "type": "string"
+        },
+        "diskallocated": {
+          "type": "integer"
+        },
+        "diskfree": {
+          "type": "integer"
+        },
+        "diskname": {
+          "type": "string"
+        },
+        "disktotal": {
+          "type": "integer"
+        },
+        "diskused": {
+          "type": "integer"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "lock": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "mem": {
+          "type": "string"
+        },
+        "memfree": {
+          "type": "string"
+        },
+        "memload": {
+          "type": "string"
+        },
+        "profile": {
+          "type": "integer"
+        },
+        "schedule": {
+          "type": "string"
+        },
+        "signal": {
+          "type": "string"
+        },
+        "streams": {
+          "type": "string"
+        },
+        "systemName": {
+          "type": "string"
+        },
+        "tzone": {
+          "type": "string"
+        },
+        "uptime": {
+          "type": "string"
+        },
+        "user": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "warnings": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "BlueIris Server",
+      "displayStateId": "deviceState",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.BlueIris",
+      "pluginName": "BlueIris Plugin",
+      "deviceTypeId": "BlueIrisUser",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "date": {
+          "type": "integer"
+        },
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "isOnline": {
+          "type": "boolean"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "msg": {
+          "type": "string"
+        },
+        "object": {
+          "type": "string"
+        },
+        "timeLastLogin": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "BlueIris User",
+      "displayStateId": "isOnline",
+      "displayStateImageSel": "PowerOff"
+    },
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.DeepQuestAI",
+      "pluginName": "DeepQuestAI Plugin",
+      "deviceTypeId": "DeepStateObject",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "cameraFound": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number"
+        },
+        "date": {
+          "type": "string"
+        },
+        "imageLink": {
+          "type": "string"
+        },
+        "objectType": {
+          "type": "string"
+        },
+        "timeLastFound": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "DeepState Object",
+      "displayStateId": "objectType",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.GlennNZ.indigoplugin.DeepQuestAI",
+      "pluginName": "DeepQuestAI Plugin",
+      "deviceTypeId": "DeepStateService",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "bytesProcessed": {
+          "type": "number"
+        },
+        "currentDelay": {
+          "type": "integer"
+        },
+        "currentQue": {
+          "type": "integer"
+        },
+        "dataProcessed": {
+          "type": "string"
+        },
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "imagesProcessed": {
+          "type": "integer"
+        },
+        "imagesSkipped": {
+          "type": "integer"
+        },
+        "ipaddress": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "timeLastrun": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "DeepState Main Service",
+      "displayStateId": "deviceIsOnline",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
       "pluginId": "com.GlennNZ.indigoplugin.FindFriendsMini",
       "pluginName": "FindFriendsMini",
       "deviceTypeId": "FindFriendsGeofence",
@@ -1311,6 +1770,220 @@
       "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
     },
     {
+      "pluginId": "com.duncanware.plexMediaServerManager",
+      "pluginName": "Plex Media Server Manager",
+      "deviceTypeId": "plexMediaClient",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "clientAddress": {
+          "type": "string"
+        },
+        "clientConnectionStatus": {
+          "type": "string"
+        },
+        "clientConnectionStatus.buffering": {
+          "type": "boolean"
+        },
+        "clientConnectionStatus.connected": {
+          "type": "boolean"
+        },
+        "clientConnectionStatus.disconnected": {
+          "type": "boolean"
+        },
+        "clientConnectionStatus.other": {
+          "type": "boolean"
+        },
+        "clientConnectionStatus.paused": {
+          "type": "boolean"
+        },
+        "clientConnectionStatus.playing": {
+          "type": "boolean"
+        },
+        "clientConnectionStatus.stopped": {
+          "type": "boolean"
+        },
+        "clientPort": {
+          "type": "integer"
+        },
+        "currentUser": {
+          "type": "string"
+        },
+        "currentlPlayingTitleYear": {
+          "type": "string"
+        },
+        "currentlyPlayingArtUrl": {
+          "type": "string"
+        },
+        "currentlyPlayingContentLengthDisplay": {
+          "type": "string"
+        },
+        "currentlyPlayingContentLengthMS": {
+          "type": "integer"
+        },
+        "currentlyPlayingContentLengthOffset": {
+          "type": "integer"
+        },
+        "currentlyPlayingContentLengthOffsetDisplay": {
+          "type": "string"
+        },
+        "currentlyPlayingContentPercentComplete": {
+          "type": "integer"
+        },
+        "currentlyPlayingContentRating": {
+          "type": "string"
+        },
+        "currentlyPlayingContentResolution": {
+          "type": "string"
+        },
+        "currentlyPlayingGenre": {
+          "type": "string"
+        },
+        "currentlyPlayingGrandparentArtUrl": {
+          "type": "string"
+        },
+        "currentlyPlayingGrandparentKey": {
+          "type": "string"
+        },
+        "currentlyPlayingGrandparentThumbnailUrl": {
+          "type": "string"
+        },
+        "currentlyPlayingGrandparentTitle": {
+          "type": "string"
+        },
+        "currentlyPlayingKey": {
+          "type": "string"
+        },
+        "currentlyPlayingMediaType": {
+          "type": "string"
+        },
+        "currentlyPlayingMediaType.album": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.artist": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.clip": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.comic": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.episode": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.movie": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.person": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.photo": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.photoAlbum": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.picture": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.playlistItem": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.season": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.show": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.track": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.trailer": {
+          "type": "boolean"
+        },
+        "currentlyPlayingMediaType.unknown": {
+          "type": "boolean"
+        },
+        "currentlyPlayingParentKey": {
+          "type": "string"
+        },
+        "currentlyPlayingParentThumbnailUrl": {
+          "type": "string"
+        },
+        "currentlyPlayingParentTitle": {
+          "type": "string"
+        },
+        "currentlyPlayingStarRating": {
+          "type": "string"
+        },
+        "currentlyPlayingSummary": {
+          "type": "string"
+        },
+        "currentlyPlayingThumbnailUrl": {
+          "type": "string"
+        },
+        "currentlyPlayingTitle": {
+          "type": "string"
+        },
+        "playerDeviceTitle": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Plex Media Client",
+      "displayStateId": "clientConnectionStatus",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.duncanware.plexMediaServerManager",
+      "pluginName": "Plex Media Server Manager",
+      "deviceTypeId": "plexMediaServer",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "activeSessionsCount": {
+          "type": "integer"
+        },
+        "connectedClientCount": {
+          "type": "integer"
+        },
+        "connectionState": {
+          "type": "string"
+        },
+        "serverIdentifier": {
+          "type": "string"
+        },
+        "serverName": {
+          "type": "string"
+        },
+        "serverVersion": {
+          "type": "string"
+        },
+        "transcoderActiveVideoSessions": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Plex Media Server",
+      "displayStateId": "connectionState",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
       "pluginId": "com.duncanware.rokuNetworkRemote",
       "pluginName": "Roku Network Remote",
       "deviceTypeId": "rokuRemoteDevice",
@@ -1673,6 +2346,131 @@
       "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
     },
     {
+      "pluginId": "com.flyingdiver.indigoplugin.shims",
+      "pluginName": "MQTT Shims",
+      "deviceTypeId": "shimGeneric",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "action": {
+          "type": "string"
+        },
+        "sk_type": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "MQTT Generic JSON Device",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.fogbert.indigoplugin.GhostXML",
+      "pluginName": "GhostXML",
+      "deviceTypeId": "GhostXMLdevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "deviceIsOnline.ui": {
+          "type": "string"
+        },
+        "deviceLastUpdated": {
+          "type": "string"
+        },
+        "deviceLastUpdated.ui": {
+          "type": "string"
+        },
+        "deviceTimestamp": {
+          "type": "string"
+        },
+        "deviceTimestamp.ui": {
+          "type": "string"
+        },
+        "parse_error": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "GhostXML Device (String Type)",
+      "displayStateId": "deviceIsOnline",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.fogbert.indigoplugin.GhostXML",
+      "pluginName": "GhostXML",
+      "deviceTypeId": "GhostXMLdeviceTrue",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "URLRoutineTrigger_triggerActivationStatus": {
+          "type": "string"
+        },
+        "URLRoutineTrigger_triggerActivationStatus.ui": {
+          "type": "string"
+        },
+        "URLRoutineTrigger_triggerId": {
+          "type": "string"
+        },
+        "URLRoutineTrigger_triggerId.ui": {
+          "type": "string"
+        },
+        "URLRoutineTrigger_triggerName": {
+          "type": "string"
+        },
+        "URLRoutineTrigger_triggerName.ui": {
+          "type": "string"
+        },
+        "URLRoutineTrigger_userName": {
+          "type": "string"
+        },
+        "URLRoutineTrigger_userName.ui": {
+          "type": "string"
+        },
+        "deviceIsOnline": {
+          "type": "integer"
+        },
+        "deviceIsOnline.ui": {
+          "type": "string"
+        },
+        "deviceLastUpdated": {
+          "type": "string"
+        },
+        "deviceTimestamp": {
+          "type": "number"
+        },
+        "parse_error": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "GhostXML Device (Real Type)",
+      "displayStateId": "deviceIsOnline",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
       "pluginId": "com.fogbert.indigoplugin.announcements",
       "pluginName": "Announcements",
       "deviceTypeId": "announcementsDevice",
@@ -1698,6 +2496,38 @@
         "discoveredAt": "2026-03-15"
       },
       "model": "Announcements Device",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.fogbert.indigoplugin.announcements",
+      "pluginName": "Announcements",
+      "deviceTypeId": "salutationsDevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "intro": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "outro": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Salutations Device",
       "displayStateId": "onOffState",
       "displayStateImageSel": "SensorOn"
     },
@@ -5279,6 +6109,207 @@
       "displayStateImageSel": "SensorOff"
     },
     {
+      "pluginId": "com.frightideas.indigoplugin.dscAlarm",
+      "pluginName": "DSC Alarm",
+      "deviceTypeId": "alarmKeypad",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "ArmedState": {
+          "type": "string"
+        },
+        "ArmedState.away": {
+          "type": "boolean"
+        },
+        "ArmedState.disarmed": {
+          "type": "boolean"
+        },
+        "ArmedState.stay": {
+          "type": "boolean"
+        },
+        "KeypadChime": {
+          "type": "string"
+        },
+        "KeypadChime.disabled": {
+          "type": "boolean"
+        },
+        "KeypadChime.enabled": {
+          "type": "boolean"
+        },
+        "LCDLine1": {
+          "type": "string"
+        },
+        "LCDLine2": {
+          "type": "string"
+        },
+        "LEDArmed": {
+          "type": "boolean"
+        },
+        "LEDBypass": {
+          "type": "boolean"
+        },
+        "LEDMemory": {
+          "type": "boolean"
+        },
+        "LEDReady": {
+          "type": "string"
+        },
+        "LEDTrouble": {
+          "type": "boolean"
+        },
+        "PanicState": {
+          "type": "string"
+        },
+        "PanicState.ambulance": {
+          "type": "boolean"
+        },
+        "PanicState.duress": {
+          "type": "boolean"
+        },
+        "PanicState.fire": {
+          "type": "boolean"
+        },
+        "PanicState.none": {
+          "type": "boolean"
+        },
+        "PanicState.panic": {
+          "type": "boolean"
+        },
+        "ReadyState": {
+          "type": "string"
+        },
+        "ReadyState.notready": {
+          "type": "boolean"
+        },
+        "ReadyState.ready": {
+          "type": "boolean"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.armedAway": {
+          "type": "boolean"
+        },
+        "state.armedStay": {
+          "type": "boolean"
+        },
+        "state.disarmed": {
+          "type": "boolean"
+        },
+        "state.entryDelay": {
+          "type": "boolean"
+        },
+        "state.exitDelay": {
+          "type": "boolean"
+        },
+        "state.tripped": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Alarm Keypad",
+      "displayStateId": "state",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.frightideas.indigoplugin.dscAlarm",
+      "pluginName": "DSC Alarm",
+      "deviceTypeId": "alarmZone",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "LastChangedShort": {
+          "type": "string"
+        },
+        "LastChangedTimer": {
+          "type": "integer"
+        },
+        "bypass": {
+          "type": "string"
+        },
+        "bypass.bypassed": {
+          "type": "boolean"
+        },
+        "bypass.nobypass": {
+          "type": "boolean"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.closed": {
+          "type": "boolean"
+        },
+        "state.open": {
+          "type": "boolean"
+        },
+        "state.tripped": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Alarm Zone",
+      "displayStateId": "state",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.frightideas.indigoplugin.dscAlarm",
+      "pluginName": "DSC Alarm",
+      "deviceTypeId": "alarmZoneGroup",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "AnyMemberLastChangedShort": {
+          "type": "string"
+        },
+        "AnyMemberLastChangedTimer": {
+          "type": "integer"
+        },
+        "EntireGroupLastChangedShort": {
+          "type": "string"
+        },
+        "EntireGroupLastChangedTimer": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "state.allZonesClosed": {
+          "type": "boolean"
+        },
+        "state.zoneOpen": {
+          "type": "boolean"
+        },
+        "state.zoneTripped": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Alarm Zone Group",
+      "displayStateId": "state",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
       "pluginId": "com.howartp.clockdisplay",
       "pluginName": "Clock Display",
       "deviceTypeId": "clockdisplay",
@@ -5484,6 +6515,24 @@
       "displayStateImageSel": "Locked"
     },
     {
+      "pluginId": "com.howartp.lockmanager",
+      "pluginName": "Z-Wave Lock Manager",
+      "deviceTypeId": "keyPad",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {},
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Keypad",
+      "displayStateImageSel": "NoImage"
+    },
+    {
       "pluginId": "com.howartp.scenecontrol",
       "pluginName": "Z-Wave Scene Controller",
       "deviceTypeId": "sceneController",
@@ -5515,6 +6564,57 @@
       ],
       "displayStateId": "currentScene",
       "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.howartp.variabledevice",
+      "pluginName": "Variable Devices",
+      "deviceTypeId": "variable",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "GeoFence_Cline_Members": {
+          "type": "string"
+        },
+        "GeoFence_Cline_Occupied": {
+          "type": "string"
+        },
+        "displayState": {
+          "type": "string"
+        },
+        "displayState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Variable Device",
+      "displayStateId": "displayState",
+      "displayStateImageSel": "PowerOff"
+    },
+    {
+      "pluginId": "com.howartp.zwavewatcher",
+      "pluginName": "Z-Wave Watcher",
+      "deviceTypeId": "zwatch",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {},
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "ZWave Watcher",
+      "protocol": "zwave",
+      "displayStateImageSel": "NoImage"
     },
     {
       "pluginId": "com.indigodomo.email",
@@ -7026,6 +8126,590 @@
       "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
     },
     {
+      "pluginId": "com.pennypacker.indigoplugin.weatherflow",
+      "pluginName": "WeatherFlow Smart Weather",
+      "deviceTypeId": "SmartWeatherTempestUDP",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "battery": {
+          "type": "number"
+        },
+        "formatted_datetime": {
+          "type": "string"
+        },
+        "illuminance": {
+          "type": "integer"
+        },
+        "lightning_strike_average_distance": {
+          "type": "number"
+        },
+        "lightning_strike_count": {
+          "type": "integer"
+        },
+        "precipitation": {
+          "type": "number"
+        },
+        "precipitation_type": {
+          "type": "string"
+        },
+        "precipitation_type.hail": {
+          "type": "boolean"
+        },
+        "precipitation_type.none": {
+          "type": "boolean"
+        },
+        "precipitation_type.rain": {
+          "type": "boolean"
+        },
+        "precipitation_type.rhmix": {
+          "type": "boolean"
+        },
+        "pressure": {
+          "type": "number"
+        },
+        "raw_obs": {
+          "type": "string"
+        },
+        "relative_humidity": {
+          "type": "number"
+        },
+        "report_interval": {
+          "type": "integer"
+        },
+        "solar_radiation": {
+          "type": "integer"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "timestamp": {
+          "type": "integer"
+        },
+        "uv": {
+          "type": "number"
+        },
+        "wind_average": {
+          "type": "number"
+        },
+        "wind_direction": {
+          "type": "integer"
+        },
+        "wind_gust": {
+          "type": "number"
+        },
+        "wind_lull": {
+          "type": "number"
+        },
+        "wind_sample_interval": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Smart Weather Tempest UDP Device",
+      "displayStateId": "temperature",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.pennypacker.indigoplugin.weatherflow",
+      "pluginName": "WeatherFlow Smart Weather",
+      "deviceTypeId": "SmartWeatherTempestWS",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "battery": {
+          "type": "number"
+        },
+        "daily_rain_accumulation_final": {
+          "type": "number"
+        },
+        "formatted_datetime": {
+          "type": "string"
+        },
+        "illuminance": {
+          "type": "integer"
+        },
+        "last_precip": {
+          "type": "integer"
+        },
+        "last_precip_formatted": {
+          "type": "string"
+        },
+        "last_strike": {
+          "type": "integer"
+        },
+        "last_strike_formatted": {
+          "type": "string"
+        },
+        "lightning_strike_average_distance": {
+          "type": "number"
+        },
+        "lightning_strike_count": {
+          "type": "integer"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "precipitation": {
+          "type": "number"
+        },
+        "precipitation_analysis_type": {
+          "type": "string"
+        },
+        "precipitation_analysis_type.none": {
+          "type": "boolean"
+        },
+        "precipitation_analysis_type.off": {
+          "type": "boolean"
+        },
+        "precipitation_analysis_type.on": {
+          "type": "boolean"
+        },
+        "precipitation_type": {
+          "type": "string"
+        },
+        "precipitation_type.hail": {
+          "type": "boolean"
+        },
+        "precipitation_type.none": {
+          "type": "boolean"
+        },
+        "precipitation_type.rain": {
+          "type": "boolean"
+        },
+        "precipitation_type.rhmix": {
+          "type": "boolean"
+        },
+        "pressure": {
+          "type": "number"
+        },
+        "rain_accumulated_final": {
+          "type": "number"
+        },
+        "raw_obs": {
+          "type": "string"
+        },
+        "raw_precip": {
+          "type": "string"
+        },
+        "raw_strike": {
+          "type": "string"
+        },
+        "relative_humidity": {
+          "type": "integer"
+        },
+        "report_interval": {
+          "type": "integer"
+        },
+        "solar_radiation": {
+          "type": "integer"
+        },
+        "strike_distance": {
+          "type": "number"
+        },
+        "strike_energy": {
+          "type": "integer"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "timestamp": {
+          "type": "integer"
+        },
+        "uv": {
+          "type": "number"
+        },
+        "wind_average": {
+          "type": "number"
+        },
+        "wind_direction": {
+          "type": "string"
+        },
+        "wind_gust": {
+          "type": "number"
+        },
+        "wind_lull": {
+          "type": "number"
+        },
+        "wind_sample_interval": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Smart Weather Tempest Websocket Device",
+      "displayStateId": "temperature",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.NOAAWeather",
+      "pluginName": "NOAA Weather",
+      "deviceTypeId": "alerts",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alert1_areaDesc": {
+          "type": "string"
+        },
+        "alert1_category": {
+          "type": "string"
+        },
+        "alert1_certainty": {
+          "type": "string"
+        },
+        "alert1_description": {
+          "type": "string"
+        },
+        "alert1_effective": {
+          "type": "string"
+        },
+        "alert1_ends": {
+          "type": "string"
+        },
+        "alert1_event": {
+          "type": "string"
+        },
+        "alert1_expires": {
+          "type": "string"
+        },
+        "alert1_headline": {
+          "type": "string"
+        },
+        "alert1_messageType": {
+          "type": "string"
+        },
+        "alert1_onset": {
+          "type": "string"
+        },
+        "alert1_sent": {
+          "type": "string"
+        },
+        "alert1_severity": {
+          "type": "string"
+        },
+        "alert1_status": {
+          "type": "string"
+        },
+        "alert1_urgency": {
+          "type": "string"
+        },
+        "alert2_areaDesc": {
+          "type": "string"
+        },
+        "alert2_category": {
+          "type": "string"
+        },
+        "alert2_certainty": {
+          "type": "string"
+        },
+        "alert2_description": {
+          "type": "string"
+        },
+        "alert2_effective": {
+          "type": "string"
+        },
+        "alert2_ends": {
+          "type": "string"
+        },
+        "alert2_event": {
+          "type": "string"
+        },
+        "alert2_expires": {
+          "type": "string"
+        },
+        "alert2_headline": {
+          "type": "string"
+        },
+        "alert2_messageType": {
+          "type": "string"
+        },
+        "alert2_onset": {
+          "type": "string"
+        },
+        "alert2_sent": {
+          "type": "string"
+        },
+        "alert2_severity": {
+          "type": "string"
+        },
+        "alert2_status": {
+          "type": "string"
+        },
+        "alert2_urgency": {
+          "type": "string"
+        },
+        "alert3_areaDesc": {
+          "type": "string"
+        },
+        "alert3_category": {
+          "type": "string"
+        },
+        "alert3_certainty": {
+          "type": "string"
+        },
+        "alert3_description": {
+          "type": "string"
+        },
+        "alert3_effective": {
+          "type": "string"
+        },
+        "alert3_ends": {
+          "type": "string"
+        },
+        "alert3_event": {
+          "type": "string"
+        },
+        "alert3_expires": {
+          "type": "string"
+        },
+        "alert3_headline": {
+          "type": "string"
+        },
+        "alert3_messageType": {
+          "type": "string"
+        },
+        "alert3_onset": {
+          "type": "string"
+        },
+        "alert3_sent": {
+          "type": "string"
+        },
+        "alert3_severity": {
+          "type": "string"
+        },
+        "alert3_status": {
+          "type": "string"
+        },
+        "alert3_urgency": {
+          "type": "string"
+        },
+        "alert4_areaDesc": {
+          "type": "string"
+        },
+        "alert4_category": {
+          "type": "string"
+        },
+        "alert4_certainty": {
+          "type": "string"
+        },
+        "alert4_description": {
+          "type": "string"
+        },
+        "alert4_effective": {
+          "type": "string"
+        },
+        "alert4_ends": {
+          "type": "string"
+        },
+        "alert4_event": {
+          "type": "string"
+        },
+        "alert4_expires": {
+          "type": "string"
+        },
+        "alert4_headline": {
+          "type": "string"
+        },
+        "alert4_messageType": {
+          "type": "string"
+        },
+        "alert4_onset": {
+          "type": "string"
+        },
+        "alert4_sent": {
+          "type": "string"
+        },
+        "alert4_severity": {
+          "type": "string"
+        },
+        "alert4_status": {
+          "type": "string"
+        },
+        "alert4_urgency": {
+          "type": "string"
+        },
+        "alert5_areaDesc": {
+          "type": "string"
+        },
+        "alert5_category": {
+          "type": "string"
+        },
+        "alert5_certainty": {
+          "type": "string"
+        },
+        "alert5_description": {
+          "type": "string"
+        },
+        "alert5_effective": {
+          "type": "string"
+        },
+        "alert5_ends": {
+          "type": "string"
+        },
+        "alert5_event": {
+          "type": "string"
+        },
+        "alert5_expires": {
+          "type": "string"
+        },
+        "alert5_headline": {
+          "type": "string"
+        },
+        "alert5_messageType": {
+          "type": "string"
+        },
+        "alert5_onset": {
+          "type": "string"
+        },
+        "alert5_sent": {
+          "type": "string"
+        },
+        "alert5_severity": {
+          "type": "string"
+        },
+        "alert5_status": {
+          "type": "string"
+        },
+        "alert5_urgency": {
+          "type": "string"
+        },
+        "alert_count": {
+          "type": "string"
+        },
+        "alert_count.ui": {
+          "type": "string"
+        },
+        "observationDate": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Weather Alerts",
+      "displayStateId": "alert_count",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.NOAAWeather",
+      "pluginName": "NOAA Weather",
+      "deviceTypeId": "current",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "currentCondition": {
+          "type": "string"
+        },
+        "currentConditionIcon": {
+          "type": "string"
+        },
+        "dewPointC": {
+          "type": "number"
+        },
+        "dewPointF": {
+          "type": "integer"
+        },
+        "dewPointString": {
+          "type": "string"
+        },
+        "heatIndexC": {
+          "type": "number"
+        },
+        "heatIndexF": {
+          "type": "integer"
+        },
+        "heatIndexString": {
+          "type": "string"
+        },
+        "humidity": {
+          "type": "integer"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "location": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "observationDate": {
+          "type": "string"
+        },
+        "pressureInches": {
+          "type": "number"
+        },
+        "pressureInches.ui": {
+          "type": "string"
+        },
+        "pressureMillibars": {
+          "type": "number"
+        },
+        "qualityCodes": {
+          "type": "string"
+        },
+        "temperatureC": {
+          "type": "number"
+        },
+        "temperatureF": {
+          "type": "integer"
+        },
+        "temperatureString": {
+          "type": "string"
+        },
+        "timeZone": {
+          "type": "string"
+        },
+        "visibility": {
+          "type": "number"
+        },
+        "windDegrees": {
+          "type": "integer"
+        },
+        "windDirection": {
+          "type": "string"
+        },
+        "windKnots": {
+          "type": "number"
+        },
+        "windMPH": {
+          "type": "number"
+        },
+        "windString": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Current Conditions",
+      "displayStateId": "temperatureString",
+      "displayStateImageSel": "TemperatureSensor"
+    },
+    {
       "pluginId": "com.perceptiveautomation.indigoplugin.NOAAWeather",
       "pluginName": "NOAA Weather",
       "deviceTypeId": "forecast",
@@ -7525,6 +9209,157 @@
       "model": "Weather Station",
       "displayStateId": "temperatureString",
       "displayStateImageSel": "TemperatureSensor"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.airfoilpro",
+      "pluginName": "Airfoil Pro",
+      "deviceTypeId": "airfoil",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "canConnect": {
+          "type": "boolean"
+        },
+        "canRemoteControl": {
+          "type": "boolean"
+        },
+        "instanceName": {
+          "type": "string"
+        },
+        "protocolVersion": {
+          "type": "string"
+        },
+        "sourceAlbum": {
+          "type": "string"
+        },
+        "sourceArtist": {
+          "type": "string"
+        },
+        "sourceGroup": {
+          "type": "string"
+        },
+        "sourceIdentifier": {
+          "type": "string"
+        },
+        "sourceMachineModel": {
+          "type": "string"
+        },
+        "sourceMachineName": {
+          "type": "string"
+        },
+        "sourceMetadataAvailable": {
+          "type": "string"
+        },
+        "sourceName": {
+          "type": "string"
+        },
+        "sourcePlayStatus": {
+          "type": "string"
+        },
+        "sourcePlayStatus.error": {
+          "type": "boolean"
+        },
+        "sourcePlayStatus.paused": {
+          "type": "boolean"
+        },
+        "sourcePlayStatus.playing": {
+          "type": "boolean"
+        },
+        "sourcePlayStatus.stopped": {
+          "type": "boolean"
+        },
+        "sourcePlayStatus.unavailable": {
+          "type": "boolean"
+        },
+        "sourceRemoteControlAvailable": {
+          "type": "boolean"
+        },
+        "sourceTrackName": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "status.connected": {
+          "type": "boolean"
+        },
+        "status.disconnected": {
+          "type": "boolean"
+        },
+        "status.unavailable": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Airfoil Instance",
+      "displayStateId": "status",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.airfoilpro",
+      "pluginName": "Airfoil Pro",
+      "deviceTypeId": "speaker",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "longIdentifier": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "parentInstanceId": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "status.connected": {
+          "type": "boolean"
+        },
+        "status.disconnected": {
+          "type": "boolean"
+        },
+        "status.unavailable": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string"
+        },
+        "type.airplay": {
+          "type": "boolean"
+        },
+        "type.bluetooth": {
+          "type": "boolean"
+        },
+        "type.group": {
+          "type": "boolean"
+        },
+        "type.local": {
+          "type": "boolean"
+        },
+        "volume": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Speaker",
+      "displayStateId": "status",
+      "displayStateImageSel": "SensorOff"
     },
     {
       "pluginId": "com.perceptiveautomation.indigoplugin.itunes",
@@ -8905,6 +10740,101 @@
       "displayStateImageSel": "indigo.kStateImageSel.NoImage"
     },
     {
+      "pluginId": "com.whmoorejr.my-events",
+      "pluginName": "My Events",
+      "deviceTypeId": "anEvent",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "displayStateId": {
+          "type": "string"
+        },
+        "event00": {
+          "type": "string"
+        },
+        "event00DTG": {
+          "type": "string"
+        },
+        "event01": {
+          "type": "string"
+        },
+        "event01DTG": {
+          "type": "string"
+        },
+        "event02": {
+          "type": "string"
+        },
+        "event02DTG": {
+          "type": "string"
+        },
+        "event03": {
+          "type": "string"
+        },
+        "event03DTG": {
+          "type": "string"
+        },
+        "event04": {
+          "type": "string"
+        },
+        "event04DTG": {
+          "type": "string"
+        },
+        "event05": {
+          "type": "string"
+        },
+        "event05DTG": {
+          "type": "string"
+        },
+        "event06": {
+          "type": "string"
+        },
+        "event06DTG": {
+          "type": "string"
+        },
+        "event07": {
+          "type": "string"
+        },
+        "event07DTG": {
+          "type": "string"
+        },
+        "event08": {
+          "type": "string"
+        },
+        "event08DTG": {
+          "type": "string"
+        },
+        "event09": {
+          "type": "string"
+        },
+        "event09DTG": {
+          "type": "string"
+        },
+        "event10": {
+          "type": "string"
+        },
+        "event10DTG": {
+          "type": "string"
+        },
+        "eventNow": {
+          "type": "string"
+        },
+        "eventNowDTG": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Event",
+      "displayStateId": "eventNow",
+      "displayStateImageSel": "NoImage"
+    },
+    {
       "pluginId": "com.whmoorejr.my-people",
       "pluginName": "My People",
       "deviceTypeId": "aPerson",
@@ -9009,6 +10939,212 @@
       ],
       "displayStateId": "homeState",
       "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "com.whmoorejr.my-rooms",
+      "pluginName": "- plugin not installed -",
+      "deviceTypeId": "aRoom",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "accentLight": {
+          "type": "string"
+        },
+        "airplay": {
+          "type": "string"
+        },
+        "alertsOn": {
+          "type": "string"
+        },
+        "alexa": {
+          "type": "string"
+        },
+        "appleTV": {
+          "type": "string"
+        },
+        "audioOther1": {
+          "type": "string"
+        },
+        "audioOther2": {
+          "type": "string"
+        },
+        "aux01Name": {
+          "type": "string"
+        },
+        "aux01State": {
+          "type": "string"
+        },
+        "aux02Name": {
+          "type": "string"
+        },
+        "aux02State": {
+          "type": "string"
+        },
+        "aux03Name": {
+          "type": "string"
+        },
+        "aux03State": {
+          "type": "string"
+        },
+        "aux04Name": {
+          "type": "string"
+        },
+        "aux04State": {
+          "type": "string"
+        },
+        "aux05Name": {
+          "type": "string"
+        },
+        "aux05State": {
+          "type": "string"
+        },
+        "building": {
+          "type": "string"
+        },
+        "cctvImage": {
+          "type": "string"
+        },
+        "cctvState": {
+          "type": "string"
+        },
+        "ceilingFan": {
+          "type": "string"
+        },
+        "domoPad": {
+          "type": "string"
+        },
+        "door1": {
+          "type": "string"
+        },
+        "door2": {
+          "type": "string"
+        },
+        "door3": {
+          "type": "string"
+        },
+        "door4": {
+          "type": "string"
+        },
+        "floor": {
+          "type": "string"
+        },
+        "humidity": {
+          "type": "string"
+        },
+        "isOccupied": {
+          "type": "string"
+        },
+        "lastOccupied": {
+          "type": "string"
+        },
+        "lastVacant": {
+          "type": "string"
+        },
+        "lock1": {
+          "type": "string"
+        },
+        "lock2": {
+          "type": "string"
+        },
+        "lock3": {
+          "type": "string"
+        },
+        "lock4": {
+          "type": "string"
+        },
+        "luminescence": {
+          "type": "string"
+        },
+        "mainLight": {
+          "type": "string"
+        },
+        "motionDetected": {
+          "type": "string"
+        },
+        "motionLast": {
+          "type": "string"
+        },
+        "occupiedBy1": {
+          "type": "string"
+        },
+        "occupiedBy2": {
+          "type": "string"
+        },
+        "otherSecurity1": {
+          "type": "string"
+        },
+        "otherSecurity2": {
+          "type": "string"
+        },
+        "otherSecurity3": {
+          "type": "string"
+        },
+        "outlet1": {
+          "type": "string"
+        },
+        "outlet2": {
+          "type": "string"
+        },
+        "outlet3": {
+          "type": "string"
+        },
+        "roku": {
+          "type": "string"
+        },
+        "roomName": {
+          "type": "string"
+        },
+        "roomState": {
+          "type": "integer"
+        },
+        "roomState.Off": {
+          "type": "boolean"
+        },
+        "roomState.On": {
+          "type": "boolean"
+        },
+        "roomState.Other": {
+          "type": "boolean"
+        },
+        "sonos": {
+          "type": "string"
+        },
+        "television": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "string"
+        },
+        "videoOther1": {
+          "type": "string"
+        },
+        "videoOther2": {
+          "type": "string"
+        },
+        "window1": {
+          "type": "string"
+        },
+        "window2": {
+          "type": "string"
+        },
+        "window3": {
+          "type": "string"
+        },
+        "windowShades": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Room",
+      "displayStateId": "roomState",
+      "displayStateImageSel": "NoImage"
     },
     {
       "pluginId": "nl.rjdekok.indigoplugin.RFXCOM",

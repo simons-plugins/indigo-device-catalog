@@ -9,6 +9,74 @@
   ],
   "profiles": [
     {
+      "pluginId": "com.GlennNZ.indigoplugin.WinRemote",
+      "pluginName": "WinRemote Plugin",
+      "deviceTypeId": "WindowsComputer",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "HostName": {
+          "type": "string"
+        },
+        "MACaddress": {
+          "type": "string"
+        },
+        "WindowsVersion": {
+          "type": "string"
+        },
+        "cpu": {
+          "type": "string"
+        },
+        "deviceIsOnline": {
+          "type": "boolean"
+        },
+        "deviceIsOnline.ui": {
+          "type": "string"
+        },
+        "deviceTimestamp": {
+          "type": "string"
+        },
+        "foregroundApp": {
+          "type": "string"
+        },
+        "idleTime": {
+          "type": "integer"
+        },
+        "ipAddress": {
+          "type": "string"
+        },
+        "memFree": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "pendingCommands": {
+          "type": "string"
+        },
+        "pendingCommands.ui": {
+          "type": "string"
+        },
+        "upTime": {
+          "type": "number"
+        },
+        "userName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Windows Computer",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOff"
+    },
+    {
       "pluginId": "com.GlennNZ.indigoplugin.appleTV",
       "pluginName": "appleTV Plugin",
       "deviceTypeId": "appleTV",
@@ -1096,6 +1164,86 @@
       "displayStateImageSel": "indigo.kStateImageSel.PowerOff"
     },
     {
+      "pluginId": "com.flyingdiver.indigoplugin.shims",
+      "pluginName": "MQTT Shims",
+      "deviceTypeId": "shimRelay",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "BSSID": {
+          "type": "string"
+        },
+        "SSID": {
+          "type": "string"
+        },
+        "acc": {
+          "type": "integer"
+        },
+        "alt": {
+          "type": "integer"
+        },
+        "batt": {
+          "type": "integer"
+        },
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "batteryLevel.ui": {
+          "type": "string"
+        },
+        "bs": {
+          "type": "integer"
+        },
+        "conn": {
+          "type": "string"
+        },
+        "inregions": {
+          "type": "string"
+        },
+        "inrids": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        },
+        "m": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "p": {
+          "type": "number"
+        },
+        "sk_type": {
+          "type": "string"
+        },
+        "tid": {
+          "type": "string"
+        },
+        "tst": {
+          "type": "integer"
+        },
+        "vac": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "MQTT Switch Device",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOn"
+    },
+    {
       "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
       "pluginName": "ShellyNGMQTT",
       "deviceTypeId": "component-switch",
@@ -1556,6 +1704,37 @@
       ],
       "displayStateId": "onOffState",
       "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "Z-Wave",
+      "deviceTypeId": "zwSoundSwitchType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        },
+        "zwaveSoundSwitchTone": {
+          "type": "integer"
+        },
+        "zwaveSoundSwitchVolume": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Doorbell 6 (ZW162)",
+      "subModel": "ui=Button 1",
+      "protocol": "zwave",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOff"
     },
     {
       "pluginId": "com.racarter.indigoplugin.heatmiser-neo",
