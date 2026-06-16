@@ -1,6 +1,40 @@
 {
   "generated": "2026-06-16",
   "plugins": {
+    "com.GlennNZ.indigoplugin.BlueIris": {
+      "pluginName": "BlueIris Plugin",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "BlueIrisCamera"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "BlueIrisDevice"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "BlueIrisServer"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "BlueIrisUser"
+        }
+      ]
+    },
+    "com.GlennNZ.indigoplugin.DeepQuestAI": {
+      "pluginName": "DeepQuestAI Plugin",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "DeepStateObject"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "DeepStateService"
+        }
+      ]
+    },
     "com.GlennNZ.indigoplugin.FindFriendsMini": {
       "pluginName": "FindFriendsMini",
       "deviceTypes": [
@@ -20,6 +54,15 @@
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "homeKitBridgeDevice"
+        }
+      ]
+    },
+    "com.GlennNZ.indigoplugin.WinRemote": {
+      "pluginName": "WinRemote Plugin",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "WindowsComputer"
         }
       ]
     },
@@ -171,6 +214,28 @@
         }
       ]
     },
+    "com.duncanware.plexMediaServerManager": {
+      "pluginName": "Plex Media Server Manager",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "plexMediaClient"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "plexMediaServer"
+        }
+      ]
+    },
+    "com.duncanware.rokuNetworkRemote": {
+      "pluginName": "Roku Network Remote",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "rokuRemoteDevice"
+        }
+      ]
+    },
     "com.flyingdiver.indigoplugin.harmonyhub": {
       "pluginName": "Harmony Hub",
       "deviceTypes": [
@@ -190,6 +255,14 @@
         {
           "baseClass": "indigo.SensorDevice",
           "deviceTypeId": "masqSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "masqValueSensor"
+        },
+        {
+          "baseClass": "indigo.SpeedControlDevice",
+          "deviceTypeId": "masqSpeedControl"
         }
       ]
     },
@@ -240,12 +313,68 @@
         }
       ]
     },
+    "com.flyingdiver.indigoplugin.shims": {
+      "pluginName": "MQTT Shims",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "shimGeneric"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "shimRelay"
+        }
+      ]
+    },
+    "com.fogbert.indigoplugin.GhostXML": {
+      "pluginName": "GhostXML",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "GhostXMLdevice"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "GhostXMLdeviceTrue"
+        }
+      ]
+    },
+    "com.fogbert.indigoplugin.announcements": {
+      "pluginName": "Announcements",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "announcementsDevice"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "salutationsDevice"
+        }
+      ]
+    },
     "com.fogbert.indigoplugin.fantasticwWeather": {
       "pluginName": "com.fogbert.indigoplugin.fantasticwWeather",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "Astronomy"
+        }
+      ]
+    },
+    "com.frightideas.indigoplugin.dscAlarm": {
+      "pluginName": "DSC Alarm",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "alarmKeypad"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "alarmZone"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "alarmZoneGroup"
         }
       ]
     },
@@ -264,6 +393,10 @@
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "doorLock"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "keyPad"
         }
       ]
     },
@@ -273,6 +406,24 @@
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "sceneController"
+        }
+      ]
+    },
+    "com.howartp.variabledevice": {
+      "pluginName": "Variable Devices",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "variable"
+        }
+      ]
+    },
+    "com.howartp.zwavewatcher": {
+      "pluginName": "Z-Wave Watcher",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "zwatch"
         }
       ]
     },
@@ -451,6 +602,53 @@
         }
       ]
     },
+    "com.pennypacker.indigoplugin.weatherflow": {
+      "pluginName": "WeatherFlow Smart Weather",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "SmartWeatherTempestUDP"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "SmartWeatherTempestWS"
+        }
+      ]
+    },
+    "com.perceptiveautomation.indigoplugin.NOAAWeather": {
+      "pluginName": "NOAA Weather",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "alerts"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "current"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "forecast"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "station"
+        }
+      ]
+    },
+    "com.perceptiveautomation.indigoplugin.airfoilpro": {
+      "pluginName": "Airfoil Pro",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "airfoil"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "speaker"
+        }
+      ]
+    },
     "com.perceptiveautomation.indigoplugin.devicecollection": {
       "pluginName": "Virtual Devices",
       "deviceTypes": [
@@ -483,11 +681,15 @@
       ]
     },
     "com.perceptiveautomation.indigoplugin.zwave": {
-      "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "Z-Wave",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "zwCustomType"
+        },
+        {
+          "baseClass": "indigo.DimmerDevice",
+          "deviceTypeId": "zwColorDimmerType"
         },
         {
           "baseClass": "indigo.DimmerDevice",
@@ -500,6 +702,10 @@
         {
           "baseClass": "indigo.RelayDevice",
           "deviceTypeId": "zwRelayType"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "zwSoundSwitchType"
         },
         {
           "baseClass": "indigo.SensorDevice",
@@ -585,6 +791,15 @@
         {
           "baseClass": "indigo.RelayDevice",
           "deviceTypeId": "televisions"
+        }
+      ]
+    },
+    "com.schollnick.indigoplugin.BatteryMonitor": {
+      "pluginName": "UPS and Battery Monitor",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "BatteryMonitor"
         }
       ]
     },
@@ -778,12 +993,30 @@
         }
       ]
     },
+    "com.whmoorejr.my-events": {
+      "pluginName": "My Events",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "anEvent"
+        }
+      ]
+    },
     "com.whmoorejr.my-people": {
       "pluginName": "My People",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "aPerson"
+        }
+      ]
+    },
+    "com.whmoorejr.my-rooms": {
+      "pluginName": "- plugin not installed -",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "aRoom"
         }
       ]
     },
@@ -878,6 +1111,15 @@
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "virtualGroupEnergyMeter"
+        }
+      ]
+    },
+    "se.furtenbach.indigo.plugin.beacon": {
+      "pluginName": "GeoFence",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "beacon"
         }
       ]
     },
