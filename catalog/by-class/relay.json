@@ -1241,6 +1241,42 @@
     },
     {
       "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "Z-Wave",
+      "deviceTypeId": "zwLockType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "batteryLevel.ui": {
+          "type": "string"
+        },
+        "lastChangedVia": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Keyfree Connected Lock",
+      "protocol": "zwave",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "Locked"
+    },
+    {
+      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
       "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
       "deviceTypeId": "zwRelayType",
       "capabilities": {
@@ -1343,6 +1379,47 @@
       ],
       "displayStateId": "onOffState",
       "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
+    },
+    {
+      "pluginId": "com.racarter.indigoplugin.heatmiser-neo",
+      "pluginName": "Heatmiser-Neo",
+      "deviceTypeId": "heatmiserNeoTimeclock",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "Away": {
+          "type": "boolean"
+        },
+        "HoldTimeRemaining": {
+          "type": "string"
+        },
+        "Holiday": {
+          "type": "boolean"
+        },
+        "ShortMode": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "temperatureInput1": {
+          "type": "number"
+        },
+        "temperatureInput1.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Heatmiser Neo Timeclock",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOff"
     },
     {
       "pluginId": "com.racarter.indigoplugin.heatmiser-neo",
@@ -1490,6 +1567,107 @@
       "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
     },
     {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterLock",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lockState": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Lock",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "Locked"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterRelay",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOn"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterValve",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        },
+        "valveState": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Valve",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOn"
+    },
+    {
+      "pluginId": "com.simons-plugins.sofabaton",
+      "pluginName": "Sofabaton",
+      "deviceTypeId": "sofabatonActivity",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Sofabaton Activity",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOff"
+    },
+    {
       "pluginId": "com.vtmikel.autolights",
       "pluginName": "Auto Lights",
       "deviceTypeId": "auto_lights_config",
@@ -1617,83 +1795,6 @@
       "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
     },
     {
-      "pluginId": "no.homeassistant.plugin",
-      "pluginName": "Home Assistant Agent",
-      "deviceTypeId": "HAswitchType",
-      "capabilities": {
-        "supportsOnState": true,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "actual_state": {
-          "type": "string"
-        },
-        "lastUpdated": {
-          "type": "string"
-        },
-        "onOffState": {
-          "type": "boolean"
-        },
-        "restored": {
-          "type": "boolean"
-        },
-        "supported_features": {
-          "type": "integer"
-        }
-      },
-      "metadata": {
-        "contributedBy": "simons-plugins",
-        "discoveredAt": "2026-02-17"
-      },
-      "model": "Home Assistant Switch",
-      "protocol": "indigo.kprotocol.plugin",
-      "pluginConfigKeys": [
-        "SupportsStatusRequest",
-        "address",
-        "states_list"
-      ],
-      "displayStateId": "onOffState",
-      "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
-    },
-    {
-      "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
-      "pluginName": "Z-Wave",
-      "deviceTypeId": "zwLockType",
-      "capabilities": {
-        "supportsOnState": true,
-        "supportsStatusRequest": true,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "batteryLevel": {
-          "type": "integer"
-        },
-        "batteryLevel.ui": {
-          "type": "string"
-        },
-        "lastChangedVia": {
-          "type": "string"
-        },
-        "onOffState": {
-          "type": "boolean"
-        },
-        "onOffState.ui": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Keyfree Connected Lock",
-      "protocol": "zwave",
-      "displayStateId": "onOffState",
-      "displayStateImageSel": "Locked"
-    },
-    {
       "pluginId": "net.papamac.indigoplugin.virtualgaragedoor",
       "pluginName": "Virtual Garage Door",
       "deviceTypeId": "opener",
@@ -1743,6 +1844,47 @@
       "subModel": "Garage Controller",
       "displayStateId": "onOffState",
       "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "no.homeassistant.plugin",
+      "pluginName": "Home Assistant Agent",
+      "deviceTypeId": "HAswitchType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "actual_state": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "restored": {
+          "type": "boolean"
+        },
+        "supported_features": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-02-17"
+      },
+      "model": "Home Assistant Switch",
+      "protocol": "indigo.kprotocol.plugin",
+      "pluginConfigKeys": [
+        "SupportsStatusRequest",
+        "address",
+        "states_list"
+      ],
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "indigo.kStateImageSel.PowerOn"
     }
   ],
   "classCommands": {
