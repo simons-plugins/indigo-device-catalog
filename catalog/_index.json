@@ -1,9 +1,360 @@
 {
-  "generated": "2026-04-14",
+  "generated": "2026-06-16",
   "classes": {
+    "indigo.DimmerDevice": {
+      "file": "by-class/dimmer.json",
+      "profileCount": 9,
+      "plugins": {
+        "com.autologplugin.indigoplugin.zigbee2mqtt": {
+          "pluginName": "Zigbee2mqtt Bridge",
+          "deviceTypeIds": [
+            "dimmer",
+            "zigbeeGroupDimmer"
+          ]
+        },
+        "com.barn.indigoplugin.WLED": {
+          "pluginName": "WLED",
+          "deviceTypeIds": [
+            "wledip"
+          ]
+        },
+        "com.perceptiveautomation.indigoplugin.zwave": {
+          "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+          "deviceTypeIds": [
+            "zwDimmerType"
+          ]
+        },
+        "com.simon.indigo-matter": {
+          "pluginName": "Matter",
+          "deviceTypeIds": [
+            "matterColorDimmer",
+            "matterDimmer",
+            "matterFan",
+            "matterWindowCovering"
+          ]
+        },
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "HAdimmerType"
+          ]
+        }
+      }
+    },
+    "indigo.RelayDevice": {
+      "file": "by-class/relay.json",
+      "profileCount": 30,
+      "plugins": {
+        "com.JohnBurgess.indigoplugin.TP-Link-Device": {
+          "pluginName": "TP-Link Devices",
+          "deviceTypeIds": [
+            "tplinkSmartPlug"
+          ]
+        },
+        "com.anyone.indigoplugin.voice-monkey": {
+          "pluginName": "Voice Monkey",
+          "deviceTypeIds": [
+            "VoiceMonkeyDevice"
+          ]
+        },
+        "com.autologplugin.indigoplugin.zigbee2mqtt": {
+          "pluginName": "Zigbee2mqtt Bridge",
+          "deviceTypeIds": [
+            "multiOutlet",
+            "multiOutletSecondary2",
+            "multiOutletSecondary3",
+            "multiOutletSecondary4",
+            "multiOutletSecondary5",
+            "outlet"
+          ]
+        },
+        "com.berkinet.metadevice": {
+          "pluginName": "Meta Device",
+          "deviceTypeIds": [
+            "metaDevice"
+          ]
+        },
+        "com.flyingdiver.indigoplugin.harmonyhub": {
+          "pluginName": "Harmony Hub",
+          "deviceTypeIds": [
+            "activityDevice"
+          ]
+        },
+        "com.lionsheeptechnology.ShellyNGMQTT": {
+          "pluginName": "ShellyNGMQTT",
+          "deviceTypeIds": [
+            "component-switch"
+          ]
+        },
+        "com.morris.mac-apps": {
+          "pluginName": "Mac Apps",
+          "deviceTypeIds": [
+            "application"
+          ]
+        },
+        "com.morris.realistic-random": {
+          "pluginName": "Realistic Random",
+          "deviceTypeIds": [
+            "randomizer"
+          ]
+        },
+        "com.perceptiveautomation.indigoplugin.devicecollection": {
+          "pluginName": "Virtual Devices",
+          "deviceTypeIds": [
+            "pseudoRelay",
+            "relayGroup"
+          ]
+        },
+        "com.perceptiveautomation.indigoplugin.zwave": {
+          "pluginName": "Z-Wave",
+          "deviceTypeIds": [
+            "zwLockType",
+            "zwRelayType"
+          ]
+        },
+        "com.racarter.indigoplugin.heatmiser-neo": {
+          "pluginName": "Heatmiser-Neo",
+          "deviceTypeIds": [
+            "heatmiserNeoTimeclock",
+            "heatmiserNeoplug"
+          ]
+        },
+        "com.racarter.indigoplugin.texecom": {
+          "pluginName": "Texecom",
+          "deviceTypeIds": [
+            "pcOutput"
+          ]
+        },
+        "com.ramias.indigo.plugins.pihole": {
+          "pluginName": "Pi Hole DNS Controller",
+          "deviceTypeIds": [
+            "myPiHoleType"
+          ]
+        },
+        "com.ryanbuckner.indigoplugin.samsungtv": {
+          "pluginName": "SamsungTV",
+          "deviceTypeIds": [
+            "televisions"
+          ]
+        },
+        "com.simon.indigo-matter": {
+          "pluginName": "Matter",
+          "deviceTypeIds": [
+            "matterLock",
+            "matterRelay",
+            "matterValve"
+          ]
+        },
+        "com.simons-plugins.sofabaton": {
+          "pluginName": "Sofabaton",
+          "deviceTypeIds": [
+            "sofabatonActivity"
+          ]
+        },
+        "com.vtmikel.autolights": {
+          "pluginName": "Auto Lights",
+          "deviceTypeIds": [
+            "auto_lights_config",
+            "auto_lights_zone"
+          ]
+        },
+        "net.papamac.indigoplugin.virtualgaragedoor": {
+          "pluginName": "Virtual Garage Door",
+          "deviceTypeIds": [
+            "opener"
+          ]
+        },
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "HAswitchType"
+          ]
+        }
+      }
+    },
+    "indigo.SensorDevice": {
+      "file": "by-class/sensor.json",
+      "profileCount": 48,
+      "plugins": {
+        "com.autologplugin.indigoplugin.zigbee2mqtt": {
+          "pluginName": "Zigbee2mqtt Bridge",
+          "deviceTypeIds": [
+            "contactSensor",
+            "humiditySensorSecondary",
+            "motionSensor",
+            "multiSensor",
+            "radarSensor",
+            "temperatureSensor",
+            "vibrationSensor",
+            "waterLeakSensor"
+          ]
+        },
+        "com.flyingdiver.indigoplugin.masquerade": {
+          "pluginName": "Masquerade",
+          "deviceTypeIds": [
+            "masqSensor"
+          ]
+        },
+        "com.flyingdiver.indigoplugin.miniUniFi": {
+          "pluginName": "miniUniFi",
+          "deviceTypeIds": [
+            "unifiAccessPoint",
+            "unifiClient",
+            "unifiDevice",
+            "unifiWirelessClient"
+          ]
+        },
+        "com.flyingdiver.indigoplugin.occupatum": {
+          "pluginName": "Occupatum",
+          "deviceTypeIds": [
+            "activityZone",
+            "area"
+          ]
+        },
+        "com.karlwachs.uniFiAP": {
+          "pluginName": "uniFiAP",
+          "deviceTypeIds": [
+            "Device-AP",
+            "Device-SW-52",
+            "UniFi",
+            "system_controller"
+          ]
+        },
+        "com.lionsheeptechnology.ShellyNGMQTT": {
+          "pluginName": "ShellyNGMQTT",
+          "deviceTypeIds": [
+            "component-humidity",
+            "component-input",
+            "component-temperature",
+            "shelly-plus-1",
+            "shelly-plus-1-pm",
+            "shelly-plus-2-pm",
+            "shelly-plus-plug"
+          ]
+        },
+        "com.morris.online-sensor": {
+          "pluginName": "Online Sensor",
+          "deviceTypeIds": [
+            "lanPing",
+            "onlineSensor",
+            "publicIP",
+            "speedtest"
+          ]
+        },
+        "com.perceptiveautomation.indigoplugin.zwave": {
+          "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+          "deviceTypeIds": [
+            "zwOnOffSensorType",
+            "zwValueSensorType"
+          ]
+        },
+        "com.simon.indigo-matter": {
+          "pluginName": "Matter",
+          "deviceTypeIds": [
+            "matterAirQualitySensor",
+            "matterButton",
+            "matterCO2Sensor",
+            "matterFlowSensor",
+            "matterHumiditySensor",
+            "matterIlluminanceSensor",
+            "matterMotionSensor",
+            "matterPM25Sensor",
+            "matterPressureSensor",
+            "matterSmokeCOAlarm",
+            "matterTVOCSensor",
+            "matterTemperatureSensor"
+          ]
+        },
+        "com.simons-plugins.indigo-shelly-trv": {
+          "pluginName": "- plugin not installed -",
+          "deviceTypeIds": [
+            "shellySensor"
+          ]
+        },
+        "com.simons-plugins.netro": {
+          "pluginName": "Netro Smart Sprinklers",
+          "deviceTypeIds": [
+            "Whisperer"
+          ]
+        },
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "HAbinarySensorType",
+            "HAsensor"
+          ]
+        }
+      }
+    },
+    "indigo.SpeedControlDevice": {
+      "file": "by-class/speed-control.json",
+      "profileCount": 1,
+      "plugins": {
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "ha_fan"
+          ]
+        }
+      }
+    },
+    "indigo.SprinklerDevice": {
+      "file": "by-class/sprinkler.json",
+      "profileCount": 1,
+      "plugins": {
+        "com.simons-plugins.netro": {
+          "pluginName": "Netro Smart Sprinklers",
+          "deviceTypeIds": [
+            "sprinkler"
+          ]
+        }
+      }
+    },
+    "indigo.ThermostatDevice": {
+      "file": "by-class/thermostat.json",
+      "profileCount": 6,
+      "plugins": {
+        "com.lionsheeptechnology.ShellyMQTT": {
+          "pluginName": "ShellyMQTT",
+          "deviceTypeIds": [
+            "shelly-trv"
+          ]
+        },
+        "com.perceptiveautomation.indigoplugin.zwave": {
+          "pluginName": "Z-Wave",
+          "deviceTypeIds": [
+            "zwThermostatType"
+          ]
+        },
+        "com.racarter.indigoplugin.heatmiser-neo": {
+          "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
+          "deviceTypeIds": [
+            "heatmiserNeostat"
+          ]
+        },
+        "com.simon.indigo-matter": {
+          "pluginName": "Matter",
+          "deviceTypeIds": [
+            "matterThermostat"
+          ]
+        },
+        "com.simons-plugins.indigo-shelly-trv": {
+          "pluginName": "- plugin not installed -",
+          "deviceTypeIds": [
+            "shellyThermostat"
+          ]
+        },
+        "uk.co.clives.ramses.esp": {
+          "pluginName": "RAMSES ESP",
+          "deviceTypeIds": [
+            "ramsesZoneThermostat"
+          ]
+        }
+      }
+    },
     "indigo.Device": {
       "file": "by-class/custom.json",
-      "profileCount": 50,
+      "profileCount": 58,
       "plugins": {
         "com.GlennNZ.indigoplugin.FindFriendsMini": {
           "pluginName": "FindFriendsMini",
@@ -31,6 +382,12 @@
           "deviceTypeIds": [
             "GlowmarktCAD_local",
             "daily_Consumption"
+          ]
+        },
+        "com.drjason.temp-adapter": {
+          "pluginName": "Adapters",
+          "deviceTypeIds": [
+            "formulaConvertedSensorString"
           ]
         },
         "com.duncanware.domoPadMobileClient": {
@@ -63,16 +420,48 @@
             "Astronomy"
           ]
         },
+        "com.howartp.clockdisplay": {
+          "pluginName": "Clock Display",
+          "deviceTypeIds": [
+            "clockdisplay"
+          ]
+        },
+        "com.howartp.lockmanager": {
+          "pluginName": "Z-Wave Lock Manager",
+          "deviceTypeIds": [
+            "doorLock"
+          ]
+        },
         "com.howartp.scenecontrol": {
           "pluginName": "Z-Wave Scene Controller",
           "deviceTypeIds": [
             "sceneController"
           ]
         },
+        "com.indigodomo.email": {
+          "pluginName": "Email+",
+          "deviceTypeIds": [
+            "imapAccount",
+            "smtpAccount"
+          ]
+        },
+        "com.indigodomo.indigoplugin.tomorrowio": {
+          "pluginName": "- plugin not installed -",
+          "deviceTypeIds": [
+            "current",
+            "forecast"
+          ]
+        },
         "com.karlwachs.fingscan": {
           "pluginName": "fingscan",
           "deviceTypeIds": [
             "IP-Device"
+          ]
+        },
+        "com.karlwachs.networkscanner": {
+          "pluginName": "Network Scanner",
+          "deviceTypeIds": [
+            "networkDevice"
           ]
         },
         "com.lionsheeptechnology.ShellyNGMQTT": {
@@ -140,6 +529,36 @@
             "trainTimetable"
           ]
         },
+        "com.simons-plugins.indigo-shelly-trv": {
+          "pluginName": "- plugin not installed -",
+          "deviceTypeIds": [
+            "shellyController"
+          ]
+        },
+        "com.simons-plugins.mqtt-device-sniffer": {
+          "pluginName": "MQTT Device Sniffer",
+          "deviceTypeIds": [
+            "snifferCoordinator"
+          ]
+        },
+        "com.simons-plugins.netro": {
+          "pluginName": "Netro Smart Sprinklers",
+          "deviceTypeIds": [
+            "zone"
+          ]
+        },
+        "com.simons-plugins.pentair-pool": {
+          "pluginName": "- plugin not installed -",
+          "deviceTypeIds": [
+            "poolController"
+          ]
+        },
+        "com.simons-plugins.sofabaton": {
+          "pluginName": "Sofabaton",
+          "deviceTypeIds": [
+            "sofabatonHub"
+          ]
+        },
         "com.ssi.indigoplugin.Sonos": {
           "pluginName": "Sonos",
           "deviceTypeIds": [
@@ -156,6 +575,12 @@
           "pluginName": "My People",
           "deviceTypeIds": [
             "aPerson"
+          ]
+        },
+        "no.homeassistant.plugin": {
+          "pluginName": "Home Assistant Agent",
+          "deviceTypeIds": [
+            "ha_generic"
           ]
         },
         "org.cynic.indigo.denon-av": {
@@ -187,333 +612,11 @@
             "virtualGroupEnergyMeter"
           ]
         },
-        "com.drjason.temp-adapter": {
-          "pluginName": "Adapters",
-          "deviceTypeIds": [
-            "formulaConvertedSensorString"
-          ]
-        },
-        "com.howartp.clockdisplay": {
-          "pluginName": "Clock Display",
-          "deviceTypeIds": [
-            "clockdisplay"
-          ]
-        },
-        "com.howartp.lockmanager": {
-          "pluginName": "Z-Wave Lock Manager",
-          "deviceTypeIds": [
-            "doorLock"
-          ]
-        },
-        "com.indigodomo.email": {
-          "pluginName": "Email+",
-          "deviceTypeIds": [
-            "imapAccount",
-            "smtpAccount"
-          ]
-        },
-        "no.homeassistant.plugin": {
-          "pluginName": "Home Assistant Agent",
-          "deviceTypeIds": [
-            "ha_generic"
-          ]
-        },
         "uk.co.clives.shelly.energy.monitor": {
           "pluginName": "Shelly Energy Monitor",
           "deviceTypeIds": [
             "shellyCombinedDevice",
             "shellyEnergyDevice"
-          ]
-        }
-      }
-    },
-    "indigo.DimmerDevice": {
-      "file": "by-class/dimmer.json",
-      "profileCount": 5,
-      "plugins": {
-        "com.autologplugin.indigoplugin.zigbee2mqtt": {
-          "pluginName": "Zigbee2mqtt Bridge",
-          "deviceTypeIds": [
-            "dimmer",
-            "zigbeeGroupDimmer"
-          ]
-        },
-        "com.barn.indigoplugin.WLED": {
-          "pluginName": "WLED",
-          "deviceTypeIds": [
-            "wledip"
-          ]
-        },
-        "com.perceptiveautomation.indigoplugin.zwave": {
-          "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
-          "deviceTypeIds": [
-            "zwDimmerType"
-          ]
-        },
-        "no.homeassistant.plugin": {
-          "pluginName": "Home Assistant Agent",
-          "deviceTypeIds": [
-            "HAdimmerType"
-          ]
-        }
-      }
-    },
-    "indigo.RelayDevice": {
-      "file": "by-class/relay.json",
-      "profileCount": 25,
-      "plugins": {
-        "com.JohnBurgess.indigoplugin.TP-Link-Device": {
-          "pluginName": "TP-Link Devices",
-          "deviceTypeIds": [
-            "tplinkSmartPlug"
-          ]
-        },
-        "com.anyone.indigoplugin.voice-monkey": {
-          "pluginName": "Voice Monkey",
-          "deviceTypeIds": [
-            "VoiceMonkeyDevice"
-          ]
-        },
-        "com.autologplugin.indigoplugin.zigbee2mqtt": {
-          "pluginName": "Zigbee2mqtt Bridge",
-          "deviceTypeIds": [
-            "multiOutlet",
-            "multiOutletSecondary2",
-            "multiOutletSecondary3",
-            "multiOutletSecondary4",
-            "multiOutletSecondary5",
-            "outlet"
-          ]
-        },
-        "com.berkinet.metadevice": {
-          "pluginName": "Meta Device",
-          "deviceTypeIds": [
-            "metaDevice"
-          ]
-        },
-        "com.flyingdiver.indigoplugin.harmonyhub": {
-          "pluginName": "Harmony Hub",
-          "deviceTypeIds": [
-            "activityDevice"
-          ]
-        },
-        "com.lionsheeptechnology.ShellyNGMQTT": {
-          "pluginName": "ShellyNGMQTT",
-          "deviceTypeIds": [
-            "component-switch"
-          ]
-        },
-        "com.morris.mac-apps": {
-          "pluginName": "Mac Apps",
-          "deviceTypeIds": [
-            "application"
-          ]
-        },
-        "com.morris.realistic-random": {
-          "pluginName": "Realistic Random",
-          "deviceTypeIds": [
-            "randomizer"
-          ]
-        },
-        "com.perceptiveautomation.indigoplugin.devicecollection": {
-          "pluginName": "Virtual Devices",
-          "deviceTypeIds": [
-            "pseudoRelay",
-            "relayGroup"
-          ]
-        },
-        "com.perceptiveautomation.indigoplugin.zwave": {
-          "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
-          "deviceTypeIds": [
-            "zwRelayType",
-            "zwLockType"
-          ]
-        },
-        "com.racarter.indigoplugin.heatmiser-neo": {
-          "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
-          "deviceTypeIds": [
-            "heatmiserNeoplug"
-          ]
-        },
-        "com.racarter.indigoplugin.texecom": {
-          "pluginName": "Texecom",
-          "deviceTypeIds": [
-            "pcOutput"
-          ]
-        },
-        "com.ramias.indigo.plugins.pihole": {
-          "pluginName": "Pi Hole DNS Controller",
-          "deviceTypeIds": [
-            "myPiHoleType"
-          ]
-        },
-        "com.ryanbuckner.indigoplugin.samsungtv": {
-          "pluginName": "SamsungTV",
-          "deviceTypeIds": [
-            "televisions"
-          ]
-        },
-        "com.vtmikel.autolights": {
-          "pluginName": "Auto Lights",
-          "deviceTypeIds": [
-            "auto_lights_config",
-            "auto_lights_zone"
-          ]
-        },
-        "no.homeassistant.plugin": {
-          "pluginName": "Home Assistant Agent",
-          "deviceTypeIds": [
-            "HAswitchType"
-          ]
-        },
-        "net.papamac.indigoplugin.virtualgaragedoor": {
-          "pluginName": "Virtual Garage Door",
-          "deviceTypeIds": [
-            "opener"
-          ]
-        }
-      }
-    },
-    "indigo.SensorDevice": {
-      "file": "by-class/sensor.json",
-      "profileCount": 34,
-      "plugins": {
-        "com.autologplugin.indigoplugin.zigbee2mqtt": {
-          "pluginName": "Zigbee2mqtt Bridge",
-          "deviceTypeIds": [
-            "multiSensor",
-            "radarSensor",
-            "temperatureSensor",
-            "vibrationSensor",
-            "contactSensor",
-            "humiditySensorSecondary",
-            "motionSensor",
-            "waterLeakSensor"
-          ]
-        },
-        "com.flyingdiver.indigoplugin.masquerade": {
-          "pluginName": "Masquerade",
-          "deviceTypeIds": [
-            "masqSensor"
-          ]
-        },
-        "com.flyingdiver.indigoplugin.miniUniFi": {
-          "pluginName": "miniUniFi",
-          "deviceTypeIds": [
-            "unifiAccessPoint",
-            "unifiClient",
-            "unifiDevice",
-            "unifiWirelessClient"
-          ]
-        },
-        "com.flyingdiver.indigoplugin.occupatum": {
-          "pluginName": "Occupatum",
-          "deviceTypeIds": [
-            "activityZone",
-            "area"
-          ]
-        },
-        "com.karlwachs.uniFiAP": {
-          "pluginName": "uniFiAP",
-          "deviceTypeIds": [
-            "Device-AP",
-            "Device-SW-52",
-            "UniFi",
-            "system_controller"
-          ]
-        },
-        "com.lionsheeptechnology.ShellyNGMQTT": {
-          "pluginName": "ShellyNGMQTT",
-          "deviceTypeIds": [
-            "component-humidity",
-            "component-input",
-            "component-temperature",
-            "shelly-plus-1-pm",
-            "shelly-plus-2-pm",
-            "shelly-plus-plug"
-          ]
-        },
-        "com.morris.online-sensor": {
-          "pluginName": "Online Sensor",
-          "deviceTypeIds": [
-            "lanPing",
-            "onlineSensor",
-            "publicIP",
-            "speedtest"
-          ]
-        },
-        "com.perceptiveautomation.indigoplugin.zwave": {
-          "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
-          "deviceTypeIds": [
-            "zwOnOffSensorType",
-            "zwValueSensorType"
-          ]
-        },
-        "com.simons-plugins.netro": {
-          "pluginName": "Netro Smart Sprinklers",
-          "deviceTypeIds": [
-            "Whisperer"
-          ]
-        },
-        "no.homeassistant.plugin": {
-          "pluginName": "Home Assistant Agent",
-          "deviceTypeIds": [
-            "HAsensor",
-            "HAbinarySensorType"
-          ]
-        }
-      }
-    },
-    "indigo.SpeedControlDevice": {
-      "file": "by-class/speed-control.json",
-      "profileCount": 1,
-      "plugins": {
-        "no.homeassistant.plugin": {
-          "pluginName": "Home Assistant Agent",
-          "deviceTypeIds": [
-            "ha_fan"
-          ]
-        }
-      }
-    },
-    "indigo.SprinklerDevice": {
-      "file": "by-class/sprinkler.json",
-      "profileCount": 1,
-      "plugins": {
-        "com.simons-plugins.netro": {
-          "pluginName": "Netro Smart Sprinklers",
-          "deviceTypeIds": [
-            "sprinkler"
-          ]
-        }
-      }
-    },
-    "indigo.ThermostatDevice": {
-      "file": "by-class/thermostat.json",
-      "profileCount": 4,
-      "plugins": {
-        "com.lionsheeptechnology.ShellyMQTT": {
-          "pluginName": "ShellyMQTT",
-          "deviceTypeIds": [
-            "shelly-trv"
-          ]
-        },
-        "com.racarter.indigoplugin.heatmiser-neo": {
-          "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
-          "deviceTypeIds": [
-            "heatmiserNeostat"
-          ]
-        },
-        "com.perceptiveautomation.indigoplugin.zwave": {
-          "pluginName": "Z-Wave",
-          "deviceTypeIds": [
-            "zwThermostatType"
-          ]
-        },
-        "uk.co.clives.ramses.esp": {
-          "pluginName": "RAMSES ESP",
-          "deviceTypeIds": [
-            "ramsesZoneThermostat"
           ]
         }
       }
