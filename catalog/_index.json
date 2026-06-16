@@ -3,7 +3,7 @@
   "classes": {
     "indigo.DimmerDevice": {
       "file": "by-class/dimmer.json",
-      "profileCount": 9,
+      "profileCount": 10,
       "plugins": {
         "com.autologplugin.indigoplugin.zigbee2mqtt": {
           "pluginName": "Zigbee2mqtt Bridge",
@@ -19,8 +19,9 @@
           ]
         },
         "com.perceptiveautomation.indigoplugin.zwave": {
-          "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+          "pluginName": "Z-Wave",
           "deviceTypeIds": [
+            "zwColorDimmerType",
             "zwDimmerType"
           ]
         },
@@ -43,8 +44,14 @@
     },
     "indigo.RelayDevice": {
       "file": "by-class/relay.json",
-      "profileCount": 30,
+      "profileCount": 33,
       "plugins": {
+        "com.GlennNZ.indigoplugin.WinRemote": {
+          "pluginName": "WinRemote Plugin",
+          "deviceTypeIds": [
+            "WindowsComputer"
+          ]
+        },
         "com.JohnBurgess.indigoplugin.TP-Link-Device": {
           "pluginName": "TP-Link Devices",
           "deviceTypeIds": [
@@ -80,6 +87,12 @@
             "activityDevice"
           ]
         },
+        "com.flyingdiver.indigoplugin.shims": {
+          "pluginName": "MQTT Shims",
+          "deviceTypeIds": [
+            "shimRelay"
+          ]
+        },
         "com.lionsheeptechnology.ShellyNGMQTT": {
           "pluginName": "ShellyNGMQTT",
           "deviceTypeIds": [
@@ -109,7 +122,8 @@
           "pluginName": "Z-Wave",
           "deviceTypeIds": [
             "zwLockType",
-            "zwRelayType"
+            "zwRelayType",
+            "zwSoundSwitchType"
           ]
         },
         "com.racarter.indigoplugin.heatmiser-neo": {
@@ -174,7 +188,7 @@
     },
     "indigo.SensorDevice": {
       "file": "by-class/sensor.json",
-      "profileCount": 48,
+      "profileCount": 50,
       "plugins": {
         "com.autologplugin.indigoplugin.zigbee2mqtt": {
           "pluginName": "Zigbee2mqtt Bridge",
@@ -192,7 +206,8 @@
         "com.flyingdiver.indigoplugin.masquerade": {
           "pluginName": "Masquerade",
           "deviceTypeIds": [
-            "masqSensor"
+            "masqSensor",
+            "masqValueSensor"
           ]
         },
         "com.flyingdiver.indigoplugin.miniUniFi": {
@@ -283,13 +298,25 @@
             "HAbinarySensorType",
             "HAsensor"
           ]
+        },
+        "se.furtenbach.indigo.plugin.beacon": {
+          "pluginName": "GeoFence",
+          "deviceTypeIds": [
+            "beacon"
+          ]
         }
       }
     },
     "indigo.SpeedControlDevice": {
       "file": "by-class/speed-control.json",
-      "profileCount": 1,
+      "profileCount": 2,
       "plugins": {
+        "com.flyingdiver.indigoplugin.masquerade": {
+          "pluginName": "Masquerade",
+          "deviceTypeIds": [
+            "masqSpeedControl"
+          ]
+        },
         "no.homeassistant.plugin": {
           "pluginName": "Home Assistant Agent",
           "deviceTypeIds": [
@@ -354,8 +381,24 @@
     },
     "indigo.Device": {
       "file": "by-class/custom.json",
-      "profileCount": 58,
+      "profileCount": 89,
       "plugins": {
+        "com.GlennNZ.indigoplugin.BlueIris": {
+          "pluginName": "BlueIris Plugin",
+          "deviceTypeIds": [
+            "BlueIrisCamera",
+            "BlueIrisDevice",
+            "BlueIrisServer",
+            "BlueIrisUser"
+          ]
+        },
+        "com.GlennNZ.indigoplugin.DeepQuestAI": {
+          "pluginName": "DeepQuestAI Plugin",
+          "deviceTypeIds": [
+            "DeepStateObject",
+            "DeepStateService"
+          ]
+        },
         "com.GlennNZ.indigoplugin.FindFriendsMini": {
           "pluginName": "FindFriendsMini",
           "deviceTypeIds": [
@@ -396,6 +439,19 @@
             "domoPadAndroidClient"
           ]
         },
+        "com.duncanware.plexMediaServerManager": {
+          "pluginName": "Plex Media Server Manager",
+          "deviceTypeIds": [
+            "plexMediaClient",
+            "plexMediaServer"
+          ]
+        },
+        "com.duncanware.rokuNetworkRemote": {
+          "pluginName": "Roku Network Remote",
+          "deviceTypeIds": [
+            "rokuRemoteDevice"
+          ]
+        },
         "com.flyingdiver.indigoplugin.harmonyhub": {
           "pluginName": "Harmony Hub",
           "deviceTypeIds": [
@@ -414,10 +470,38 @@
             "mqttBroker"
           ]
         },
+        "com.flyingdiver.indigoplugin.shims": {
+          "pluginName": "MQTT Shims",
+          "deviceTypeIds": [
+            "shimGeneric"
+          ]
+        },
+        "com.fogbert.indigoplugin.GhostXML": {
+          "pluginName": "GhostXML",
+          "deviceTypeIds": [
+            "GhostXMLdevice",
+            "GhostXMLdeviceTrue"
+          ]
+        },
+        "com.fogbert.indigoplugin.announcements": {
+          "pluginName": "Announcements",
+          "deviceTypeIds": [
+            "announcementsDevice",
+            "salutationsDevice"
+          ]
+        },
         "com.fogbert.indigoplugin.fantasticwWeather": {
           "pluginName": "com.fogbert.indigoplugin.fantasticwWeather",
           "deviceTypeIds": [
             "Astronomy"
+          ]
+        },
+        "com.frightideas.indigoplugin.dscAlarm": {
+          "pluginName": "DSC Alarm",
+          "deviceTypeIds": [
+            "alarmKeypad",
+            "alarmZone",
+            "alarmZoneGroup"
           ]
         },
         "com.howartp.clockdisplay": {
@@ -429,13 +513,26 @@
         "com.howartp.lockmanager": {
           "pluginName": "Z-Wave Lock Manager",
           "deviceTypeIds": [
-            "doorLock"
+            "doorLock",
+            "keyPad"
           ]
         },
         "com.howartp.scenecontrol": {
           "pluginName": "Z-Wave Scene Controller",
           "deviceTypeIds": [
             "sceneController"
+          ]
+        },
+        "com.howartp.variabledevice": {
+          "pluginName": "Variable Devices",
+          "deviceTypeIds": [
+            "variable"
+          ]
+        },
+        "com.howartp.zwavewatcher": {
+          "pluginName": "Z-Wave Watcher",
+          "deviceTypeIds": [
+            "zwatch"
           ]
         },
         "com.indigodomo.email": {
@@ -484,6 +581,29 @@
             "runningTimer"
           ]
         },
+        "com.pennypacker.indigoplugin.weatherflow": {
+          "pluginName": "WeatherFlow Smart Weather",
+          "deviceTypeIds": [
+            "SmartWeatherTempestUDP",
+            "SmartWeatherTempestWS"
+          ]
+        },
+        "com.perceptiveautomation.indigoplugin.NOAAWeather": {
+          "pluginName": "NOAA Weather",
+          "deviceTypeIds": [
+            "alerts",
+            "current",
+            "forecast",
+            "station"
+          ]
+        },
+        "com.perceptiveautomation.indigoplugin.airfoilpro": {
+          "pluginName": "Airfoil Pro",
+          "deviceTypeIds": [
+            "airfoil",
+            "speaker"
+          ]
+        },
         "com.perceptiveautomation.indigoplugin.panasonic-network-Remote": {
           "pluginName": "Panasonic Network Remote",
           "deviceTypeIds": [
@@ -521,6 +641,12 @@
             "alarmPartition",
             "alarmZone",
             "powerStatus"
+          ]
+        },
+        "com.schollnick.indigoplugin.BatteryMonitor": {
+          "pluginName": "UPS and Battery Monitor",
+          "deviceTypeIds": [
+            "BatteryMonitor"
           ]
         },
         "com.simons-plugins.UKTrains": {
@@ -571,10 +697,22 @@
             "mcpServer"
           ]
         },
+        "com.whmoorejr.my-events": {
+          "pluginName": "My Events",
+          "deviceTypeIds": [
+            "anEvent"
+          ]
+        },
         "com.whmoorejr.my-people": {
           "pluginName": "My People",
           "deviceTypeIds": [
             "aPerson"
+          ]
+        },
+        "com.whmoorejr.my-rooms": {
+          "pluginName": "- plugin not installed -",
+          "deviceTypeIds": [
+            "aRoom"
           ]
         },
         "no.homeassistant.plugin": {
