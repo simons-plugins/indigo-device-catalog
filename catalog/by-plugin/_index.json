@@ -23,15 +23,6 @@
         }
       ]
     },
-    "com.GlennNZ.indigoplugin.appleTV": {
-      "pluginName": "appleTV Plugin",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.RelayDevice",
-          "deviceTypeId": "appleTV"
-        }
-      ]
-    },
     "com.JohnBurgess.indigoplugin.TP-Link-Device": {
       "pluginName": "TP-Link Devices",
       "deviceTypes": [
@@ -180,50 +171,6 @@
         }
       ]
     },
-    "com.duncanware.rokuNetworkRemote": {
-      "pluginName": "Roku Network Remote",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "rokuRemoteDevice"
-        }
-      ]
-    },
-    "com.eps.indigoplugin.scene-toggle": {
-      "pluginName": "- plugin not installed -",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.RelayDevice",
-          "deviceTypeId": "epsst"
-        }
-      ]
-    },
-    "com.flyingdiver.indigoplugin.bmw-cd": {
-      "pluginName": "Connected Drive",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "cdAccount"
-        },
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "cdVehicle"
-        }
-      ]
-    },
-    "com.flyingdiver.indigoplugin.bondhome": {
-      "pluginName": "Bond Home",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.DimmerDevice",
-          "deviceTypeId": "bondBridge"
-        },
-        {
-          "baseClass": "indigo.RelayDevice",
-          "deviceTypeId": "bondDevice"
-        }
-      ]
-    },
     "com.flyingdiver.indigoplugin.harmonyhub": {
       "pluginName": "Harmony Hub",
       "deviceTypes": [
@@ -293,29 +240,12 @@
         }
       ]
     },
-    "com.fogbert.indigoplugin.announcements": {
-      "pluginName": "Announcements",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "announcementsDevice"
-        }
-      ]
-    },
     "com.fogbert.indigoplugin.fantasticwWeather": {
       "pluginName": "com.fogbert.indigoplugin.fantasticwWeather",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "Astronomy"
-        },
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "Daily"
-        },
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "Hourly"
         }
       ]
     },
@@ -369,15 +299,6 @@
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "forecast"
-        }
-      ]
-    },
-    "com.indigodomo.opensource.rachio": {
-      "pluginName": "Rachio Sprinklers",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.SprinklerDevice",
-          "deviceTypeId": "sprinkler"
         }
       ]
     },
@@ -470,15 +391,6 @@
         }
       ]
     },
-    "com.morris.google-calendar": {
-      "pluginName": "Google Calendar",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.SensorDevice",
-          "deviceTypeId": "GoogleCalendar"
-        }
-      ]
-    },
     "com.morris.mac-apps": {
       "pluginName": "Mac Apps",
       "deviceTypes": [
@@ -539,32 +451,6 @@
         }
       ]
     },
-    "com.nathansheldon.indigoplugin.HueLights": {
-      "pluginName": "Hue Lights",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.DimmerDevice",
-          "deviceTypeId": "hueBulb"
-        },
-        {
-          "baseClass": "indigo.DimmerDevice",
-          "deviceTypeId": "hueGroup"
-        }
-      ]
-    },
-    "com.perceptiveautomation.indigoplugin.NOAAWeather": {
-      "pluginName": "NOAA Weather",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "forecast"
-        },
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "station"
-        }
-      ]
-    },
     "com.perceptiveautomation.indigoplugin.devicecollection": {
       "pluginName": "Virtual Devices",
       "deviceTypes": [
@@ -575,15 +461,6 @@
         {
           "baseClass": "indigo.RelayDevice",
           "deviceTypeId": "relayGroup"
-        }
-      ]
-    },
-    "com.perceptiveautomation.indigoplugin.itunes": {
-      "pluginName": "- plugin not installed -",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "mediaserver"
         }
       ]
     },
@@ -639,7 +516,7 @@
       ]
     },
     "com.racarter.indigoplugin.heatmiser-neo": {
-      "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
+      "pluginName": "Heatmiser-Neo",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
@@ -702,30 +579,12 @@
         }
       ]
     },
-    "com.ryanbuckner.indigoplugin.life360": {
-      "pluginName": "Life360",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "members"
-        }
-      ]
-    },
     "com.ryanbuckner.indigoplugin.samsungtv": {
       "pluginName": "SamsungTV",
       "deviceTypes": [
         {
           "baseClass": "indigo.RelayDevice",
           "deviceTypeId": "televisions"
-        }
-      ]
-    },
-    "com.schollnick.indigoplugin.BatteryMonitor": {
-      "pluginName": "UPS and Battery Monitor",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "BatteryMonitor"
         }
       ]
     },
@@ -897,19 +756,6 @@
         }
       ]
     },
-    "com.vtmikel.augusthome": {
-      "pluginName": "August Home",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.RelayDevice",
-          "deviceTypeId": "augLock"
-        },
-        {
-          "baseClass": "indigo.SensorDevice",
-          "deviceTypeId": "augDoor"
-        }
-      ]
-    },
     "com.vtmikel.autolights": {
       "pluginName": "Auto Lights",
       "deviceTypes": [
@@ -950,15 +796,6 @@
         }
       ]
     },
-    "nl.rjdekok.indigoplugin.RFXCOM": {
-      "pluginName": "RFXCOM",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "Temperature"
-        }
-      ]
-    },
     "no.homeassistant.plugin": {
       "pluginName": "Home Assistant Agent",
       "deviceTypes": [
@@ -985,19 +822,6 @@
         {
           "baseClass": "indigo.SpeedControlDevice",
           "deviceTypeId": "ha_fan"
-        },
-        {
-          "baseClass": "indigo.ThermostatDevice",
-          "deviceTypeId": "HAclimate"
-        }
-      ]
-    },
-    "org.cynic.indigo.behaviors": {
-      "pluginName": "Cynical Behaviors",
-      "deviceTypes": [
-        {
-          "baseClass": "indigo.Device",
-          "deviceTypeId": "batterywatch"
         }
       ]
     },
