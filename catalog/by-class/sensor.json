@@ -2786,6 +2786,42 @@
       "displayStateImageSel": "indigo.kStateImageSel.NoImage"
     },
     {
+      "pluginId": "com.morris.google-calendar",
+      "pluginName": "Google Calendar",
+      "deviceTypeId": "GoogleCalendar",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "event_count": {
+          "type": "integer"
+        },
+        "event_data": {
+          "type": "string"
+        },
+        "last_download": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "online": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "ryanbuckner",
+        "discoveredAt": "2026-03-15"
+      },
+      "model": "Google Calendar Device",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
       "pluginId": "com.morris.online-sensor",
       "pluginName": "Online Sensor",
       "deviceTypeId": "lanPing",
@@ -3657,6 +3693,30 @@
       ],
       "displayStateId": "sensorValue",
       "displayStateImageSel": "indigo.kStateImageSel.DehumidifierOff"
+    },
+    {
+      "pluginId": "com.vtmikel.augusthome",
+      "pluginName": "August Home",
+      "deviceTypeId": "augDoor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "ryanbuckner",
+        "discoveredAt": "2026-03-15"
+      },
+      "model": "August Smart Lock DoorSense",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOff"
     },
     {
       "pluginId": "no.homeassistant.plugin",
