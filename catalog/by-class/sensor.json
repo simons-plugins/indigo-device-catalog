@@ -1495,6 +1495,36 @@
       "displayStateImageSel": "indigo.kStateImageSel.PowerOff"
     },
     {
+      "pluginId": "com.flyingdiver.indigoplugin.masquerade",
+      "pluginName": "Masquerade",
+      "deviceTypeId": "masqValueSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Value Sensor Device",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "TemperatureSensor"
+    },
+    {
       "pluginId": "com.flyingdiver.indigoplugin.miniUniFi",
       "pluginName": "miniUniFi",
       "deviceTypeId": "unifiAccessPoint",
@@ -3749,6 +3779,54 @@
       ],
       "displayStateId": "sensorValue",
       "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "se.furtenbach.indigo.plugin.beacon",
+      "pluginName": "GeoFence",
+      "deviceTypeId": "beacon",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "device": {
+          "type": "string"
+        },
+        "device_model": {
+          "type": "string"
+        },
+        "device_type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "timestamp": {
+          "type": "string"
+        },
+        "trigger": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Geofence Beacon",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "MotionSensor"
     }
   ],
   "classCommands": {
