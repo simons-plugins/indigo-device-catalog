@@ -1,0 +1,136 @@
+name: Ingest contribution
+
+# Ingests a device-catalog contribution that a user attached to a GitHub
+# issue and opens a `contribute/` PR with the merged profiles.
+#
+# Gated on a maintainer applying the `ingest-contribution` label, mirroring
+# the trust model of auto-merge.yml: a human decides what gets ingested, then
+# reviews the resulting PR (and adds `auto-merge-approved` to merge it). This
+# workflow only opens the PR — it never merges.
+#
+# Note: PRs opened with the default GITHUB_TOKEN do not themselves trigger
+# other workflows, so this job runs the full validation before opening the PR
+# and records the result in the PR body. To have validate.yml run on the PR
+# too, set a `CONTRIB_PAT` repo secret (a PAT with repo scope); the checkout
+# and PR steps will use it automatically when present.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  ingest:
+    if: github.event.label.name == 'ingest-contribution'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.CONTRIB_PAT || secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Find the attached contribution JSON
+        id: find
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          # Pull the first GitHub user-attachments .json URL out of the issue
+          # body. ISSUE_BODY is untrusted, so it is only ever read from env,
+          # never interpolated into the script.
+          URL=$(printf '%s' "$ISSUE_BODY" \
+            | grep -oE 'https://github\.com/user-attachments/files/[^) ]+\.json' \
+            | head -n1 || true)
+          if [ -z "$URL" ]; then
+            echo "url=" >> "$GITHUB_OUTPUT"
+          else
+            echo "Found attachment: $URL"
+            echo "url=$URL" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Comment when no attachment is found
+        if: steps.find.outputs.url == ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body \
+            "I couldn't find a \`.json\` attachment in this issue, so there's nothing to ingest. Attach the contribution file produced by the Device Catalog Contributor plugin and re-apply the \`ingest-contribution\` label."
+          exit 1
+
+      - name: Download the contribution
+        if: steps.find.outputs.url != ''
+        run: curl -sSL -o /tmp/contribution.json "${{ steps.find.outputs.url }}"
+
+      - name: Merge into the catalog
+        if: steps.find.outputs.url != ''
+        run: python tools/merge_contribution.py /tmp/contribution.json
+
+      - name: Detect whether anything changed
+        if: steps.find.outputs.url != ''
+        id: changed
+        run: |
+          if [ -n "$(git status --porcelain catalog/)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Comment when nothing new was added
+        if: steps.find.outputs.url != '' && steps.changed.outputs.changed == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body \
+            "Thanks! Every profile in this contribution is already in the catalog, so there's nothing to add."
+
+      - name: Validate the merged catalog
+        if: steps.find.outputs.url != '' && steps.changed.outputs.changed == 'true'
+        run: |
+          python tools/validate.py
+          python tools/check_indexes.py
+
+      - name: Open the contribution PR
+        if: steps.find.outputs.url != '' && steps.changed.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.CONTRIB_PAT || secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          BRANCH="contribute/issue-${ISSUE_NUMBER}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add catalog/
+          git commit -m "Ingest device profiles from issue #${ISSUE_NUMBER}
+
+          Contributed by @${ISSUE_AUTHOR} (issue #${ISSUE_NUMBER})."
+          git push -f -u origin "$BRANCH"
+
+          BODY="Auto-generated from the contribution attached to #${ISSUE_NUMBER} (by @${ISSUE_AUTHOR}).
+
+          \`tools/validate.py\` and \`tools/check_indexes.py\` passed in the ingest run.
+
+          A maintainer should review the merged profiles and add the \`auto-merge-approved\` label to merge."
+
+          EXISTING=$(gh pr list --head "$BRANCH" --state open --json number -q '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            echo "PR #$EXISTING already open for $BRANCH; branch updated."
+            gh issue comment "$ISSUE_NUMBER" --body "Updated the existing contribution PR #${EXISTING} with the latest merge."
+          else
+            URL=$(gh pr create --base main --head "$BRANCH" \
+              --title "Ingest device profiles from issue #${ISSUE_NUMBER}" \
+              --body "$BODY")
+            echo "Opened $URL"
+            gh issue comment "$ISSUE_NUMBER" --body "Opened ${URL} with the merged profiles for review."
+          fi
