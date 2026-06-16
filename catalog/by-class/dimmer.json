@@ -531,6 +531,333 @@
       "displayStateImageSel": "indigo.kStateImageSel.DimmerOff"
     },
     {
+      "pluginId": "com.flyingdiver.indigoplugin.bondhome",
+      "pluginName": "Bond Home",
+      "deviceTypeId": "bondBridge",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "bondid": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "fw_date": {
+          "type": "string"
+        },
+        "fw_ver": {
+          "type": "string"
+        },
+        "ip_address": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "make": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "uptime_s": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "ryanbuckner",
+        "discoveredAt": "2026-03-15"
+      },
+      "model": "Bond Bridge",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.nathansheldon.indigoplugin.HueLights",
+      "pluginName": "Hue Lights",
+      "deviceTypeId": "hueBulb",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": true,
+        "supportsRGB": true,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": true,
+        "supportsWhiteTemperature": true,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "alertMode": {
+          "type": "string"
+        },
+        "blueLevel": {
+          "type": "number"
+        },
+        "blueLevel.ui": {
+          "type": "string"
+        },
+        "bridge": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "brightnessLevel.ui": {
+          "type": "string"
+        },
+        "colorBlue": {
+          "type": "integer"
+        },
+        "colorGreen": {
+          "type": "integer"
+        },
+        "colorMode": {
+          "type": "string"
+        },
+        "colorRed": {
+          "type": "integer"
+        },
+        "colorTemp": {
+          "type": "integer"
+        },
+        "colorX": {
+          "type": "number"
+        },
+        "colorY": {
+          "type": "number"
+        },
+        "created": {
+          "type": "string"
+        },
+        "effect": {
+          "type": "string"
+        },
+        "greenLevel": {
+          "type": "number"
+        },
+        "greenLevel.ui": {
+          "type": "string"
+        },
+        "hue": {
+          "type": "integer"
+        },
+        "id_v1": {
+          "type": "string"
+        },
+        "manufacturerName": {
+          "type": "string"
+        },
+        "modelId": {
+          "type": "string"
+        },
+        "nameOnBridge": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "online": {
+          "type": "boolean"
+        },
+        "ownerId": {
+          "type": "string"
+        },
+        "redLevel": {
+          "type": "number"
+        },
+        "redLevel.ui": {
+          "type": "string"
+        },
+        "saturation": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        },
+        "uniqueId": {
+          "type": "string"
+        },
+        "whiteLevel": {
+          "type": "number"
+        },
+        "whiteLevel.ui": {
+          "type": "string"
+        },
+        "whiteTemperature": {
+          "type": "number"
+        },
+        "whiteTemperature.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "ryanbuckner",
+        "discoveredAt": "2026-03-15"
+      },
+      "model": "Hue Color/Ambiance and compatible",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOn"
+    },
+    {
+      "pluginId": "com.nathansheldon.indigoplugin.HueLights",
+      "pluginName": "Hue Lights",
+      "deviceTypeId": "hueGroup",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": true,
+        "supportsRGB": true,
+        "supportsRGBandWhiteSimultaneously": true,
+        "supportsWhite": true,
+        "supportsWhiteTemperature": true,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "alertMode": {
+          "type": "string"
+        },
+        "allOn": {
+          "type": "boolean"
+        },
+        "anyOn": {
+          "type": "boolean"
+        },
+        "blueLevel": {
+          "type": "number"
+        },
+        "blueLevel.ui": {
+          "type": "string"
+        },
+        "bridge": {
+          "type": "string"
+        },
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "colorBlue": {
+          "type": "integer"
+        },
+        "colorGreen": {
+          "type": "integer"
+        },
+        "colorMode": {
+          "type": "string"
+        },
+        "colorRed": {
+          "type": "integer"
+        },
+        "colorTemp": {
+          "type": "integer"
+        },
+        "colorX": {
+          "type": "number"
+        },
+        "colorY": {
+          "type": "number"
+        },
+        "created": {
+          "type": "string"
+        },
+        "effect": {
+          "type": "string"
+        },
+        "greenLevel": {
+          "type": "number"
+        },
+        "greenLevel.ui": {
+          "type": "string"
+        },
+        "groupClass": {
+          "type": "string"
+        },
+        "hue": {
+          "type": "integer"
+        },
+        "id_v1": {
+          "type": "string"
+        },
+        "lightIds": {
+          "type": "string"
+        },
+        "nameOnBridge": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "ownerId": {
+          "type": "string"
+        },
+        "redLevel": {
+          "type": "number"
+        },
+        "redLevel.ui": {
+          "type": "string"
+        },
+        "saturation": {
+          "type": "integer"
+        },
+        "sensorIds": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "uniqueId": {
+          "type": "string"
+        },
+        "whiteLevel": {
+          "type": "number"
+        },
+        "whiteLevel.ui": {
+          "type": "string"
+        },
+        "whiteTemperature": {
+          "type": "number"
+        },
+        "whiteTemperature.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "ryanbuckner",
+        "discoveredAt": "2026-03-15"
+      },
+      "model": "Hue Group",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOff"
+    },
+    {
       "pluginId": "com.perceptiveautomation.indigoplugin.zwave",
       "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
       "deviceTypeId": "zwDimmerType",
