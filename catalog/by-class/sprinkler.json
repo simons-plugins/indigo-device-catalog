@@ -6,6 +6,1385 @@
   ],
   "profiles": [
     {
+      "pluginId": "com.indigodomo.opensource.rachio",
+      "pluginName": "Rachio Sprinklers",
+      "deviceTypeId": "sprinkler",
+      "capabilities": {
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsOnState": false
+      },
+      "states": {
+        "activeSchedule": {
+          "type": "string"
+        },
+        "activeZone": {
+          "type": "integer"
+        },
+        "activeZone.ui": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "current_calculatedPrecip": {
+          "type": "number"
+        },
+        "current_cloudCover": {
+          "type": "number"
+        },
+        "current_cloudCover.ui": {
+          "type": "string"
+        },
+        "current_currentTemperature": {
+          "type": "number"
+        },
+        "current_currentTemperature.ui": {
+          "type": "string"
+        },
+        "current_dewPoint": {
+          "type": "number"
+        },
+        "current_dewPoint.ui": {
+          "type": "string"
+        },
+        "current_humidity": {
+          "type": "number"
+        },
+        "current_humidity.ui": {
+          "type": "string"
+        },
+        "current_iconUrl": {
+          "type": "string"
+        },
+        "current_precipIntensity": {
+          "type": "number"
+        },
+        "current_precipProbability": {
+          "type": "number"
+        },
+        "current_precipProbability.ui": {
+          "type": "string"
+        },
+        "current_weatherSummary": {
+          "type": "string"
+        },
+        "current_weatherType": {
+          "type": "string"
+        },
+        "current_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "current_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "current_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "current_weatherType.fog": {
+          "type": "boolean"
+        },
+        "current_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "current_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "current_weatherType.rain": {
+          "type": "boolean"
+        },
+        "current_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "current_weatherType.snow": {
+          "type": "boolean"
+        },
+        "current_weatherType.sun": {
+          "type": "boolean"
+        },
+        "current_weatherType.wind": {
+          "type": "boolean"
+        },
+        "current_windSpeed": {
+          "type": "number"
+        },
+        "id": {
+          "type": "string"
+        },
+        "inStandbyMode": {
+          "type": "boolean"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "model": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "paused": {
+          "type": "string"
+        },
+        "scheduleModeType": {
+          "type": "string"
+        },
+        "serialNumber": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "t0forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t0forecast_cloudCover": {
+          "type": "number"
+        },
+        "t0forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t0forecast_dewPoint": {
+          "type": "number"
+        },
+        "t0forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t0forecast_humidity": {
+          "type": "number"
+        },
+        "t0forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t0forecast_iconUrl": {
+          "type": "string"
+        },
+        "t0forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t0forecast_precipProbability": {
+          "type": "number"
+        },
+        "t0forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t0forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t0forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t0forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t0forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t0forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t0forecast_weatherType": {
+          "type": "string"
+        },
+        "t0forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t0forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t0forecast_windSpeed": {
+          "type": "number"
+        },
+        "t10forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t10forecast_cloudCover": {
+          "type": "number"
+        },
+        "t10forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t10forecast_dewPoint": {
+          "type": "number"
+        },
+        "t10forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t10forecast_humidity": {
+          "type": "number"
+        },
+        "t10forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t10forecast_iconUrl": {
+          "type": "string"
+        },
+        "t10forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t10forecast_precipProbability": {
+          "type": "number"
+        },
+        "t10forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t10forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t10forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t10forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t10forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t10forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t10forecast_weatherType": {
+          "type": "string"
+        },
+        "t10forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t10forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t10forecast_windSpeed": {
+          "type": "number"
+        },
+        "t11forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t11forecast_cloudCover": {
+          "type": "number"
+        },
+        "t11forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t11forecast_dewPoint": {
+          "type": "number"
+        },
+        "t11forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t11forecast_humidity": {
+          "type": "number"
+        },
+        "t11forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t11forecast_iconUrl": {
+          "type": "string"
+        },
+        "t11forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t11forecast_precipProbability": {
+          "type": "number"
+        },
+        "t11forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t11forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t11forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t11forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t11forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t11forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t11forecast_weatherType": {
+          "type": "string"
+        },
+        "t11forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t11forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t11forecast_windSpeed": {
+          "type": "number"
+        },
+        "t12forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t12forecast_cloudCover": {
+          "type": "number"
+        },
+        "t12forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t12forecast_dewPoint": {
+          "type": "number"
+        },
+        "t12forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t12forecast_humidity": {
+          "type": "number"
+        },
+        "t12forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t12forecast_iconUrl": {
+          "type": "string"
+        },
+        "t12forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t12forecast_precipProbability": {
+          "type": "number"
+        },
+        "t12forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t12forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t12forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t12forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t12forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t12forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t12forecast_weatherType": {
+          "type": "string"
+        },
+        "t12forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t12forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t12forecast_windSpeed": {
+          "type": "number"
+        },
+        "t13forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t13forecast_cloudCover": {
+          "type": "number"
+        },
+        "t13forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t13forecast_dewPoint": {
+          "type": "number"
+        },
+        "t13forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t13forecast_humidity": {
+          "type": "number"
+        },
+        "t13forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t13forecast_iconUrl": {
+          "type": "string"
+        },
+        "t13forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t13forecast_precipProbability": {
+          "type": "number"
+        },
+        "t13forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t13forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t13forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t13forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t13forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t13forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t13forecast_weatherType": {
+          "type": "string"
+        },
+        "t13forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t13forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t13forecast_windSpeed": {
+          "type": "number"
+        },
+        "t1forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t1forecast_cloudCover": {
+          "type": "number"
+        },
+        "t1forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t1forecast_dewPoint": {
+          "type": "number"
+        },
+        "t1forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t1forecast_humidity": {
+          "type": "number"
+        },
+        "t1forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t1forecast_iconUrl": {
+          "type": "string"
+        },
+        "t1forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t1forecast_precipProbability": {
+          "type": "number"
+        },
+        "t1forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t1forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t1forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t1forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t1forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t1forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t1forecast_weatherType": {
+          "type": "string"
+        },
+        "t1forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t1forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t1forecast_windSpeed": {
+          "type": "number"
+        },
+        "t2forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t2forecast_cloudCover": {
+          "type": "number"
+        },
+        "t2forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t2forecast_dewPoint": {
+          "type": "number"
+        },
+        "t2forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t2forecast_humidity": {
+          "type": "number"
+        },
+        "t2forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t2forecast_iconUrl": {
+          "type": "string"
+        },
+        "t2forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t2forecast_precipProbability": {
+          "type": "number"
+        },
+        "t2forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t2forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t2forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t2forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t2forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t2forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t2forecast_weatherType": {
+          "type": "string"
+        },
+        "t2forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t2forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t2forecast_windSpeed": {
+          "type": "number"
+        },
+        "t3forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t3forecast_cloudCover": {
+          "type": "number"
+        },
+        "t3forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t3forecast_dewPoint": {
+          "type": "number"
+        },
+        "t3forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t3forecast_humidity": {
+          "type": "number"
+        },
+        "t3forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t3forecast_iconUrl": {
+          "type": "string"
+        },
+        "t3forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t3forecast_precipProbability": {
+          "type": "number"
+        },
+        "t3forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t3forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t3forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t3forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t3forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t3forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t3forecast_weatherType": {
+          "type": "string"
+        },
+        "t3forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t3forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t3forecast_windSpeed": {
+          "type": "number"
+        },
+        "t4forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t4forecast_cloudCover": {
+          "type": "number"
+        },
+        "t4forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t4forecast_dewPoint": {
+          "type": "number"
+        },
+        "t4forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t4forecast_humidity": {
+          "type": "number"
+        },
+        "t4forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t4forecast_iconUrl": {
+          "type": "string"
+        },
+        "t4forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t4forecast_precipProbability": {
+          "type": "number"
+        },
+        "t4forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t4forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t4forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t4forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t4forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t4forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t4forecast_weatherType": {
+          "type": "string"
+        },
+        "t4forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t4forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t4forecast_windSpeed": {
+          "type": "number"
+        },
+        "t5forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t5forecast_cloudCover": {
+          "type": "number"
+        },
+        "t5forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t5forecast_dewPoint": {
+          "type": "number"
+        },
+        "t5forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t5forecast_humidity": {
+          "type": "number"
+        },
+        "t5forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t5forecast_iconUrl": {
+          "type": "string"
+        },
+        "t5forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t5forecast_precipProbability": {
+          "type": "number"
+        },
+        "t5forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t5forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t5forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t5forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t5forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t5forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t5forecast_weatherType": {
+          "type": "string"
+        },
+        "t5forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t5forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t5forecast_windSpeed": {
+          "type": "number"
+        },
+        "t6forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t6forecast_cloudCover": {
+          "type": "number"
+        },
+        "t6forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t6forecast_dewPoint": {
+          "type": "number"
+        },
+        "t6forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t6forecast_humidity": {
+          "type": "number"
+        },
+        "t6forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t6forecast_iconUrl": {
+          "type": "string"
+        },
+        "t6forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t6forecast_precipProbability": {
+          "type": "number"
+        },
+        "t6forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t6forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t6forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t6forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t6forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t6forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t6forecast_weatherType": {
+          "type": "string"
+        },
+        "t6forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t6forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t6forecast_windSpeed": {
+          "type": "number"
+        },
+        "t7forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t7forecast_cloudCover": {
+          "type": "number"
+        },
+        "t7forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t7forecast_dewPoint": {
+          "type": "number"
+        },
+        "t7forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t7forecast_humidity": {
+          "type": "number"
+        },
+        "t7forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t7forecast_iconUrl": {
+          "type": "string"
+        },
+        "t7forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t7forecast_precipProbability": {
+          "type": "number"
+        },
+        "t7forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t7forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t7forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t7forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t7forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t7forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t7forecast_weatherType": {
+          "type": "string"
+        },
+        "t7forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t7forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t7forecast_windSpeed": {
+          "type": "number"
+        },
+        "t8forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t8forecast_cloudCover": {
+          "type": "number"
+        },
+        "t8forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t8forecast_dewPoint": {
+          "type": "number"
+        },
+        "t8forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t8forecast_humidity": {
+          "type": "number"
+        },
+        "t8forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t8forecast_iconUrl": {
+          "type": "string"
+        },
+        "t8forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t8forecast_precipProbability": {
+          "type": "number"
+        },
+        "t8forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t8forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t8forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t8forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t8forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t8forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t8forecast_weatherType": {
+          "type": "string"
+        },
+        "t8forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t8forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t8forecast_windSpeed": {
+          "type": "number"
+        },
+        "t9forecast_calculatedPrecip": {
+          "type": "number"
+        },
+        "t9forecast_cloudCover": {
+          "type": "number"
+        },
+        "t9forecast_cloudCover.ui": {
+          "type": "string"
+        },
+        "t9forecast_dewPoint": {
+          "type": "number"
+        },
+        "t9forecast_dewPoint.ui": {
+          "type": "string"
+        },
+        "t9forecast_humidity": {
+          "type": "number"
+        },
+        "t9forecast_humidity.ui": {
+          "type": "string"
+        },
+        "t9forecast_iconUrl": {
+          "type": "string"
+        },
+        "t9forecast_precipIntensity": {
+          "type": "number"
+        },
+        "t9forecast_precipProbability": {
+          "type": "number"
+        },
+        "t9forecast_precipProbability.ui": {
+          "type": "string"
+        },
+        "t9forecast_temperatureMax": {
+          "type": "number"
+        },
+        "t9forecast_temperatureMax.ui": {
+          "type": "string"
+        },
+        "t9forecast_temperatureMin": {
+          "type": "number"
+        },
+        "t9forecast_temperatureMin.ui": {
+          "type": "string"
+        },
+        "t9forecast_weatherSummary": {
+          "type": "string"
+        },
+        "t9forecast_weatherType": {
+          "type": "string"
+        },
+        "t9forecast_weatherType.clear-day": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.clear-night": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.cloudy": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.fog": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.partly-cloudy-day": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.partly-cloudy-night": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.rain": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.sleet": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.snow": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.sun": {
+          "type": "boolean"
+        },
+        "t9forecast_weatherType.wind": {
+          "type": "boolean"
+        },
+        "t9forecast_windSpeed": {
+          "type": "number"
+        },
+        "timeZone": {
+          "type": "string"
+        },
+        "utcOffset": {
+          "type": "integer"
+        },
+        "zone1": {
+          "type": "boolean"
+        },
+        "zone2": {
+          "type": "boolean"
+        },
+        "zone3": {
+          "type": "boolean"
+        },
+        "zone4": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "ryanbuckner",
+        "discoveredAt": "2026-03-15"
+      },
+      "model": "Rachio Sprinkler Controller",
+      "displayStateId": "activeZone",
+      "displayStateImageSel": "SprinklerOff"
+    },
+    {
       "pluginId": "com.simons-plugins.netro",
       "pluginName": "Netro Smart Sprinklers",
       "deviceTypeId": "sprinkler",
@@ -175,5 +1554,18 @@
       "displayStateId": "activeZone",
       "displayStateImageSel": "SprinklerOff"
     }
-  ]
+  ],
+  "classCommands": {
+    "indigo.sprinkler.run": {
+      "parameters": {
+        "schedule": "list of durations"
+      }
+    },
+    "indigo.sprinkler.stop": {},
+    "indigo.sprinkler.pause": {},
+    "indigo.sprinkler.resume": {},
+    "indigo.sprinkler.previousZone": {},
+    "indigo.sprinkler.nextZone": {},
+    "indigo.device.statusRequest": {}
+  }
 }
