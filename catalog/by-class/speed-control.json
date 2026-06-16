@@ -7,6 +7,38 @@
   ],
   "profiles": [
     {
+      "pluginId": "com.flyingdiver.indigoplugin.masquerade",
+      "pluginName": "Masquerade",
+      "deviceTypeId": "masqSpeedControl",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        },
+        "speedIndex": {
+          "type": "integer"
+        },
+        "speedIndex.ui": {
+          "type": "string"
+        },
+        "speedLevel": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "whmoorejr",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Speed Control Device",
+      "displayStateId": "speedIndex",
+      "displayStateImageSel": "FanOff"
+    },
+    {
       "pluginId": "no.homeassistant.plugin",
       "pluginName": "Home Assistant Agent",
       "deviceTypeId": "ha_fan",
