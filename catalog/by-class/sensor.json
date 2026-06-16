@@ -10,6 +10,117 @@
     {
       "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
       "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "contactSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Contact Sensor",
+      "subModel": "Door/Window",
+      "protocol": "zigbee",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "humiditySensorSecondary",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Humidity Sensor [Secondary]",
+      "subModel": "Humidity",
+      "protocol": "zigbee",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "DehumidifierOff"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "motionSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Motion Sensor",
+      "subModel": "Motion",
+      "protocol": "zigbee",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "MotionSensor"
+    },
+    {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
       "deviceTypeId": "multiSensor",
       "capabilities": {
         "supportsOnState": true,
@@ -1302,6 +1413,52 @@
       "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
     },
     {
+      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
+      "pluginName": "Zigbee2mqtt Bridge",
+      "deviceTypeId": "waterLeakSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "last_seen": {
+          "type": "string"
+        },
+        "linkQuality": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "topicFriendlyName": {
+          "type": "string"
+        },
+        "voltage": {
+          "type": "integer"
+        },
+        "voltage.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Water Leak Sensor",
+      "protocol": "zigbee",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
       "pluginId": "com.flyingdiver.indigoplugin.masquerade",
       "pluginName": "Masquerade",
       "deviceTypeId": "masqSensor",
@@ -2301,6 +2458,58 @@
     {
       "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
       "pluginName": "ShellyNGMQTT",
+      "deviceTypeId": "shelly-plus-1",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "available-beta-firmware": {
+          "type": "string"
+        },
+        "available-firmware": {
+          "type": "string"
+        },
+        "current-firmware": {
+          "type": "string"
+        },
+        "ip-address": {
+          "type": "string"
+        },
+        "mac-address": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "online": {
+          "type": "boolean"
+        },
+        "rssi": {
+          "type": "integer"
+        },
+        "ssid": {
+          "type": "string"
+        },
+        "uptime": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Shelly Plus 1",
+      "protocol": "mqtt",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
+      "pluginName": "ShellyNGMQTT",
       "deviceTypeId": "shelly-plus-1-pm",
       "capabilities": {
         "supportsOnState": false,
@@ -2955,6 +3164,408 @@
       "displayStateImageSel": "indigo.kStateImageSel.EnergyMeterOff"
     },
     {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterAirQualitySensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "airQuality": {
+          "type": "string"
+        },
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "airQuality",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterButton",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lastButtonEvent": {
+          "type": "string"
+        },
+        "pressCount": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Button",
+      "displayStateId": "lastButtonEvent",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterCO2Sensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterFlowSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Flow Sensor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterHumiditySensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterIlluminanceSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Presence Multi-Sensor FP300",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterMotionSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Presence Multi-Sensor FP300",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterPM25Sensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterPressureSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Pressure Sensor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterSmokeCOAlarm",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryAlert": {
+          "type": "boolean"
+        },
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "coAlarm": {
+          "type": "boolean"
+        },
+        "endOfService": {
+          "type": "boolean"
+        },
+        "expressedState": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "smokeAlarm": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter Smoke/CO Alarm",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterTVOCSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Matter TVOC Sensor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simon.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterTemperatureSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-shelly-trv",
+      "pluginName": "- plugin not installed -",
+      "deviceTypeId": "shellySensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryVoltage": {
+          "type": "number"
+        },
+        "batteryVoltage.ui": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Shelly TRV Sensor",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
       "pluginId": "com.simons-plugins.netro",
       "pluginName": "Netro Smart Sprinklers",
       "deviceTypeId": "Whisperer",
@@ -3050,6 +3661,42 @@
     {
       "pluginId": "no.homeassistant.plugin",
       "pluginName": "Home Assistant Agent",
+      "deviceTypeId": "HAbinarySensorType",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "actual_state": {
+          "type": "string"
+        },
+        "device_class": {
+          "type": "string"
+        },
+        "friendly_name": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Home Assistant Binary Sensor",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "no.homeassistant.plugin",
+      "pluginName": "Home Assistant Agent",
       "deviceTypeId": "HAsensor",
       "capabilities": {
         "supportsOnState": false,
@@ -3102,199 +3749,6 @@
       ],
       "displayStateId": "sensorValue",
       "displayStateImageSel": "indigo.kStateImageSel.NoImage"
-    },
-    {
-      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
-      "pluginName": "Zigbee2mqtt Bridge",
-      "deviceTypeId": "contactSensor",
-      "capabilities": {
-        "supportsOnState": true,
-        "supportsSensorValue": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "batteryLevel": {
-          "type": "integer"
-        },
-        "last_seen": {
-          "type": "string"
-        },
-        "linkQuality": {
-          "type": "integer"
-        },
-        "onOffState": {
-          "type": "boolean"
-        },
-        "onOffState.ui": {
-          "type": "string"
-        },
-        "topicFriendlyName": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Contact Sensor",
-      "subModel": "Door/Window",
-      "protocol": "zigbee",
-      "displayStateId": "onOffState",
-      "displayStateImageSel": "SensorOff"
-    },
-    {
-      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
-      "pluginName": "Zigbee2mqtt Bridge",
-      "deviceTypeId": "humiditySensorSecondary",
-      "capabilities": {
-        "supportsOnState": false,
-        "supportsSensorValue": true,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "sensorValue": {
-          "type": "number"
-        },
-        "sensorValue.ui": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Humidity Sensor [Secondary]",
-      "subModel": "Humidity",
-      "protocol": "zigbee",
-      "displayStateId": "sensorValue",
-      "displayStateImageSel": "DehumidifierOff"
-    },
-    {
-      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
-      "pluginName": "Zigbee2mqtt Bridge",
-      "deviceTypeId": "motionSensor",
-      "capabilities": {
-        "supportsOnState": true,
-        "supportsSensorValue": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "batteryLevel": {
-          "type": "integer"
-        },
-        "last_seen": {
-          "type": "string"
-        },
-        "linkQuality": {
-          "type": "integer"
-        },
-        "onOffState": {
-          "type": "boolean"
-        },
-        "onOffState.ui": {
-          "type": "string"
-        },
-        "topicFriendlyName": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Motion Sensor",
-      "subModel": "Motion",
-      "protocol": "zigbee",
-      "displayStateId": "onOffState",
-      "displayStateImageSel": "MotionSensor"
-    },
-    {
-      "pluginId": "com.autologplugin.indigoplugin.zigbee2mqtt",
-      "pluginName": "Zigbee2mqtt Bridge",
-      "deviceTypeId": "waterLeakSensor",
-      "capabilities": {
-        "supportsOnState": true,
-        "supportsSensorValue": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "batteryLevel": {
-          "type": "integer"
-        },
-        "last_seen": {
-          "type": "string"
-        },
-        "linkQuality": {
-          "type": "integer"
-        },
-        "onOffState": {
-          "type": "boolean"
-        },
-        "onOffState.ui": {
-          "type": "string"
-        },
-        "topicFriendlyName": {
-          "type": "string"
-        },
-        "voltage": {
-          "type": "integer"
-        },
-        "voltage.ui": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Water Leak Sensor",
-      "protocol": "zigbee",
-      "displayStateId": "onOffState",
-      "displayStateImageSel": "SensorOff"
-    },
-    {
-      "pluginId": "no.homeassistant.plugin",
-      "pluginName": "Home Assistant Agent",
-      "deviceTypeId": "HAbinarySensorType",
-      "capabilities": {
-        "supportsOnState": true,
-        "supportsSensorValue": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "actual_state": {
-          "type": "string"
-        },
-        "device_class": {
-          "type": "string"
-        },
-        "friendly_name": {
-          "type": "string"
-        },
-        "lastUpdated": {
-          "type": "string"
-        },
-        "onOffState": {
-          "type": "boolean"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Home Assistant Binary Sensor",
-      "displayStateId": "onOffState",
-      "displayStateImageSel": "NoImage"
     }
   ],
   "classCommands": {

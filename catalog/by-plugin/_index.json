@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14",
+  "generated": "2026-06-16",
   "plugins": {
     "com.GlennNZ.indigoplugin.FindFriendsMini": {
       "pluginName": "FindFriendsMini",
@@ -289,12 +289,34 @@
         }
       ]
     },
+    "com.indigodomo.indigoplugin.tomorrowio": {
+      "pluginName": "- plugin not installed -",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "current"
+        },
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "forecast"
+        }
+      ]
+    },
     "com.karlwachs.fingscan": {
       "pluginName": "fingscan",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "IP-Device"
+        }
+      ]
+    },
+    "com.karlwachs.networkscanner": {
+      "pluginName": "Network Scanner",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "networkDevice"
         }
       ]
     },
@@ -350,6 +372,10 @@
         {
           "baseClass": "indigo.SensorDevice",
           "deviceTypeId": "component-temperature"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "shelly-plus-1"
         },
         {
           "baseClass": "indigo.SensorDevice",
@@ -490,11 +516,15 @@
       ]
     },
     "com.racarter.indigoplugin.heatmiser-neo": {
-      "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
+      "pluginName": "Heatmiser-Neo",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "heatmiserNeoSensor"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "heatmiserNeoTimeclock"
         },
         {
           "baseClass": "indigo.RelayDevice",
@@ -558,6 +588,91 @@
         }
       ]
     },
+    "com.simon.indigo-matter": {
+      "pluginName": "Matter",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.DimmerDevice",
+          "deviceTypeId": "matterColorDimmer"
+        },
+        {
+          "baseClass": "indigo.DimmerDevice",
+          "deviceTypeId": "matterDimmer"
+        },
+        {
+          "baseClass": "indigo.DimmerDevice",
+          "deviceTypeId": "matterFan"
+        },
+        {
+          "baseClass": "indigo.DimmerDevice",
+          "deviceTypeId": "matterWindowCovering"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "matterLock"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "matterRelay"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "matterValve"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterAirQualitySensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterButton"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterCO2Sensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterFlowSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterHumiditySensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterIlluminanceSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterMotionSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterPM25Sensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterPressureSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterSmokeCOAlarm"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterTVOCSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterTemperatureSensor"
+        },
+        {
+          "baseClass": "indigo.ThermostatDevice",
+          "deviceTypeId": "matterThermostat"
+        }
+      ]
+    },
     "com.simons-plugins.UKTrains": {
       "pluginName": "UK Trains",
       "deviceTypes": [
@@ -567,9 +682,39 @@
         }
       ]
     },
+    "com.simons-plugins.indigo-shelly-trv": {
+      "pluginName": "- plugin not installed -",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "shellyController"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "shellySensor"
+        },
+        {
+          "baseClass": "indigo.ThermostatDevice",
+          "deviceTypeId": "shellyThermostat"
+        }
+      ]
+    },
+    "com.simons-plugins.mqtt-device-sniffer": {
+      "pluginName": "MQTT Device Sniffer",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "snifferCoordinator"
+        }
+      ]
+    },
     "com.simons-plugins.netro": {
       "pluginName": "Netro Smart Sprinklers",
       "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "zone"
+        },
         {
           "baseClass": "indigo.SensorDevice",
           "deviceTypeId": "Whisperer"
@@ -577,6 +722,28 @@
         {
           "baseClass": "indigo.SprinklerDevice",
           "deviceTypeId": "sprinkler"
+        }
+      ]
+    },
+    "com.simons-plugins.pentair-pool": {
+      "pluginName": "- plugin not installed -",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "poolController"
+        }
+      ]
+    },
+    "com.simons-plugins.sofabaton": {
+      "pluginName": "Sofabaton",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.Device",
+          "deviceTypeId": "sofabatonHub"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "sofabatonActivity"
         }
       ]
     },

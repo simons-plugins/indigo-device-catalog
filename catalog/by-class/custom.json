@@ -1235,6 +1235,32 @@
       "displayStateImageSel": "indigo.kStateImageSel.NoImage"
     },
     {
+      "pluginId": "com.drjason.temp-adapter",
+      "pluginName": "Adapters",
+      "deviceTypeId": "formulaConvertedSensorString",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "sensorValue": {
+          "type": "string"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Custom Formula Adapter (string result)",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
       "pluginId": "com.duncanware.domoPadMobileClient",
       "pluginName": "com.duncanware.domoPadMobileClient",
       "deviceTypeId": "domoPadAndroidClient",
@@ -1495,6 +1521,211 @@
       "displayStateImageSel": "indigo.kStateImageSel.SensorOff"
     },
     {
+      "pluginId": "com.howartp.clockdisplay",
+      "pluginName": "Clock Display",
+      "deviceTypeId": "clockdisplay",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "Custom1": {
+          "type": "string"
+        },
+        "Custom1L": {
+          "type": "string"
+        },
+        "Custom2": {
+          "type": "string"
+        },
+        "Custom2L": {
+          "type": "string"
+        },
+        "Custom3": {
+          "type": "string"
+        },
+        "Custom3L": {
+          "type": "string"
+        },
+        "Custom4": {
+          "type": "string"
+        },
+        "Custom4L": {
+          "type": "string"
+        },
+        "Custom5": {
+          "type": "string"
+        },
+        "Custom5L": {
+          "type": "string"
+        },
+        "DateUK_DDMMYY": {
+          "type": "string"
+        },
+        "DateUK_DDMMYYYY": {
+          "type": "string"
+        },
+        "DateUS_MMDDYY": {
+          "type": "string"
+        },
+        "DateUS_MMDDYYYY": {
+          "type": "string"
+        },
+        "Day_Long": {
+          "type": "string"
+        },
+        "Day_Short": {
+          "type": "string"
+        },
+        "LocalDate": {
+          "type": "string"
+        },
+        "LocalTime": {
+          "type": "string"
+        },
+        "MinuteOfDay": {
+          "type": "string"
+        },
+        "Sunrise": {
+          "type": "string"
+        },
+        "SunriseL": {
+          "type": "string"
+        },
+        "Sunset": {
+          "type": "string"
+        },
+        "SunsetL": {
+          "type": "string"
+        },
+        "TZ_Offset": {
+          "type": "number"
+        },
+        "Time_12HHMM": {
+          "type": "string"
+        },
+        "Time_12HHMMAMPM": {
+          "type": "string"
+        },
+        "Time_12HHMMAMPML": {
+          "type": "string"
+        },
+        "Time_12HHMMSS": {
+          "type": "string"
+        },
+        "Time_12HHMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_12HHMMSSAMPML": {
+          "type": "string"
+        },
+        "Time_12HMM": {
+          "type": "string"
+        },
+        "Time_12HMMAMPM": {
+          "type": "string"
+        },
+        "Time_12HMMAMPML": {
+          "type": "string"
+        },
+        "Time_12HMMSS": {
+          "type": "string"
+        },
+        "Time_12HMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_12HMMSSAMPML": {
+          "type": "string"
+        },
+        "Time_24HHMM": {
+          "type": "string"
+        },
+        "Time_24HHMMAMPM": {
+          "type": "string"
+        },
+        "Time_24HHMMAMPML": {
+          "type": "string"
+        },
+        "Time_24HHMMSS": {
+          "type": "string"
+        },
+        "Time_24HHMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_24HHMMSSAMPML": {
+          "type": "string"
+        },
+        "Time_24HMM": {
+          "type": "string"
+        },
+        "Time_24HMMAMPM": {
+          "type": "string"
+        },
+        "Time_24HMMAMPML": {
+          "type": "string"
+        },
+        "Time_24HMMSS": {
+          "type": "string"
+        },
+        "Time_24HMMSSAMPM": {
+          "type": "string"
+        },
+        "Time_24HMMSSAMPML": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Clock Display",
+      "displayStateId": "LocalTime",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.howartp.lockmanager",
+      "pluginName": "Z-Wave Lock Manager",
+      "deviceTypeId": "doorLock",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "alarmState": {
+          "type": "string"
+        },
+        "boltState": {
+          "type": "string"
+        },
+        "doorMode": {
+          "type": "string"
+        },
+        "handleState": {
+          "type": "string"
+        },
+        "lastUser": {
+          "type": "string"
+        },
+        "latchState": {
+          "type": "string"
+        },
+        "lockState": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Door Lock",
+      "displayStateId": "lockState",
+      "displayStateImageSel": "Locked"
+    },
+    {
       "pluginId": "com.howartp.scenecontrol",
       "pluginName": "Z-Wave Scene Controller",
       "deviceTypeId": "sceneController",
@@ -1526,6 +1757,518 @@
       ],
       "displayStateId": "currentScene",
       "displayStateImageSel": "indigo.kStateImageSel.NoImage"
+    },
+    {
+      "pluginId": "com.indigodomo.email",
+      "pluginName": "Email+",
+      "deviceTypeId": "imapAccount",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lastMessage": {
+          "type": "integer"
+        },
+        "messageDate": {
+          "type": "string"
+        },
+        "messageFrom": {
+          "type": "string"
+        },
+        "messageSubject": {
+          "type": "string"
+        },
+        "messageText": {
+          "type": "string"
+        },
+        "messageTo": {
+          "type": "string"
+        },
+        "regexMatch": {
+          "type": "string"
+        },
+        "serverStatus": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "IMAP Server",
+      "displayStateId": "serverStatus",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.indigodomo.email",
+      "pluginName": "Email+",
+      "deviceTypeId": "smtpAccount",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "messagesToSend": {
+          "type": "integer"
+        },
+        "serverStatus": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "SMTP Server",
+      "displayStateId": "serverStatus",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.indigodomo.indigoplugin.tomorrowio",
+      "pluginName": "- plugin not installed -",
+      "deviceTypeId": "current",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "altimeterSetting": {
+          "type": "number"
+        },
+        "cloudBase": {
+          "type": "number"
+        },
+        "cloudCeiling": {
+          "type": "string"
+        },
+        "cloudCover": {
+          "type": "number"
+        },
+        "dewPoint": {
+          "type": "number"
+        },
+        "dewPointString": {
+          "type": "string"
+        },
+        "freezingRainIntensity": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "integer"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "observationTime": {
+          "type": "string"
+        },
+        "precipitationProbability": {
+          "type": "integer"
+        },
+        "pressureSeaLevel": {
+          "type": "number"
+        },
+        "pressureSurfaceLevel": {
+          "type": "number"
+        },
+        "rainIntensity": {
+          "type": "number"
+        },
+        "sleetIntensity": {
+          "type": "number"
+        },
+        "snowIntensity": {
+          "type": "number"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "temperatureApparent": {
+          "type": "number"
+        },
+        "temperatureString": {
+          "type": "string"
+        },
+        "units": {
+          "type": "string"
+        },
+        "uvHealthConcern": {
+          "type": "integer"
+        },
+        "uvIndex": {
+          "type": "integer"
+        },
+        "visibility": {
+          "type": "number"
+        },
+        "weatherCode": {
+          "type": "integer"
+        },
+        "weatherDescription": {
+          "type": "string"
+        },
+        "windDegrees": {
+          "type": "number"
+        },
+        "windDirection": {
+          "type": "string"
+        },
+        "windGust": {
+          "type": "number"
+        },
+        "windSpeed": {
+          "type": "number"
+        },
+        "windString": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Current Conditions",
+      "displayStateId": "temperatureString",
+      "displayStateImageSel": "TemperatureSensor"
+    },
+    {
+      "pluginId": "com.indigodomo.indigoplugin.tomorrowio",
+      "pluginName": "- plugin not installed -",
+      "deviceTypeId": "forecast",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "day1_cloudCoverAvg": {
+          "type": "number"
+        },
+        "day1_date": {
+          "type": "string"
+        },
+        "day1_humidityAvg": {
+          "type": "integer"
+        },
+        "day1_moonriseTime": {
+          "type": "string"
+        },
+        "day1_moonsetTime": {
+          "type": "string"
+        },
+        "day1_precipitationProbabilityMax": {
+          "type": "integer"
+        },
+        "day1_sunriseTime": {
+          "type": "string"
+        },
+        "day1_sunsetTime": {
+          "type": "string"
+        },
+        "day1_temperatureAvg": {
+          "type": "number"
+        },
+        "day1_temperatureMax": {
+          "type": "number"
+        },
+        "day1_temperatureMin": {
+          "type": "number"
+        },
+        "day1_uvIndexMax": {
+          "type": "integer"
+        },
+        "day1_visibilityAvg": {
+          "type": "number"
+        },
+        "day1_weatherCode": {
+          "type": "integer"
+        },
+        "day1_weatherDescription": {
+          "type": "string"
+        },
+        "day1_windGustMax": {
+          "type": "number"
+        },
+        "day1_windSpeedAvg": {
+          "type": "number"
+        },
+        "day2_cloudCoverAvg": {
+          "type": "number"
+        },
+        "day2_date": {
+          "type": "string"
+        },
+        "day2_humidityAvg": {
+          "type": "integer"
+        },
+        "day2_moonriseTime": {
+          "type": "string"
+        },
+        "day2_moonsetTime": {
+          "type": "string"
+        },
+        "day2_precipitationProbabilityMax": {
+          "type": "integer"
+        },
+        "day2_sunriseTime": {
+          "type": "string"
+        },
+        "day2_sunsetTime": {
+          "type": "string"
+        },
+        "day2_temperatureAvg": {
+          "type": "number"
+        },
+        "day2_temperatureMax": {
+          "type": "number"
+        },
+        "day2_temperatureMin": {
+          "type": "number"
+        },
+        "day2_uvIndexMax": {
+          "type": "integer"
+        },
+        "day2_visibilityAvg": {
+          "type": "number"
+        },
+        "day2_weatherCode": {
+          "type": "integer"
+        },
+        "day2_weatherDescription": {
+          "type": "string"
+        },
+        "day2_windGustMax": {
+          "type": "number"
+        },
+        "day2_windSpeedAvg": {
+          "type": "number"
+        },
+        "day3_cloudCoverAvg": {
+          "type": "number"
+        },
+        "day3_date": {
+          "type": "string"
+        },
+        "day3_humidityAvg": {
+          "type": "integer"
+        },
+        "day3_moonriseTime": {
+          "type": "string"
+        },
+        "day3_moonsetTime": {
+          "type": "string"
+        },
+        "day3_precipitationProbabilityMax": {
+          "type": "integer"
+        },
+        "day3_sunriseTime": {
+          "type": "string"
+        },
+        "day3_sunsetTime": {
+          "type": "string"
+        },
+        "day3_temperatureAvg": {
+          "type": "number"
+        },
+        "day3_temperatureMax": {
+          "type": "number"
+        },
+        "day3_temperatureMin": {
+          "type": "number"
+        },
+        "day3_uvIndexMax": {
+          "type": "integer"
+        },
+        "day3_visibilityAvg": {
+          "type": "number"
+        },
+        "day3_weatherCode": {
+          "type": "integer"
+        },
+        "day3_weatherDescription": {
+          "type": "string"
+        },
+        "day3_windGustMax": {
+          "type": "number"
+        },
+        "day3_windSpeedAvg": {
+          "type": "number"
+        },
+        "day4_cloudCoverAvg": {
+          "type": "number"
+        },
+        "day4_date": {
+          "type": "string"
+        },
+        "day4_humidityAvg": {
+          "type": "integer"
+        },
+        "day4_moonriseTime": {
+          "type": "string"
+        },
+        "day4_moonsetTime": {
+          "type": "string"
+        },
+        "day4_precipitationProbabilityMax": {
+          "type": "integer"
+        },
+        "day4_sunriseTime": {
+          "type": "string"
+        },
+        "day4_sunsetTime": {
+          "type": "string"
+        },
+        "day4_temperatureAvg": {
+          "type": "number"
+        },
+        "day4_temperatureMax": {
+          "type": "number"
+        },
+        "day4_temperatureMin": {
+          "type": "number"
+        },
+        "day4_uvIndexMax": {
+          "type": "integer"
+        },
+        "day4_visibilityAvg": {
+          "type": "number"
+        },
+        "day4_weatherCode": {
+          "type": "integer"
+        },
+        "day4_weatherDescription": {
+          "type": "string"
+        },
+        "day4_windGustMax": {
+          "type": "number"
+        },
+        "day4_windSpeedAvg": {
+          "type": "number"
+        },
+        "day5_cloudCoverAvg": {
+          "type": "number"
+        },
+        "day5_date": {
+          "type": "string"
+        },
+        "day5_humidityAvg": {
+          "type": "integer"
+        },
+        "day5_moonriseTime": {
+          "type": "string"
+        },
+        "day5_moonsetTime": {
+          "type": "string"
+        },
+        "day5_precipitationProbabilityMax": {
+          "type": "integer"
+        },
+        "day5_sunriseTime": {
+          "type": "string"
+        },
+        "day5_sunsetTime": {
+          "type": "string"
+        },
+        "day5_temperatureAvg": {
+          "type": "number"
+        },
+        "day5_temperatureMax": {
+          "type": "number"
+        },
+        "day5_temperatureMin": {
+          "type": "number"
+        },
+        "day5_uvIndexMax": {
+          "type": "integer"
+        },
+        "day5_visibilityAvg": {
+          "type": "number"
+        },
+        "day5_weatherCode": {
+          "type": "integer"
+        },
+        "day5_weatherDescription": {
+          "type": "string"
+        },
+        "day5_windGustMax": {
+          "type": "number"
+        },
+        "day5_windSpeedAvg": {
+          "type": "number"
+        },
+        "day6_cloudCoverAvg": {
+          "type": "number"
+        },
+        "day6_date": {
+          "type": "string"
+        },
+        "day6_humidityAvg": {
+          "type": "integer"
+        },
+        "day6_moonriseTime": {
+          "type": "string"
+        },
+        "day6_moonsetTime": {
+          "type": "string"
+        },
+        "day6_precipitationProbabilityMax": {
+          "type": "integer"
+        },
+        "day6_sunriseTime": {
+          "type": "string"
+        },
+        "day6_sunsetTime": {
+          "type": "string"
+        },
+        "day6_temperatureAvg": {
+          "type": "number"
+        },
+        "day6_temperatureMax": {
+          "type": "number"
+        },
+        "day6_temperatureMin": {
+          "type": "number"
+        },
+        "day6_uvIndexMax": {
+          "type": "string"
+        },
+        "day6_visibilityAvg": {
+          "type": "number"
+        },
+        "day6_weatherCode": {
+          "type": "integer"
+        },
+        "day6_weatherDescription": {
+          "type": "string"
+        },
+        "day6_windGustMax": {
+          "type": "number"
+        },
+        "day6_windSpeedAvg": {
+          "type": "number"
+        },
+        "observationTime": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Weather Forecast",
+      "displayStateId": "day1_temperatureAvg",
+      "displayStateImageSel": "TemperatureSensor"
     },
     {
       "pluginId": "com.karlwachs.fingscan",
@@ -1589,6 +2332,116 @@
       ],
       "displayStateId": "statusDisplay",
       "displayStateImageSel": "indigo.kStateImageSel.SensorTripped"
+    },
+    {
+      "pluginId": "com.karlwachs.networkscanner",
+      "pluginName": "Network Scanner",
+      "deviceTypeId": "networkDevice",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "MACNumber": {
+          "type": "string"
+        },
+        "appleModel": {
+          "type": "string"
+        },
+        "arpHostname": {
+          "type": "string"
+        },
+        "changeToOff": {
+          "type": "string"
+        },
+        "changeToOn": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "deviceType": {
+          "type": "string"
+        },
+        "dhcpHostname": {
+          "type": "string"
+        },
+        "dhcpOsFingerprint": {
+          "type": "string"
+        },
+        "fingscanDeviceInfo": {
+          "type": "string"
+        },
+        "hardwareVendor": {
+          "type": "string"
+        },
+        "ipNumber": {
+          "type": "string"
+        },
+        "isApOrRouter": {
+          "type": "boolean"
+        },
+        "lastOnMessage": {
+          "type": "string"
+        },
+        "lastOnOffChange": {
+          "type": "string"
+        },
+        "mdnsModel": {
+          "type": "string"
+        },
+        "mdnsName": {
+          "type": "string"
+        },
+        "mdnsServices": {
+          "type": "string"
+        },
+        "networkInterface": {
+          "type": "string"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "onOffState.ui": {
+          "type": "string"
+        },
+        "openPorts": {
+          "type": "string"
+        },
+        "osHint": {
+          "type": "string"
+        },
+        "osVersion": {
+          "type": "string"
+        },
+        "pingMode": {
+          "type": "string"
+        },
+        "pingMs": {
+          "type": "string"
+        },
+        "previousIps": {
+          "type": "string"
+        },
+        "setOffBy": {
+          "type": "string"
+        },
+        "setOnBy": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Network Device",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOff"
     },
     {
       "pluginId": "com.lionsheeptechnology.ShellyNGMQTT",
@@ -3224,6 +4077,194 @@
       "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
     },
     {
+      "pluginId": "com.simons-plugins.indigo-shelly-trv",
+      "pluginName": "- plugin not installed -",
+      "deviceTypeId": "shellyController",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "lastMessage": {
+          "type": "string"
+        },
+        "mqttStatus": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Shelly TRV Coordinator",
+      "displayStateId": "mqttStatus",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.simons-plugins.mqtt-device-sniffer",
+      "pluginName": "MQTT Device Sniffer",
+      "deviceTypeId": "snifferCoordinator",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "capturedPayloads": {
+          "type": "integer"
+        },
+        "capturedTopics": {
+          "type": "integer"
+        },
+        "lastCapture": {
+          "type": "string"
+        },
+        "mqttStatus": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "MQTT Sniffer",
+      "protocol": "mqtt",
+      "displayStateId": "status",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.simons-plugins.netro",
+      "pluginName": "Netro Smart Sprinklers",
+      "deviceTypeId": "zone",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "isIrrigating": {
+          "type": "boolean"
+        },
+        "lastWateringEnd": {
+          "type": "string"
+        },
+        "lastWateringSource": {
+          "type": "string"
+        },
+        "lastWateringStart": {
+          "type": "string"
+        },
+        "lastWateringStatus": {
+          "type": "string"
+        },
+        "moisture": {
+          "type": "integer"
+        },
+        "moisture.ui": {
+          "type": "string"
+        },
+        "moistureForecast": {
+          "type": "integer"
+        },
+        "moistureForecast.ui": {
+          "type": "string"
+        },
+        "nextWateringEnd": {
+          "type": "string"
+        },
+        "nextWateringSource": {
+          "type": "string"
+        },
+        "nextWateringStart": {
+          "type": "string"
+        },
+        "smartMode": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Netro Zone",
+      "displayStateId": "moisture",
+      "displayStateImageSel": "DehumidifierOff"
+    },
+    {
+      "pluginId": "com.simons-plugins.pentair-pool",
+      "pluginName": "- plugin not installed -",
+      "deviceTypeId": "poolController",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "airTemp": {
+          "type": "integer"
+        },
+        "controllerType": {
+          "type": "string"
+        },
+        "lastMessage": {
+          "type": "string"
+        },
+        "mqttStatus": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Pool Controller",
+      "displayStateId": "mqttStatus",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
+      "pluginId": "com.simons-plugins.sofabaton",
+      "pluginName": "Sofabaton",
+      "deviceTypeId": "sofabatonHub",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "activeActivity": {
+          "type": "string"
+        },
+        "activeActivityId": {
+          "type": "integer"
+        },
+        "connectionStatus": {
+          "type": "string"
+        },
+        "connectionStatus.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-06-16"
+      },
+      "model": "Sofabaton Hub",
+      "displayStateId": "activeActivity",
+      "displayStateImageSel": "SensorOn"
+    },
+    {
       "pluginId": "com.ssi.indigoplugin.Sonos",
       "pluginName": "Sonos",
       "deviceTypeId": "ZonePlayer",
@@ -3511,6 +4552,34 @@
       ],
       "displayStateId": "homeState",
       "displayStateImageSel": "indigo.kStateImageSel.SensorOn"
+    },
+    {
+      "pluginId": "no.homeassistant.plugin",
+      "pluginName": "Home Assistant Agent",
+      "deviceTypeId": "ha_generic",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsStatusRequest": false,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "actual_state": {
+          "type": "string"
+        },
+        "friendly_name": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "CliveS",
+        "discoveredAt": "2026-02-24"
+      },
+      "model": "Home Assistant Generic Device",
+      "displayStateImageSel": "NoImage"
     },
     {
       "pluginId": "org.cynic.indigo.denon-av",
@@ -4321,335 +5390,6 @@
       ],
       "displayStateId": "curEnergyLevel",
       "displayStateImageSel": "indigo.kStateImageSel.EnergyMeterOff"
-    },
-    {
-      "pluginId": "com.drjason.temp-adapter",
-      "pluginName": "Adapters",
-      "deviceTypeId": "formulaConvertedSensorString",
-      "capabilities": {
-        "supportsOnState": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "sensorValue": {
-          "type": "string"
-        },
-        "sensorValue.ui": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Custom Formula Adapter (string result)",
-      "displayStateId": "sensorValue",
-      "displayStateImageSel": "SensorOff"
-    },
-    {
-      "pluginId": "com.howartp.clockdisplay",
-      "pluginName": "Clock Display",
-      "deviceTypeId": "clockdisplay",
-      "capabilities": {
-        "supportsOnState": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "Custom1": {
-          "type": "string"
-        },
-        "Custom1L": {
-          "type": "string"
-        },
-        "Custom2": {
-          "type": "string"
-        },
-        "Custom2L": {
-          "type": "string"
-        },
-        "Custom3": {
-          "type": "string"
-        },
-        "Custom3L": {
-          "type": "string"
-        },
-        "Custom4": {
-          "type": "string"
-        },
-        "Custom4L": {
-          "type": "string"
-        },
-        "Custom5": {
-          "type": "string"
-        },
-        "Custom5L": {
-          "type": "string"
-        },
-        "DateUK_DDMMYY": {
-          "type": "string"
-        },
-        "DateUK_DDMMYYYY": {
-          "type": "string"
-        },
-        "DateUS_MMDDYY": {
-          "type": "string"
-        },
-        "DateUS_MMDDYYYY": {
-          "type": "string"
-        },
-        "Day_Long": {
-          "type": "string"
-        },
-        "Day_Short": {
-          "type": "string"
-        },
-        "LocalDate": {
-          "type": "string"
-        },
-        "LocalTime": {
-          "type": "string"
-        },
-        "MinuteOfDay": {
-          "type": "string"
-        },
-        "Sunrise": {
-          "type": "string"
-        },
-        "SunriseL": {
-          "type": "string"
-        },
-        "Sunset": {
-          "type": "string"
-        },
-        "SunsetL": {
-          "type": "string"
-        },
-        "TZ_Offset": {
-          "type": "number"
-        },
-        "Time_12HHMM": {
-          "type": "string"
-        },
-        "Time_12HHMMAMPM": {
-          "type": "string"
-        },
-        "Time_12HHMMAMPML": {
-          "type": "string"
-        },
-        "Time_12HHMMSS": {
-          "type": "string"
-        },
-        "Time_12HHMMSSAMPM": {
-          "type": "string"
-        },
-        "Time_12HHMMSSAMPML": {
-          "type": "string"
-        },
-        "Time_12HMM": {
-          "type": "string"
-        },
-        "Time_12HMMAMPM": {
-          "type": "string"
-        },
-        "Time_12HMMAMPML": {
-          "type": "string"
-        },
-        "Time_12HMMSS": {
-          "type": "string"
-        },
-        "Time_12HMMSSAMPM": {
-          "type": "string"
-        },
-        "Time_12HMMSSAMPML": {
-          "type": "string"
-        },
-        "Time_24HHMM": {
-          "type": "string"
-        },
-        "Time_24HHMMAMPM": {
-          "type": "string"
-        },
-        "Time_24HHMMAMPML": {
-          "type": "string"
-        },
-        "Time_24HHMMSS": {
-          "type": "string"
-        },
-        "Time_24HHMMSSAMPM": {
-          "type": "string"
-        },
-        "Time_24HHMMSSAMPML": {
-          "type": "string"
-        },
-        "Time_24HMM": {
-          "type": "string"
-        },
-        "Time_24HMMAMPM": {
-          "type": "string"
-        },
-        "Time_24HMMAMPML": {
-          "type": "string"
-        },
-        "Time_24HMMSS": {
-          "type": "string"
-        },
-        "Time_24HMMSSAMPM": {
-          "type": "string"
-        },
-        "Time_24HMMSSAMPML": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Clock Display",
-      "displayStateId": "LocalTime",
-      "displayStateImageSel": "NoImage"
-    },
-    {
-      "pluginId": "com.howartp.lockmanager",
-      "pluginName": "Z-Wave Lock Manager",
-      "deviceTypeId": "doorLock",
-      "capabilities": {
-        "supportsOnState": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "alarmState": {
-          "type": "string"
-        },
-        "boltState": {
-          "type": "string"
-        },
-        "doorMode": {
-          "type": "string"
-        },
-        "handleState": {
-          "type": "string"
-        },
-        "lastUser": {
-          "type": "string"
-        },
-        "latchState": {
-          "type": "string"
-        },
-        "lockState": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Door Lock",
-      "displayStateId": "lockState",
-      "displayStateImageSel": "Locked"
-    },
-    {
-      "pluginId": "com.indigodomo.email",
-      "pluginName": "Email+",
-      "deviceTypeId": "imapAccount",
-      "capabilities": {
-        "supportsOnState": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "lastMessage": {
-          "type": "integer"
-        },
-        "messageDate": {
-          "type": "string"
-        },
-        "messageFrom": {
-          "type": "string"
-        },
-        "messageSubject": {
-          "type": "string"
-        },
-        "messageText": {
-          "type": "string"
-        },
-        "messageTo": {
-          "type": "string"
-        },
-        "regexMatch": {
-          "type": "string"
-        },
-        "serverStatus": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "IMAP Server",
-      "displayStateId": "serverStatus",
-      "displayStateImageSel": "SensorOn"
-    },
-    {
-      "pluginId": "com.indigodomo.email",
-      "pluginName": "Email+",
-      "deviceTypeId": "smtpAccount",
-      "capabilities": {
-        "supportsOnState": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "messagesToSend": {
-          "type": "integer"
-        },
-        "serverStatus": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "SMTP Server",
-      "displayStateId": "serverStatus",
-      "displayStateImageSel": "SensorOn"
-    },
-    {
-      "pluginId": "no.homeassistant.plugin",
-      "pluginName": "Home Assistant Agent",
-      "deviceTypeId": "ha_generic",
-      "capabilities": {
-        "supportsOnState": false,
-        "supportsStatusRequest": false,
-        "supportsAllLightsOnOff": false,
-        "supportsAllOff": false
-      },
-      "states": {
-        "actual_state": {
-          "type": "string"
-        },
-        "friendly_name": {
-          "type": "string"
-        },
-        "lastUpdated": {
-          "type": "string"
-        }
-      },
-      "metadata": {
-        "contributedBy": "CliveS",
-        "discoveredAt": "2026-02-24"
-      },
-      "model": "Home Assistant Generic Device",
-      "displayStateImageSel": "NoImage"
     },
     {
       "pluginId": "uk.co.clives.shelly.energy.monitor",
