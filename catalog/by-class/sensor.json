@@ -3596,6 +3596,246 @@
       "displayStateImageSel": "NoImage"
     },
     {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterAirQualitySensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "airQuality": {
+          "type": "string"
+        },
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "airQuality",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterButton",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "lastButtonEvent": {
+          "type": "string"
+        },
+        "pressCount": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "BILRESA scroll wheel",
+      "displayStateId": "lastButtonEvent",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterCO2Sensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterHumiditySensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterIlluminanceSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "Presence Multi-Sensor FP300",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterMotionSensor",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsSensorValue": false,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        },
+        "sensitivityLevel": {
+          "type": "integer"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "Presence Multi-Sensor FP300",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "SensorOff"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterPM25Sensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterTemperatureSensor",
+      "capabilities": {
+        "supportsOnState": false,
+        "supportsSensorValue": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "batteryLevel": {
+          "type": "integer"
+        },
+        "sensorValue": {
+          "type": "number"
+        },
+        "sensorValue.ui": {
+          "type": "string"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "sensorValue",
+      "displayStateImageSel": "NoImage"
+    },
+    {
       "pluginId": "com.simons-plugins.indigo-shelly-trv",
       "pluginName": "- plugin not installed -",
       "deviceTypeId": "shellySensor",

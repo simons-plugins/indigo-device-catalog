@@ -2001,6 +2001,29 @@
       "displayStateImageSel": "PowerOn"
     },
     {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterRelay",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false
+      },
+      "states": {
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "ALPSTUGA air quality monitor",
+      "displayStateId": "onOffState",
+      "displayStateImageSel": "PowerOn"
+    },
+    {
       "pluginId": "com.simons-plugins.sofabaton",
       "pluginName": "Sofabaton",
       "deviceTypeId": "sofabatonActivity",
