@@ -1161,6 +1161,39 @@
       "displayStateImageSel": "DimmerOff"
     },
     {
+      "pluginId": "com.simons-plugins.indigo-matter",
+      "pluginName": "Matter",
+      "deviceTypeId": "matterWindowCovering",
+      "capabilities": {
+        "supportsOnState": true,
+        "supportsStatusRequest": true,
+        "supportsAllLightsOnOff": false,
+        "supportsAllOff": false,
+        "supportsColor": false,
+        "supportsRGB": false,
+        "supportsRGBandWhiteSimultaneously": false,
+        "supportsWhite": false,
+        "supportsWhiteTemperature": false,
+        "supportsTwoWhiteLevels": false,
+        "supportsTwoWhiteLevelsSimultaneously": false
+      },
+      "states": {
+        "brightnessLevel": {
+          "type": "integer"
+        },
+        "onOffState": {
+          "type": "boolean"
+        }
+      },
+      "metadata": {
+        "contributedBy": "simons-plugins",
+        "discoveredAt": "2026-07-23"
+      },
+      "model": "node-matter Window Covering",
+      "displayStateId": "brightnessLevel",
+      "displayStateImageSel": "DimmerOff"
+    },
+    {
       "pluginId": "no.homeassistant.plugin",
       "pluginName": "Home Assistant Agent",
       "deviceTypeId": "HAdimmerType",
