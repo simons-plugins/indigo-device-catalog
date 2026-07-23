@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-16",
+  "generated": "2026-07-23",
   "plugins": {
     "com.GlennNZ.indigoplugin.BlueIris": {
       "pluginName": "BlueIris Plugin",
@@ -773,7 +773,7 @@
       ]
     },
     "com.perceptiveautomation.indigoplugin.zwave": {
-      "pluginName": "com.perceptiveautomation.indigoplugin.zwave",
+      "pluginName": "Z-Wave",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
@@ -814,7 +814,7 @@
       ]
     },
     "com.racarter.indigoplugin.heatmiser-neo": {
-      "pluginName": "com.racarter.indigoplugin.heatmiser-neo",
+      "pluginName": "Heatmiser-Neo",
       "deviceTypes": [
         {
           "baseClass": "indigo.Device",
@@ -995,6 +995,51 @@
         {
           "baseClass": "indigo.Device",
           "deviceTypeId": "trainTimetable"
+        }
+      ]
+    },
+    "com.simons-plugins.indigo-matter": {
+      "pluginName": "Matter",
+      "deviceTypes": [
+        {
+          "baseClass": "indigo.DimmerDevice",
+          "deviceTypeId": "matterWindowCovering"
+        },
+        {
+          "baseClass": "indigo.RelayDevice",
+          "deviceTypeId": "matterRelay"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterAirQualitySensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterButton"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterCO2Sensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterHumiditySensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterIlluminanceSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterMotionSensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterPM25Sensor"
+        },
+        {
+          "baseClass": "indigo.SensorDevice",
+          "deviceTypeId": "matterTemperatureSensor"
         }
       ]
     },
